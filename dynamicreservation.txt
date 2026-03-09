@@ -1,0 +1,780 @@
+Essa onda tem 105 remessas e 157 sku's e demorou 11 minutos 
+
+[05:19:16.495] Iniciando reserva da onda 24626
+[05:19:23.030] Reservando 18 unidades da UA "1018750410" e Item "1501684" da posição "AP.1.B.19.3.1" da zona "Zona de caixas completas" para o pedido "4333422".
+[05:19:23.036] Criando PKL da zona de pallets completos com 1 volume(s) para o pedido "4333422"
+[05:19:23.061] Ordem 4333422 processada completa
+[05:19:29.641] Reservando 96 unidades da UA "1018767631" e Item "1500801" da posição "AP.2.C.10.1.1" da zona "Zona de caixas completas" para o pedido "4333423".
+[05:19:29.656] Reservando 18 unidades da UA "1018794575" e Item "1008120" da posição "AP.1.B.11.4.1" da zona "Zona de caixas completas" para o pedido "4333423".
+[05:19:29.674] Reservando 36 unidades da UA "1018714949" e Item "1006374" da posição "AP.1.B.28.3.1" da zona "Zona de caixas completas" para o pedido "4333423".
+[05:19:29.688] Reservando 100 unidades da UA "1018777207" e Item "1000953" da posição "AP.1.B.8.3.1" da zona "Zona de caixas completas" para o pedido "4333423".
+[05:19:29.702] Reservando 160 unidades da UA "1018795497" e Item "1000951" da posição "AP.2.C.38.2.1" da zona "Zona de caixas completas" para o pedido "4333423".
+[05:19:29.711] Reservando 40 unidades da UA "1018755190" e Item "1000356" da posição "AP.2.D.36.2.1" da zona "Zona de caixas completas" para o pedido "4333423".
+[05:19:29.723] Reservando 80 unidades da UA "1018796013" e Item "1000356" da posição "AP.1.A.50.4.1" da zona "Zona de caixas completas" para o pedido "4333423".
+[05:19:29.739] Reservando 48 unidades da UA "1018770506" e Item "1000355" da posição "AP.2.D.46.2.1" da zona "Zona de caixas completas" para o pedido "4333423".
+[05:19:29.755] Reservando 72 unidades da UA "1018779414" e Item "1000352" da posição "AP.2.D.3.3.1" da zona "Zona de caixas completas" para o pedido "4333423".
+[05:19:29.771] Reservando 144 unidades da UA "1018785560" e Item "1000351" da posição "AP.1.A.32.3.1" da zona "Zona de caixas completas" para o pedido "4333423".
+[05:19:29.780] Criando PKL da zona de pallets completos com 27 volume(s) para o pedido "4333423"
+[05:19:29.850] Ordem 4333423 processada completa
+[05:19:36.581] Reservando 32 unidades da UA "1018776189" e Item "1500941" da posição "AP.1.B.1.3.1" da zona "Zona de caixas completas" para o pedido "4333424".
+[05:19:36.594] Reservando 32 unidades da UA "1018546090" e Item "1500959" da posição "AP.1.B.13.2.1" da zona "Zona de caixas completas" para o pedido "4333424".
+[05:19:36.600] Criando PKL da zona de pallets completos com 2 volume(s) para o pedido "4333424"
+[05:19:36.642] Ordem 4333424 processada completa
+[05:19:43.502] Reservando 60 unidades da UA "1018761381" e Item "1005650" da posição "AP.1.B.2.4.1" da zona "Zona de caixas completas" para o pedido "4333425".
+[05:19:43.515] Reservando 98 unidades da UA "1018482311" e Item "1501284" da posição "AP.2.C.41.1.1" da zona "Zona de caixas completas" para o pedido "4333425".
+[05:19:43.522] Criando PKL da zona de pallets completos com 2 volume(s) para o pedido "4333425"
+[05:19:43.564] Ordem 4333425 processada completa
+[05:19:50.389] Reservando 100 unidades da UA "1018794715" e Item "1000533" da posição "AP.2.D.22.4.1" da zona "Zona de caixas completas" para o pedido "4333426".
+[05:19:50.404] Reservando 160 unidades da UA "1018793010" e Item "1001528" da posição "AP.2.D.25.1.1" da zona "Zona de caixas completas" para o pedido "4333426".
+[05:19:50.414] Reservando 108 unidades da UA "1018781784" e Item "1001534" da posição "AP.2.D.42.1.1" da zona "Zona de caixas completas" para o pedido "4333426".
+[05:19:50.426] Reservando 108 unidades da UA "1018793008" e Item "1001537" da posição "AP.1.A.42.2.1" da zona "Zona de caixas completas" para o pedido "4333426".
+[05:19:50.439] Reservando 16 unidades da UA "1018776224" e Item "1001513" da posição "AP.2.D.43.4.1" da zona "Zona de caixas completas" para o pedido "4333426".
+[05:19:50.455] Reservando 50 unidades da UA "1018750426" e Item "1500494" da posição "AP.2.C.21.4.1" da zona "Zona de caixas completas" para o pedido "4333426".
+[05:19:50.468] Reservando 64 unidades da UA "1018767998" e Item "1500570" da posição "AP.2.D.21.3.1" da zona "Zona de caixas completas" para o pedido "4333426".
+[05:19:50.473] Reservando 36 unidades da UA "1018725428" e Item "1004726" da posição "AP.2.C.2.1.1" da zona "Zona de caixas completas" para o pedido "4333426".
+[05:19:50.484] Reservando 36 unidades da UA "1018786731" e Item "1004839" da posição "AP.2.C.1.2.1" da zona "Zona de caixas completas" para o pedido "4333426".
+[05:19:50.491] Reservando 192 unidades da UA "1018785310" e Item "1007260" da posição "AP.1.A.14.2.1" da zona "Zona de caixas completas" para o pedido "4333426".
+[05:19:50.503] Reservando 48 unidades da UA "1018778286" e Item "1007261" da posição "AP.1.B.10.1.1" da zona "Zona de caixas completas" para o pedido "4333426".
+[05:19:50.515] Reservando 36 unidades da UA "1018728146" e Item "1007371" da posição "AP.1.B.45.1.1" da zona "Zona de caixas completas" para o pedido "4333426".
+[05:19:50.525] Reservando 72 unidades da UA "1018779396" e Item "1007909" da posição "AP.1.A.41.3.1" da zona "Zona de caixas completas" para o pedido "4333426".
+[05:19:50.539] Reservando 50 unidades da UA "1018795837" e Item "1501251" da posição "AP.2.C.19.2.1" da zona "Zona de caixas completas" para o pedido "4333426".
+[05:19:50.545] Reservando 36 unidades da UA "1018784827" e Item "1007929" da posição "AP.1.A.4.2.1" da zona "Zona de caixas completas" para o pedido "4333426".
+[05:19:50.551] Reservando 128 unidades da UA "1018786745" e Item "1500799" da posição "AP.2.D.14.4.1" da zona "Zona de caixas completas" para o pedido "4333426".
+[05:19:50.562] Reservando 40 unidades da UA "1018781806" e Item "1000483" da posição "AP.1.A.39.1.1" da zona "Zona de caixas completas" para o pedido "4333426".
+[05:19:50.567] Criando PKL da zona de pallets completos com 32 volume(s) para o pedido "4333426"
+[05:19:50.684] Ordem 4333426 processada completa
+[05:19:57.398] Reservando 108 unidades da UA "1018779414" e Item "1000352" da posição "AP.2.D.3.3.1" da zona "Zona de caixas completas" para o pedido "4333427".
+[05:19:57.411] Reservando 108 unidades da UA "1018785560" e Item "1000351" da posição "AP.1.A.32.3.1" da zona "Zona de caixas completas" para o pedido "4333427".
+[05:19:57.422] Criando PKL da zona de pallets completos com 6 volume(s) para o pedido "4333427"
+[05:19:57.469] Ordem 4333427 processada completa
+[05:20:04.208] Reservando 45 unidades da UA "1018625995" e Item "1007553" da posição "AP.2.D.2.1.1" da zona "Zona de caixas completas" para o pedido "4333428".
+[05:20:04.222] Reservando 45 unidades da UA "1018767617" e Item "1501100" da posição "AP.1.A.3.3.1" da zona "Zona de caixas completas" para o pedido "4333428".
+[05:20:04.239] Reservando 45 unidades da UA "1018689464" e Item "1501099" da posição "AP.1.A.11.2.1" da zona "Zona de caixas completas" para o pedido "4333428".
+[05:20:04.254] Reservando 50 unidades da UA "1018657449" e Item "1501028" da posição "AP.2.D.22.3.1" da zona "Zona de caixas completas" para o pedido "4333428".
+[05:20:04.263] Criando PKL da zona de pallets completos com 4 volume(s) para o pedido "4333428"
+[05:20:04.304] Ordem 4333428 processada completa
+[05:20:10.913] Reservando 80 unidades da UA "1018781806" e Item "1000483" da posição "AP.1.A.39.1.1" da zona "Zona de caixas completas" para o pedido "4333429".
+[05:20:10.927] Reservando 150 unidades da UA "1018794715" e Item "1000533" da posição "AP.2.D.22.4.1" da zona "Zona de caixas completas" para o pedido "4333429".
+[05:20:10.944] Reservando 72 unidades da UA "1018781784" e Item "1001534" da posição "AP.2.D.42.1.1" da zona "Zona de caixas completas" para o pedido "4333429".
+[05:20:10.957] Reservando 72 unidades da UA "1018793008" e Item "1001537" da posição "AP.1.A.42.2.1" da zona "Zona de caixas completas" para o pedido "4333429".
+[05:20:10.972] Reservando 28 unidades da UA "1018687429" e Item "1001511" da posição "AP.2.D.6.4.1" da zona "Zona de caixas completas" para o pedido "4333429".
+[05:20:10.990] Reservando 48 unidades da UA "1018796972" e Item "1001513" da posição "AP.1.A.48.4.1" da zona "Zona de caixas completas" para o pedido "4333429".
+[05:20:11.003] Reservando 24 unidades da UA "1018665971" e Item "1001618" da posição "AP.1.B.41.4.1" da zona "Zona de caixas completas" para o pedido "4333429".
+[05:20:11.017] Reservando 36 unidades da UA "1018786731" e Item "1004839" da posição "AP.2.C.1.2.1" da zona "Zona de caixas completas" para o pedido "4333429".
+[05:20:11.031] Reservando 48 unidades da UA "1018731756" e Item "1003252" da posição "AP.2.D.31.1.1" da zona "Zona de caixas completas" para o pedido "4333429".
+[05:20:11.038] Reservando 50 unidades da UA "1018657706" e Item "1500496" da posição "AP.2.C.2.2.1" da zona "Zona de caixas completas" para o pedido "4333429".
+[05:20:11.050] Reservando 48 unidades da UA "1018779540" e Item "1006653" da posição "AP.2.D.44.4.1" da zona "Zona de caixas completas" para o pedido "4333429".
+[05:20:11.061] Reservando 144 unidades da UA "1018785310" e Item "1007260" da posição "AP.1.A.14.2.1" da zona "Zona de caixas completas" para o pedido "4333429".
+[05:20:11.068] Reservando 48 unidades da UA "1018778286" e Item "1007261" da posição "AP.1.B.10.1.1" da zona "Zona de caixas completas" para o pedido "4333429".
+[05:20:11.082] Reservando 50 unidades da UA "1018795837" e Item "1501251" da posição "AP.2.C.19.2.1" da zona "Zona de caixas completas" para o pedido "4333429".
+[05:20:11.092] Reservando 30 unidades da UA "1018545805" e Item "1008080" da posição "AP.2.C.8.4.1" da zona "Zona de caixas completas" para o pedido "4333429".
+[05:20:11.104] Reservando 30 unidades da UA "1018654134" e Item "1008083" da posição "AP.2.C.29.3.1" da zona "Zona de caixas completas" para o pedido "4333429".
+[05:20:11.110] Reservando 48 unidades da UA "1018784827" e Item "1007929" da posição "AP.1.A.4.2.1" da zona "Zona de caixas completas" para o pedido "4333429".
+[05:20:11.114] Criando PKL da zona de pallets completos com 29 volume(s) para o pedido "4333429"
+[05:20:11.243] Ordem 4333429 processada completa
+[05:20:17.863] Reservando 50 unidades da UA "1018759020" e Item "1501038" da posição "AP.2.C.25.4.1" da zona "Zona de caixas completas" para o pedido "4333430".
+[05:20:17.879] Reservando 45 unidades da UA "1018689464" e Item "1501099" da posição "AP.1.A.11.2.1" da zona "Zona de caixas completas" para o pedido "4333430".
+[05:20:17.894] Reservando 360 unidades da UA "1018767617" e Item "1501100" da posição "AP.1.A.3.3.1" da zona "Zona de caixas completas" para o pedido "4333430".
+[05:20:17.908] Reservando 45 unidades da UA "1018506965" e Item "1007554" da posição "AP.1.A.23.4.1" da zona "Zona de caixas completas" para o pedido "4333430".
+[05:20:17.919] Criando PKL da zona de pallets completos com 11 volume(s) para o pedido "4333430"
+[05:20:17.956] Ordem 4333430 processada completa
+[05:20:24.562] Reservando 32 unidades da UA "1018776189" e Item "1500941" da posição "AP.1.B.1.3.1" da zona "Zona de caixas completas" para o pedido "4333431".
+[05:20:24.576] Reservando 64 unidades da UA "1018780690" e Item "1007541" da posição "AP.1.B.43.1.1" da zona "Zona de caixas completas" para o pedido "4333431".
+[05:20:24.581] Criando PKL da zona de pallets completos com 5 volume(s) para o pedido "4333431"
+[05:20:24.610] Ordem 4333431 processada completa
+[05:20:31.261] Reservando 32 unidades da UA "1018632363" e Item "1501259" da posição "AP.1.B.5.1.1" da zona "Zona de caixas completas" para o pedido "4333432".
+[05:20:31.268] Criando PKL da zona de pallets completos com 1 volume(s) para o pedido "4333432"
+[05:20:31.295] Ordem 4333432 processada completa
+[05:20:38.224] Reservando 135 unidades da UA "1018767617" e Item "1501100" da posição "AP.1.A.3.3.1" da zona "Zona de caixas completas" para o pedido "4333433".
+[05:20:38.239] Reservando 45 unidades da UA "1018625995" e Item "1007553" da posição "AP.2.D.2.1.1" da zona "Zona de caixas completas" para o pedido "4333433".
+[05:20:38.253] Reservando 45 unidades da UA "1018506965" e Item "1007554" da posição "AP.1.A.23.4.1" da zona "Zona de caixas completas" para o pedido "4333433".
+[05:20:38.259] Criando PKL da zona de pallets completos com 5 volume(s) para o pedido "4333433"
+[05:20:38.298] Ordem 4333433 processada completa
+[05:20:44.982] Reservando 20 unidades da UA "1018779392" e Item "1005270" da posição "AP.1.A.45.3.1" da zona "Zona de caixas completas" para o pedido "4333434".
+[05:20:44.989] Criando PKL da zona de pallets completos com 1 volume(s) para o pedido "4333434"
+[05:20:45.022] Ordem 4333434 processada completa
+[05:20:51.596] Reservando 32 unidades da UA "1018546090" e Item "1500959" da posição "AP.1.B.13.2.1" da zona "Zona de caixas completas" para o pedido "4333435".
+[05:20:51.604] Reservando 64 unidades da UA "1018796028" e Item "1500959" da posição "AP.2.D.19.1.1" da zona "Zona de caixas completas" para o pedido "4333435".
+[05:20:51.612] Criando PKL da zona de pallets completos com 3 volume(s) para o pedido "4333435"
+[05:20:51.647] Ordem 4333435 processada completa
+[05:20:58.317] Reservando 32 unidades da UA "1018779322" e Item "1501613" da posição "AP.2.C.31.4.1" da zona "Zona de caixas completas" para o pedido "4333436".
+[05:20:58.325] Criando PKL da zona de pallets completos com 1 volume(s) para o pedido "4333436"
+[05:20:58.360] Ordem 4333436 processada completa
+[05:21:05.246] Reservando 50 unidades da UA "1018723721" e Item "1500988" da posição "AP.2.D.9.4.1" da zona "Zona de caixas completas" para o pedido "4333437".
+[05:21:05.260] Reservando 100 unidades da UA "1018753302" e Item "1500989" da posição "AP.1.B.12.3.1" da zona "Zona de caixas completas" para o pedido "4333437".
+[05:21:05.268] Reservando 50 unidades da UA "1018545221" e Item "1500950" da posição "AP.2.C.7.4.1" da zona "Zona de caixas completas" para o pedido "4333437".
+[05:21:05.275] Reservando 192 unidades da UA "1018779540" e Item "1006653" da posição "AP.2.D.44.4.1" da zona "Zona de caixas completas" para o pedido "4333437".
+[05:21:05.285] Reservando 50 unidades da UA "1018650342" e Item "1500953" da posição "AP.2.C.29.4.1" da zona "Zona de caixas completas" para o pedido "4333437".
+[05:21:05.291] Reservando 50 unidades da UA "1018698521" e Item "1500999" da posição "AP.2.C.20.2.1" da zona "Zona de caixas completas" para o pedido "4333437".
+[05:21:05.304] Reservando 144 unidades da UA "1018786746" e Item "1005498" da posição "AP.1.A.40.3.1" da zona "Zona de caixas completas" para o pedido "4333437".
+[05:21:05.316] Reservando 48 unidades da UA "1018785310" e Item "1007260" da posição "AP.1.A.14.2.1" da zona "Zona de caixas completas" para o pedido "4333437".
+[05:21:05.332] Reservando 48 unidades da UA "1018778286" e Item "1007261" da posição "AP.1.B.10.1.1" da zona "Zona de caixas completas" para o pedido "4333437".
+[05:21:05.338] Reservando 36 unidades da UA "1018728146" e Item "1007371" da posição "AP.1.B.45.1.1" da zona "Zona de caixas completas" para o pedido "4333437".
+[05:21:05.348] Reservando 36 unidades da UA "1018779396" e Item "1007909" da posição "AP.1.A.41.3.1" da zona "Zona de caixas completas" para o pedido "4333437".
+[05:21:05.362] Reservando 100 unidades da UA "1018795837" e Item "1501251" da posição "AP.2.C.19.2.1" da zona "Zona de caixas completas" para o pedido "4333437".
+[05:21:05.372] Reservando 12 unidades da UA "1018779485" e Item "1006749" da posição "AP.2.D.20.1.1" da zona "Zona de caixas completas" para o pedido "4333437".
+[05:21:05.380] Reservando 50 unidades da UA "1018750426" e Item "1500494" da posição "AP.2.C.21.4.1" da zona "Zona de caixas completas" para o pedido "4333437".
+[05:21:05.388] Reservando 48 unidades da UA "1018796972" e Item "1001513" da posição "AP.1.A.48.4.1" da zona "Zona de caixas completas" para o pedido "4333437".
+[05:21:05.400] Reservando 40 unidades da UA "1018793010" e Item "1001528" da posição "AP.2.D.25.1.1" da zona "Zona de caixas completas" para o pedido "4333437".
+[05:21:05.406] Criando PKL da zona de pallets completos com 25 volume(s) para o pedido "4333437"
+[05:21:05.546] Ordem 4333437 processada completa
+[05:21:12.163] Reservando 32 unidades da UA "1018776189" e Item "1500941" da posição "AP.1.B.1.3.1" da zona "Zona de caixas completas" para o pedido "4333438".
+[05:21:12.176] Reservando 32 unidades da UA "1018796028" e Item "1500959" da posição "AP.2.D.19.1.1" da zona "Zona de caixas completas" para o pedido "4333438".
+[05:21:12.187] Criando PKL da zona de pallets completos com 2 volume(s) para o pedido "4333438"
+[05:21:12.233] Ordem 4333438 processada completa
+[05:21:19.108] Reservando 48 unidades da UA "1018772897" e Item "1007243" da posição "AP.1.B.25.2.1" da zona "Zona de caixas completas" para o pedido "4333439".
+[05:21:19.131] Reservando 48 unidades da UA "1018714948" e Item "1006557" da posição "AP.1.B.12.1.1" da zona "Zona de caixas completas" para o pedido "4333439".
+[05:21:19.142] Reservando 192 unidades da UA "1018755053" e Item "1006557" da posição "AP.2.C.42.2.1" da zona "Zona de caixas completas" para o pedido "4333439".
+[05:21:19.147] Reservando 144 unidades da UA "1018779472" e Item "1006557" da posição "AP.1.B.42.2.1" da zona "Zona de caixas completas" para o pedido "4333439".
+[05:21:19.171] Reservando 220 unidades da UA "1018779432" e Item "1006284" da posição "AP.2.C.36.3.1" da zona "Zona de caixas completas" para o pedido "4333439".
+[05:21:19.197] Reservando 520 unidades da UA "1018695914" e Item "1006435" da posição "AP.2.C.6.3.1" da zona "Zona de caixas completas" para o pedido "4333439".
+[05:21:19.205] Criando PKL da zona de pallets completos com 54 volume(s) para o pedido "4333439"
+[05:21:19.292] Ordem 4333439 processada completa
+[05:21:26.014] Reservando 20 unidades da UA "1018777207" e Item "1000953" da posição "AP.1.B.8.3.1" da zona "Zona de caixas completas" para o pedido "4333440".
+[05:21:26.026] Reservando 36 unidades da UA "1018779414" e Item "1000352" da posição "AP.2.D.3.3.1" da zona "Zona de caixas completas" para o pedido "4333440".
+[05:21:26.040] Reservando 36 unidades da UA "1018785560" e Item "1000351" da posição "AP.1.A.32.3.1" da zona "Zona de caixas completas" para o pedido "4333440".
+[05:21:26.049] Criando PKL da zona de pallets completos com 3 volume(s) para o pedido "4333440"
+[05:21:26.093] Ordem 4333440 processada completa
+[05:21:32.905] Reservando 24 unidades da UA "1018726971" e Item "1000212" da posição "AP.2.C.34.3.1" da zona "Zona de caixas completas" para o pedido "4333441".
+[05:21:32.915] Reservando 72 unidades da UA "1018785560" e Item "1000351" da posição "AP.1.A.32.3.1" da zona "Zona de caixas completas" para o pedido "4333441".
+[05:21:32.928] Reservando 72 unidades da UA "1018779414" e Item "1000352" da posição "AP.2.D.3.3.1" da zona "Zona de caixas completas" para o pedido "4333441".
+[05:21:32.942] Reservando 24 unidades da UA "1018770506" e Item "1000355" da posição "AP.2.D.46.2.1" da zona "Zona de caixas completas" para o pedido "4333441".
+[05:21:32.955] Reservando 40 unidades da UA "1018796013" e Item "1000356" da posição "AP.1.A.50.4.1" da zona "Zona de caixas completas" para o pedido "4333441".
+[05:21:32.964] Reservando 16 unidades da UA "1018707782" e Item "1005355" da posição "AP.1.A.44.4.1" da zona "Zona de caixas completas" para o pedido "4333441".
+[05:21:32.972] Criando PKL da zona de pallets completos com 8 volume(s) para o pedido "4333441"
+[05:21:33.035] Ordem 4333441 processada completa
+[05:21:39.740] Reservando 160 unidades da UA "1018796028" e Item "1500959" da posição "AP.2.D.19.1.1" da zona "Zona de caixas completas" para o pedido "4333442".
+[05:21:39.748] Criando PKL da zona de pallets completos com 5 volume(s) para o pedido "4333442"
+[05:21:39.779] Ordem 4333442 processada completa
+[05:21:46.433] Reservando 144 unidades da UA "1018796972" e Item "1001513" da posição "AP.1.A.48.4.1" da zona "Zona de caixas completas" para o pedido "4333443".
+[05:21:46.449] Reservando 48 unidades da UA "1018779548" e Item "1001514" da posição "AP.1.B.26.3.1" da zona "Zona de caixas completas" para o pedido "4333443".
+[05:21:46.453] Criando PKL da zona de pallets completos com 12 volume(s) para o pedido "4333443"
+[05:21:46.485] Ordem 4333443 processada completa
+[05:21:53.006] Reservando 48 unidades da UA "1018758688" e Item "1008193" da posição "AP.2.C.32.4.1" da zona "Zona de caixas completas" para o pedido "4333444".
+[05:21:53.021] Reservando 288 unidades da UA "1018779452" e Item "1007967" da posição "AP.2.D.19.3.1" da zona "Zona de caixas completas" para o pedido "4333444".
+[05:21:53.032] Reservando 45 unidades da UA "1018625995" e Item "1007553" da posição "AP.2.D.2.1.1" da zona "Zona de caixas completas" para o pedido "4333444".
+[05:21:53.039] Reservando 225 unidades da UA "1018767617" e Item "1501100" da posição "AP.1.A.3.3.1" da zona "Zona de caixas completas" para o pedido "4333444".
+[05:21:53.050] Reservando 180 unidades da UA "1018689464" e Item "1501099" da posição "AP.1.A.11.2.1" da zona "Zona de caixas completas" para o pedido "4333444".
+[05:21:53.057] Reservando 100 unidades da UA "1018657449" e Item "1501028" da posição "AP.2.D.22.3.1" da zona "Zona de caixas completas" para o pedido "4333444".
+[05:21:53.068] Criando PKL da zona de pallets completos com 20 volume(s) para o pedido "4333444"
+[05:21:53.117] Ordem 4333444 processada completa
+[05:21:59.753] Reservando 20 unidades da UA "1018779392" e Item "1005270" da posição "AP.1.A.45.3.1" da zona "Zona de caixas completas" para o pedido "4333445".
+[05:21:59.761] Criando PKL da zona de pallets completos com 1 volume(s) para o pedido "4333445"
+[05:21:59.797] Ordem 4333445 processada completa
+[05:22:06.606] Reservando 72 unidades da UA "1018785560" e Item "1000351" da posição "AP.1.A.32.3.1" da zona "Zona de caixas completas" para o pedido "4333446".
+[05:22:06.620] Reservando 36 unidades da UA "1018779414" e Item "1000352" da posição "AP.2.D.3.3.1" da zona "Zona de caixas completas" para o pedido "4333446".
+[05:22:06.633] Reservando 80 unidades da UA "1018796013" e Item "1000356" da posição "AP.1.A.50.4.1" da zona "Zona de caixas completas" para o pedido "4333446".
+[05:22:06.647] Reservando 120 unidades da UA "1018708460" e Item "1001469" da posição "AP.2.D.15.2.1" da zona "Zona de caixas completas" para o pedido "4333446".
+[05:22:06.665] Reservando 36 unidades da UA "1018626763" e Item "1006369" da posição "AP.2.D.3.1.1" da zona "Zona de caixas completas" para o pedido "4333446".
+[05:22:06.677] Criando PKL da zona de pallets completos com 9 volume(s) para o pedido "4333446"
+[05:22:06.725] Ordem 4333446 processada completa
+[05:22:13.407] Reservando 36 unidades da UA "1018779414" e Item "1000352" da posição "AP.2.D.3.3.1" da zona "Zona de caixas completas" para o pedido "4333447".
+[05:22:13.423] Reservando 24 unidades da UA "1018770506" e Item "1000355" da posição "AP.2.D.46.2.1" da zona "Zona de caixas completas" para o pedido "4333447".
+[05:22:13.432] Reservando 120 unidades da UA "1018796013" e Item "1000356" da posição "AP.1.A.50.4.1" da zona "Zona de caixas completas" para o pedido "4333447".
+[05:22:13.446] Reservando 36 unidades da UA "1018767905" e Item "1006370" da posição "AP.2.C.33.1.1" da zona "Zona de caixas completas" para o pedido "4333447".
+[05:22:13.456] Reservando 18 unidades da UA "1018794575" e Item "1008120" da posição "AP.1.B.11.4.1" da zona "Zona de caixas completas" para o pedido "4333447".
+[05:22:13.462] Criando PKL da zona de pallets completos com 7 volume(s) para o pedido "4333447"
+[05:22:13.517] Ordem 4333447 processada completa
+[05:22:20.347] Reservando 32 unidades da UA "1018796972" e Item "1001513" da posição "AP.1.A.48.4.1" da zona "Zona de caixas completas" para o pedido "4333448".
+[05:22:20.356] Criando PKL da zona de pallets completos com 2 volume(s) para o pedido "4333448"
+[05:22:20.394] Ordem 4333448 processada completa
+[05:22:26.921] Reservando 48 unidades da UA "1018444466" e Item "1006690" da posição "AP.2.C.39.1.1" da zona "Zona de caixas completas" para o pedido "4333449".
+[05:22:26.934] Reservando 128 unidades da UA "1018786745" e Item "1500799" da posição "AP.2.D.14.4.1" da zona "Zona de caixas completas" para o pedido "4333449".
+[05:22:26.945] Reservando 24 unidades da UA "1018784827" e Item "1007929" da posição "AP.1.A.4.2.1" da zona "Zona de caixas completas" para o pedido "4333449".
+[05:22:26.959] Reservando 200 unidades da UA "1018795837" e Item "1501251" da posição "AP.2.C.19.2.1" da zona "Zona de caixas completas" para o pedido "4333449".
+[05:22:26.975] Reservando 96 unidades da UA "1018778286" e Item "1007261" da posição "AP.1.B.10.1.1" da zona "Zona de caixas completas" para o pedido "4333449".
+[05:22:26.989] Reservando 288 unidades da UA "1018785310" e Item "1007260" da posição "AP.1.A.14.2.1" da zona "Zona de caixas completas" para o pedido "4333449".
+[05:22:27.006] Reservando 48 unidades da UA "1018786746" e Item "1005498" da posição "AP.1.A.40.3.1" da zona "Zona de caixas completas" para o pedido "4333449".
+[05:22:27.020] Reservando 50 unidades da UA "1018698521" e Item "1500999" da posição "AP.2.C.20.2.1" da zona "Zona de caixas completas" para o pedido "4333449".
+[05:22:27.034] Reservando 50 unidades da UA "1018723721" e Item "1500988" da posição "AP.2.D.9.4.1" da zona "Zona de caixas completas" para o pedido "4333449".
+[05:22:27.041] Reservando 50 unidades da UA "1018756055" e Item "1500981" da posição "AP.1.A.16.3.1" da zona "Zona de caixas completas" para o pedido "4333449".
+[05:22:27.061] Reservando 50 unidades da UA "1018779464" e Item "1500955" da posição "AP.1.A.12.4.1" da zona "Zona de caixas completas" para o pedido "4333449".
+[05:22:27.070] Reservando 50 unidades da UA "1018650342" e Item "1500953" da posição "AP.2.C.29.4.1" da zona "Zona de caixas completas" para o pedido "4333449".
+[05:22:27.089] Reservando 72 unidades da UA "1018786731" e Item "1004839" da posição "AP.2.C.1.2.1" da zona "Zona de caixas completas" para o pedido "4333449".
+[05:22:27.101] Reservando 50 unidades da UA "1018601620" e Item "1500509" da posição "AP.2.C.27.4.1" da zona "Zona de caixas completas" para o pedido "4333449".
+[05:22:27.113] Reservando 50 unidades da UA "1018779830" e Item "1500495" da posição "AP.2.D.31.4.1" da zona "Zona de caixas completas" para o pedido "4333449".
+[05:22:27.129] Reservando 32 unidades da UA "1018796972" e Item "1001513" da posição "AP.1.A.48.4.1" da zona "Zona de caixas completas" para o pedido "4333449".
+[05:22:27.134] Reservando 56 unidades da UA "1018687429" e Item "1001511" da posição "AP.2.D.6.4.1" da zona "Zona de caixas completas" para o pedido "4333449".
+[05:22:27.146] Reservando 40 unidades da UA "1018793010" e Item "1001528" da posição "AP.2.D.25.1.1" da zona "Zona de caixas completas" para o pedido "4333449".
+[05:22:27.151] Criando PKL da zona de pallets completos com 31 volume(s) para o pedido "4333449"
+[05:22:27.270] Ordem 4333449 processada completa
+[05:22:34.007] Reservando 98 unidades da UA "1018482311" e Item "1501284" da posição "AP.2.C.41.1.1" da zona "Zona de caixas completas" para o pedido "4333450".
+[05:22:34.017] Criando PKL da zona de pallets completos com 1 volume(s) para o pedido "4333450"
+[05:22:34.055] Ordem 4333450 processada completa
+[05:22:40.650] Reservando 108 unidades da UA "1018785560" e Item "1000351" da posição "AP.1.A.32.3.1" da zona "Zona de caixas completas" para o pedido "4333451".
+[05:22:40.665] Reservando 72 unidades da UA "1018779414" e Item "1000352" da posição "AP.2.D.3.3.1" da zona "Zona de caixas completas" para o pedido "4333451".
+[05:22:40.681] Reservando 24 unidades da UA "1018770506" e Item "1000355" da posição "AP.2.D.46.2.1" da zona "Zona de caixas completas" para o pedido "4333451".
+[05:22:40.691] Reservando 160 unidades da UA "1018673032" e Item "1500794" da posição "AP.2.D.32.4.1" da zona "Zona de caixas completas" para o pedido "4333451".
+[05:22:40.696] Criando PKL da zona de pallets completos com 7 volume(s) para o pedido "4333451"
+[05:22:40.750] Ordem 4333451 processada completa
+[05:22:47.407] Reservando 48 unidades da UA "1018778286" e Item "1007261" da posição "AP.1.B.10.1.1" da zona "Zona de caixas completas" para o pedido "4333452".
+[05:22:47.422] Reservando 36 unidades da UA "1018781784" e Item "1001534" da posição "AP.2.D.42.1.1" da zona "Zona de caixas completas" para o pedido "4333452".
+[05:22:47.428] Criando PKL da zona de pallets completos com 2 volume(s) para o pedido "4333452"
+[05:22:47.462] Ordem 4333452 processada completa
+[05:22:54.222] Reservando 80 unidades da UA "1018796972" e Item "1001513" da posição "AP.1.A.48.4.1" da zona "Zona de caixas completas" para o pedido "4333453".
+[05:22:54.236] Reservando 672 unidades da UA "1018776264" e Item "1006689" da posição "AP.2.D.24.3.1" da zona "Zona de caixas completas" para o pedido "4333453".
+[05:22:54.242] Criando PKL da zona de pallets completos com 19 volume(s) para o pedido "4333453"
+[05:22:54.290] Ordem 4333453 processada completa
+[05:23:01.016] Reservando 20 unidades da UA "1018768751" e Item "1000593" da posição "AP.2.D.49.3.1" da zona "Zona de caixas completas" para o pedido "4333454".
+[05:23:01.024] Reservando 45 unidades da UA "1018452369" e Item "1500359" da posição "AP.1.B.10.4.1" da zona "Zona de caixas completas" para o pedido "4333454".
+[05:23:01.035] Reservando 40 unidades da UA "1018778488" e Item "1004763" da posição "AP.2.C.44.4.1" da zona "Zona de caixas completas" para o pedido "4333454".
+[05:23:01.048] Reservando 16 unidades da UA "1018778586" e Item "1500658" da posição "AP.1.A.37.3.1" da zona "Zona de caixas completas" para o pedido "4333454".
+[05:23:01.055] Reservando 32 unidades da UA "1018737904" e Item "1004963" da posição "AP.2.C.44.1.1" da zona "Zona de caixas completas" para o pedido "4333454".
+[05:23:01.067] Reservando 28 unidades da UA "1018767627" e Item "1005841" da posição "AP.2.C.14.1.1" da zona "Zona de caixas completas" para o pedido "4333454".
+[05:23:01.075] Reservando 16 unidades da UA "1018593062" e Item "1501169" da posição "AP.2.C.28.1.1" da zona "Zona de caixas completas" para o pedido "4333454".
+[05:23:01.084] Reservando 48 unidades da UA "1018557679" e Item "1008012" da posição "AP.1.B.21.2.1" da zona "Zona de caixas completas" para o pedido "4333454".
+[05:23:01.090] Reservando 48 unidades da UA "1018767620" e Item "1501281" da posição "AP.2.C.16.3.1" da zona "Zona de caixas completas" para o pedido "4333454".
+[05:23:01.095] Criando PKL da zona de pallets completos com 10 volume(s) para o pedido "4333454"
+[05:23:01.157] Ordem 4333454 processada completa
+[05:23:07.931] Reservando 45 unidades da UA "1018506965" e Item "1007554" da posição "AP.1.A.23.4.1" da zona "Zona de caixas completas" para o pedido "4333455".
+[05:23:07.944] Reservando 90 unidades da UA "1018625995" e Item "1007553" da posição "AP.2.D.2.1.1" da zona "Zona de caixas completas" para o pedido "4333455".
+[05:23:07.960] Reservando 135 unidades da UA "1018767617" e Item "1501100" da posição "AP.1.A.3.3.1" da zona "Zona de caixas completas" para o pedido "4333455".
+[05:23:07.971] Reservando 315 unidades da UA "1018689464" e Item "1501099" da posição "AP.1.A.11.2.1" da zona "Zona de caixas completas" para o pedido "4333455".
+[05:23:07.977] Reservando 50 unidades da UA "1018759020" e Item "1501038" da posição "AP.2.C.25.4.1" da zona "Zona de caixas completas" para o pedido "4333455".
+[05:23:07.988] Reservando 100 unidades da UA "1018696291" e Item "1501030" da posição "AP.2.D.3.4.1" da zona "Zona de caixas completas" para o pedido "4333455".
+[05:23:07.997] Reservando 250 unidades da UA "1018657449" e Item "1501028" da posição "AP.2.D.22.3.1" da zona "Zona de caixas completas" para o pedido "4333455".
+[05:23:08.005] Criando PKL da zona de pallets completos com 21 volume(s) para o pedido "4333455"
+[05:23:08.071] Ordem 4333455 processada completa
+[05:23:14.768] Reservando 144 unidades da UA "1018786746" e Item "1005498" da posição "AP.1.A.40.3.1" da zona "Zona de caixas completas" para o pedido "4333456".
+[05:23:14.782] Reservando 144 unidades da UA "1018785310" e Item "1007260" da posição "AP.1.A.14.2.1" da zona "Zona de caixas completas" para o pedido "4333456".
+[05:23:14.793] Reservando 36 unidades da UA "1018728146" e Item "1007371" da posição "AP.1.B.45.1.1" da zona "Zona de caixas completas" para o pedido "4333456".
+[05:23:14.808] Reservando 50 unidades da UA "1018779547" e Item "1501226" da posição "AP.2.D.5.4.1" da zona "Zona de caixas completas" para o pedido "4333456".
+[05:23:14.821] Reservando 100 unidades da UA "1018795837" e Item "1501251" da posição "AP.2.C.19.2.1" da zona "Zona de caixas completas" para o pedido "4333456".
+[05:23:14.837] Reservando 50 unidades da UA "1018753302" e Item "1500989" da posição "AP.1.B.12.3.1" da zona "Zona de caixas completas" para o pedido "4333456".
+[05:23:14.850] Reservando 100 unidades da UA "1018756055" e Item "1500981" da posição "AP.1.A.16.3.1" da zona "Zona de caixas completas" para o pedido "4333456".
+[05:23:14.866] Reservando 48 unidades da UA "1018779540" e Item "1006653" da posição "AP.2.D.44.4.1" da zona "Zona de caixas completas" para o pedido "4333456".
+[05:23:14.874] Reservando 48 unidades da UA "1018754979" e Item "1006933" da posição "AP.2.C.13.1.1" da zona "Zona de caixas completas" para o pedido "4333456".
+[05:23:14.881] Reservando 36 unidades da UA "1018786731" e Item "1004839" da posição "AP.2.C.1.2.1" da zona "Zona de caixas completas" para o pedido "4333456".
+[05:23:14.888] Reservando 64 unidades da UA "1018784823" e Item "1500569" da posição "AP.1.A.40.4.1" da zona "Zona de caixas completas" para o pedido "4333456".
+[05:23:14.896] Reservando 50 unidades da UA "1018601620" e Item "1500509" da posição "AP.2.C.27.4.1" da zona "Zona de caixas completas" para o pedido "4333456".
+[05:23:14.902] Reservando 50 unidades da UA "1018750426" e Item "1500494" da posição "AP.2.C.21.4.1" da zona "Zona de caixas completas" para o pedido "4333456".
+[05:23:14.911] Reservando 24 unidades da UA "1018665971" e Item "1001618" da posição "AP.1.B.41.4.1" da zona "Zona de caixas completas" para o pedido "4333456".
+[05:23:14.927] Reservando 48 unidades da UA "1018796972" e Item "1001513" da posição "AP.1.A.48.4.1" da zona "Zona de caixas completas" para o pedido "4333456".
+[05:23:14.941] Reservando 36 unidades da UA "1018793008" e Item "1001537" da posição "AP.1.A.42.2.1" da zona "Zona de caixas completas" para o pedido "4333456".
+[05:23:14.950] Reservando 36 unidades da UA "1018781784" e Item "1001534" da posição "AP.2.D.42.1.1" da zona "Zona de caixas completas" para o pedido "4333456".
+[05:23:14.958] Criando PKL da zona de pallets completos com 25 volume(s) para o pedido "4333456"
+[05:23:15.083] Ordem 4333456 processada completa
+[05:23:21.784] Reservando 45 unidades da UA "1018506965" e Item "1007554" da posição "AP.1.A.23.4.1" da zona "Zona de caixas completas" para o pedido "4333457".
+[05:23:21.799] Reservando 135 unidades da UA "1018625995" e Item "1007553" da posição "AP.2.D.2.1.1" da zona "Zona de caixas completas" para o pedido "4333457".
+[05:23:21.809] Reservando 180 unidades da UA "1018767617" e Item "1501100" da posição "AP.1.A.3.3.1" da zona "Zona de caixas completas" para o pedido "4333457".
+[05:23:21.820] Reservando 45 unidades da UA "1018689464" e Item "1501099" da posição "AP.1.A.11.2.1" da zona "Zona de caixas completas" para o pedido "4333457".
+[05:23:21.832] Reservando 50 unidades da UA "1018657449" e Item "1501028" da posição "AP.2.D.22.3.1" da zona "Zona de caixas completas" para o pedido "4333457".
+[05:23:21.837] Criando PKL da zona de pallets completos com 10 volume(s) para o pedido "4333457"
+[05:23:21.900] Ordem 4333457 processada com pendências nas linhas: [Id: 3525641; Item: 1501100; Lote: ; Unid. Faltantes: 180]
+[05:23:28.615] Reservando 50 unidades da UA "1018650342" e Item "1500953" da posição "AP.2.C.29.4.1" da zona "Zona de caixas completas" para o pedido "4333458".
+[05:23:28.631] Reservando 50 unidades da UA "1018779464" e Item "1500955" da posição "AP.1.A.12.4.1" da zona "Zona de caixas completas" para o pedido "4333458".
+[05:23:28.650] Reservando 96 unidades da UA "1018779540" e Item "1006653" da posição "AP.2.D.44.4.1" da zona "Zona de caixas completas" para o pedido "4333458".
+[05:23:28.669] Reservando 50 unidades da UA "1018756055" e Item "1500981" da posição "AP.1.A.16.3.1" da zona "Zona de caixas completas" para o pedido "4333458".
+[05:23:28.685] Reservando 50 unidades da UA "1018753302" e Item "1500989" da posição "AP.1.B.12.3.1" da zona "Zona de caixas completas" para o pedido "4333458".
+[05:23:28.697] Reservando 50 unidades da UA "1018745301" e Item "1500998" da posição "AP.2.C.38.4.1" da zona "Zona de caixas completas" para o pedido "4333458".
+[05:23:28.709] Reservando 50 unidades da UA "1018707583" e Item "1500952" da posição "AP.2.C.12.4.1" da zona "Zona de caixas completas" para o pedido "4333458".
+[05:23:28.727] Reservando 50 unidades da UA "1018657706" e Item "1500496" da posição "AP.2.C.2.2.1" da zona "Zona de caixas completas" para o pedido "4333458".
+[05:23:28.734] Reservando 12 unidades da UA "1018779485" e Item "1006749" da posição "AP.2.D.20.1.1" da zona "Zona de caixas completas" para o pedido "4333458".
+[05:23:28.740] Reservando 64 unidades da UA "1018784823" e Item "1500569" da posição "AP.1.A.40.4.1" da zona "Zona de caixas completas" para o pedido "4333458".
+[05:23:28.759] Reservando 48 unidades da UA "1018786746" e Item "1005498" da posição "AP.1.A.40.3.1" da zona "Zona de caixas completas" para o pedido "4333458".
+[05:23:28.778] Reservando 108 unidades da UA "1018779396" e Item "1007909" da posição "AP.1.A.41.3.1" da zona "Zona de caixas completas" para o pedido "4333458".
+[05:23:28.786] Reservando 36 unidades da UA "1018779456" e Item "1007909" da posição "AP.2.D.41.3.1" da zona "Zona de caixas completas" para o pedido "4333458".
+[05:23:28.800] Reservando 50 unidades da UA "1018779547" e Item "1501226" da posição "AP.2.D.5.4.1" da zona "Zona de caixas completas" para o pedido "4333458".
+[05:23:28.812] Reservando 400 unidades da UA "1018795837" e Item "1501251" da posição "AP.2.C.19.2.1" da zona "Zona de caixas completas" para o pedido "4333458".
+[05:23:28.826] Reservando 36 unidades da UA "1018784827" e Item "1007929" da posição "AP.1.A.4.2.1" da zona "Zona de caixas completas" para o pedido "4333458".
+[05:23:28.832] Reservando 20 unidades da UA "1018707886" e Item "1007883" da posição "AP.2.D.36.4.1" da zona "Zona de caixas completas" para o pedido "4333458".
+[05:23:28.838] Reservando 50 unidades da UA "1018601620" e Item "1500509" da posição "AP.2.C.27.4.1" da zona "Zona de caixas completas" para o pedido "4333458".
+[05:23:28.852] Reservando 50 unidades da UA "1018750426" e Item "1500494" da posição "AP.2.C.21.4.1" da zona "Zona de caixas completas" para o pedido "4333458".
+[05:23:28.864] Reservando 16 unidades da UA "1018796972" e Item "1001513" da posição "AP.1.A.48.4.1" da zona "Zona de caixas completas" para o pedido "4333458".
+[05:23:28.872] Reservando 120 unidades da UA "1018793010" e Item "1001528" da posição "AP.2.D.25.1.1" da zona "Zona de caixas completas" para o pedido "4333458".
+[05:23:28.890] Reservando 50 unidades da UA "1018794715" e Item "1000533" da posição "AP.2.D.22.4.1" da zona "Zona de caixas completas" para o pedido "4333458".
+[05:23:28.896] Reservando 40 unidades da UA "1018781806" e Item "1000483" da posição "AP.1.A.39.1.1" da zona "Zona de caixas completas" para o pedido "4333458".
+[05:23:28.900] Criando PKL da zona de pallets completos com 37 volume(s) para o pedido "4333458"
+[05:23:29.217] Ordem 4333458 processada com pendências nas linhas: [Id: 3525653; Item: 1500569; Lote: ; Unid. Faltantes: 128]
+[05:23:36.283] Reservando 96 unidades da UA "1018779540" e Item "1006653" da posição "AP.2.D.44.4.1" da zona "Zona de caixas completas" para o pedido "4333459".
+[05:23:36.292] Criando PKL da zona de pallets completos com 2 volume(s) para o pedido "4333459"
+[05:23:36.337] Ordem 4333459 processada completa
+[05:23:43.329] Reservando 40 unidades da UA "1018781806" e Item "1000483" da posição "AP.1.A.39.1.1" da zona "Zona de caixas completas" para o pedido "4333460".
+[05:23:43.342] Reservando 80 unidades da UA "1018793010" e Item "1001528" da posição "AP.2.D.25.1.1" da zona "Zona de caixas completas" para o pedido "4333460".
+[05:23:43.353] Reservando 468 unidades da UA "1018781784" e Item "1001534" da posição "AP.2.D.42.1.1" da zona "Zona de caixas completas" para o pedido "4333460".
+[05:23:43.370] Reservando 28 unidades da UA "1018665287" e Item "1003566" da posição "AP.1.A.24.3.1" da zona "Zona de caixas completas" para o pedido "4333460".
+[05:23:43.386] Reservando 36 unidades da UA "1018786731" e Item "1004839" da posição "AP.2.C.1.2.1" da zona "Zona de caixas completas" para o pedido "4333460".
+[05:23:43.398] Reservando 36 unidades da UA "1018779485" e Item "1006749" da posição "AP.2.D.20.1.1" da zona "Zona de caixas completas" para o pedido "4333460".
+[05:23:43.415] Reservando 96 unidades da UA "1018731756" e Item "1003252" da posição "AP.2.D.31.1.1" da zona "Zona de caixas completas" para o pedido "4333460".
+[05:23:43.426] Reservando 96 unidades da UA "1018769540" e Item "1003254" da posição "AP.2.C.42.1.1" da zona "Zona de caixas completas" para o pedido "4333460".
+[05:23:43.433] Reservando 144 unidades da UA "1018779540" e Item "1006653" da posição "AP.2.D.44.4.1" da zona "Zona de caixas completas" para o pedido "4333460".
+[05:23:43.444] Reservando 50 unidades da UA "1018753302" e Item "1500989" da posição "AP.1.B.12.3.1" da zona "Zona de caixas completas" para o pedido "4333460".
+[05:23:43.453] Reservando 36 unidades da UA "1018786740" e Item "1001273" da posição "AP.2.D.8.4.1" da zona "Zona de caixas completas" para o pedido "4333460".
+[05:23:43.461] Reservando 48 unidades da UA "1018785310" e Item "1007260" da posição "AP.1.A.14.2.1" da zona "Zona de caixas completas" para o pedido "4333460".
+[05:23:43.472] Reservando 96 unidades da UA "1018778286" e Item "1007261" da posição "AP.1.B.10.1.1" da zona "Zona de caixas completas" para o pedido "4333460".
+[05:23:43.483] Reservando 36 unidades da UA "1018779456" e Item "1007909" da posição "AP.2.D.41.3.1" da zona "Zona de caixas completas" para o pedido "4333460".
+[05:23:43.490] Reservando 50 unidades da UA "1018795837" e Item "1501251" da posição "AP.2.C.19.2.1" da zona "Zona de caixas completas" para o pedido "4333460".
+[05:23:43.496] Reservando 30 unidades da UA "1018654134" e Item "1008083" da posição "AP.2.C.29.3.1" da zona "Zona de caixas completas" para o pedido "4333460".
+[05:23:43.505] Reservando 36 unidades da UA "1018784827" e Item "1007929" da posição "AP.1.A.4.2.1" da zona "Zona de caixas completas" para o pedido "4333460".
+[05:23:43.511] Reservando 20 unidades da UA "1018707886" e Item "1007883" da posição "AP.2.D.36.4.1" da zona "Zona de caixas completas" para o pedido "4333460".
+[05:23:43.521] Criando PKL da zona de pallets completos com 40 volume(s) para o pedido "4333460"
+[05:23:43.637] Ordem 4333460 processada com pendências nas linhas: [Id: 3525671; Item: 1500569; Lote: ; Unid. Faltantes: 64]
+[05:23:50.350] Reservando 32 unidades da UA "1018776340" e Item "1008161" da posição "AP.2.D.49.1.1" da zona "Zona de caixas completas" para o pedido "4333461".
+[05:23:50.357] Criando PKL da zona de pallets completos com 2 volume(s) para o pedido "4333461"
+[05:23:50.395] Ordem 4333461 processada completa
+[05:23:57.319] Reservando 24 unidades da UA "1018777255" e Item "1008176" da posição "AP.1.A.26.2.1" da zona "Zona de caixas completas" para o pedido "4333462".
+[05:23:57.329] Criando PKL da zona de pallets completos com 1 volume(s) para o pedido "4333462"
+[05:23:57.364] Ordem 4333462 processada completa
+[05:24:04.530] Reservando 64 unidades da UA "1018776189" e Item "1500941" da posição "AP.1.B.1.3.1" da zona "Zona de caixas completas" para o pedido "4333463".
+[05:24:04.542] Reservando 80 unidades da UA "1018780690" e Item "1007541" da posição "AP.1.B.43.1.1" da zona "Zona de caixas completas" para o pedido "4333463".
+[05:24:04.553] Criando PKL da zona de pallets completos com 7 volume(s) para o pedido "4333463"
+[05:24:04.598] Ordem 4333463 processada completa
+[05:24:11.296] Reservando 120 unidades da UA "1018779392" e Item "1005270" da posição "AP.1.A.45.3.1" da zona "Zona de caixas completas" para o pedido "4333464".
+[05:24:11.305] Criando PKL da zona de pallets completos com 6 volume(s) para o pedido "4333464"
+[05:24:11.353] Ordem 4333464 processada completa
+[05:24:18.147] Reservando 180 unidades da UA "1018767905" e Item "1006370" da posição "AP.2.C.33.1.1" da zona "Zona de caixas completas" para o pedido "4333465".
+[05:24:18.156] Criando PKL da zona de pallets completos com 5 volume(s) para o pedido "4333465"
+[05:24:18.194] Ordem 4333465 processada completa
+[05:24:24.883] Reservando 72 unidades da UA "1018770506" e Item "1000355" da posição "AP.2.D.46.2.1" da zona "Zona de caixas completas" para o pedido "4333466".
+[05:24:24.895] Reservando 108 unidades da UA "1018779414" e Item "1000352" da posição "AP.2.D.3.3.1" da zona "Zona de caixas completas" para o pedido "4333466".
+[05:24:24.904] Reservando 108 unidades da UA "1018785560" e Item "1000351" da posição "AP.1.A.32.3.1" da zona "Zona de caixas completas" para o pedido "4333466".
+[05:24:24.920] Reservando 24 unidades da UA "1018758703" e Item "1000211" da posição "AP.2.C.41.2.1" da zona "Zona de caixas completas" para o pedido "4333466".
+[05:24:24.929] Criando PKL da zona de pallets completos com 10 volume(s) para o pedido "4333466"
+[05:24:24.979] Ordem 4333466 processada completa
+[05:24:31.757] Reservando 720 unidades da UA "1018779540" e Item "1006653" da posição "AP.2.D.44.4.1" da zona "Zona de caixas completas" para o pedido "4333467".
+[05:24:31.765] Criando PKL da zona de pallets completos com 15 volume(s) para o pedido "4333467"
+[05:24:31.807] Ordem 4333467 processada completa
+[05:24:38.599] Reservando 50 unidades da UA "1018657449" e Item "1501028" da posição "AP.2.D.22.3.1" da zona "Zona de caixas completas" para o pedido "4333468".
+[05:24:38.615] Reservando 270 unidades da UA "1018689464" e Item "1501099" da posição "AP.1.A.11.2.1" da zona "Zona de caixas completas" para o pedido "4333468".
+[05:24:38.639] Reservando 45 unidades da UA "1018625995" e Item "1007553" da posição "AP.2.D.2.1.1" da zona "Zona de caixas completas" para o pedido "4333468".
+[05:24:38.647] Criando PKL da zona de pallets completos com 8 volume(s) para o pedido "4333468"
+[05:24:38.702] Ordem 4333468 processada com pendências nas linhas: [Id: 3525699; Item: 1501100; Lote: ; Unid. Faltantes: 315]
+[05:24:45.532] Reservando 240 unidades da UA "1018779540" e Item "1006653" da posição "AP.2.D.44.4.1" da zona "Zona de caixas completas" para o pedido "4333469".
+[05:24:45.536] Criando PKL da zona de pallets completos com 5 volume(s) para o pedido "4333469"
+[05:24:45.566] Ordem 4333469 processada completa
+[05:24:52.206] Reservando 24 unidades da UA "1018758688" e Item "1008193" da posição "AP.2.C.32.4.1" da zona "Zona de caixas completas" para o pedido "4333470".
+[05:24:52.221] Reservando 192 unidades da UA "1018779452" e Item "1007967" da posição "AP.2.D.19.3.1" da zona "Zona de caixas completas" para o pedido "4333470".
+[05:24:52.229] Reservando 45 unidades da UA "1018506965" e Item "1007554" da posição "AP.1.A.23.4.1" da zona "Zona de caixas completas" para o pedido "4333470".
+[05:24:52.237] Reservando 90 unidades da UA "1018625995" e Item "1007553" da posição "AP.2.D.2.1.1" da zona "Zona de caixas completas" para o pedido "4333470".
+[05:24:52.251] Reservando 300 unidades da UA "1018657449" e Item "1501028" da posição "AP.2.D.22.3.1" da zona "Zona de caixas completas" para o pedido "4333470".
+[05:24:52.254] Criando PKL da zona de pallets completos com 14 volume(s) para o pedido "4333470"
+[05:24:52.302] Ordem 4333470 processada completa
+[05:24:59.071] Reservando 336 unidades da UA "1018796011" e Item "1006653" da posição "AP.1.A.50.1.1" da zona "Zona de caixas completas" para o pedido "4333471".
+[05:24:59.079] Criando PKL da zona de pallets completos com 7 volume(s) para o pedido "4333471"
+[05:24:59.109] Ordem 4333471 processada completa
+[05:25:06.057] Reservando 48 unidades da UA "1018444466" e Item "1006690" da posição "AP.2.C.39.1.1" da zona "Zona de caixas completas" para o pedido "4333472".
+[05:25:06.071] Reservando 50 unidades da UA "1018707583" e Item "1500952" da posição "AP.2.C.12.4.1" da zona "Zona de caixas completas" para o pedido "4333472".
+[05:25:06.092] Reservando 50 unidades da UA "1018650342" e Item "1500953" da posição "AP.2.C.29.4.1" da zona "Zona de caixas completas" para o pedido "4333472".
+[05:25:06.101] Reservando 48 unidades da UA "1018754979" e Item "1006933" da posição "AP.2.C.13.1.1" da zona "Zona de caixas completas" para o pedido "4333472".
+[05:25:06.108] Reservando 50 unidades da UA "1018545221" e Item "1500950" da posição "AP.2.C.7.4.1" da zona "Zona de caixas completas" para o pedido "4333472".
+[05:25:06.124] Reservando 36 unidades da UA "1018786731" e Item "1004839" da posição "AP.2.C.1.2.1" da zona "Zona de caixas completas" para o pedido "4333472".
+[05:25:06.146] Reservando 50 unidades da UA "1018750426" e Item "1500494" da posição "AP.2.C.21.4.1" da zona "Zona de caixas completas" para o pedido "4333472".
+[05:25:06.155] Reservando 36 unidades da UA "1018781784" e Item "1001534" da posição "AP.2.D.42.1.1" da zona "Zona de caixas completas" para o pedido "4333472".
+[05:25:06.171] Reservando 48 unidades da UA "1018796011" e Item "1006653" da posição "AP.1.A.50.1.1" da zona "Zona de caixas completas" para o pedido "4333472".
+[05:25:06.189] Reservando 50 unidades da UA "1018756055" e Item "1500981" da posição "AP.1.A.16.3.1" da zona "Zona de caixas completas" para o pedido "4333472".
+[05:25:06.195] Reservando 50 unidades da UA "1018723721" e Item "1500988" da posição "AP.2.D.9.4.1" da zona "Zona de caixas completas" para o pedido "4333472".
+[05:25:06.205] Reservando 100 unidades da UA "1018753302" e Item "1500989" da posição "AP.1.B.12.3.1" da zona "Zona de caixas completas" para o pedido "4333472".
+[05:25:06.214] Reservando 50 unidades da UA "1018780997" e Item "1501001" da posição "AP.2.C.18.1.1" da zona "Zona de caixas completas" para o pedido "4333472".
+[05:25:06.226] Reservando 48 unidades da UA "1018786746" e Item "1005498" da posição "AP.1.A.40.3.1" da zona "Zona de caixas completas" para o pedido "4333472".
+[05:25:06.233] Reservando 36 unidades da UA "1018786740" e Item "1001273" da posição "AP.2.D.8.4.1" da zona "Zona de caixas completas" para o pedido "4333472".
+[05:25:06.252] Reservando 384 unidades da UA "1018785310" e Item "1007260" da posição "AP.1.A.14.2.1" da zona "Zona de caixas completas" para o pedido "4333472".
+[05:25:06.265] Reservando 48 unidades da UA "1018778286" e Item "1007261" da posição "AP.1.B.10.1.1" da zona "Zona de caixas completas" para o pedido "4333472".
+[05:25:06.274] Reservando 200 unidades da UA "1018795837" e Item "1501251" da posição "AP.2.C.19.2.1" da zona "Zona de caixas completas" para o pedido "4333472".
+[05:25:06.280] Reservando 30 unidades da UA "1018545805" e Item "1008080" da posição "AP.2.C.8.4.1" da zona "Zona de caixas completas" para o pedido "4333472".
+[05:25:06.297] Reservando 30 unidades da UA "1018654134" e Item "1008083" da posição "AP.2.C.29.3.1" da zona "Zona de caixas completas" para o pedido "4333472".
+[05:25:06.309] Reservando 60 unidades da UA "1018784827" e Item "1007929" da posição "AP.1.A.4.2.1" da zona "Zona de caixas completas" para o pedido "4333472".
+[05:25:06.325] Reservando 20 unidades da UA "1018707886" e Item "1007883" da posição "AP.2.D.36.4.1" da zona "Zona de caixas completas" para o pedido "4333472".
+[05:25:06.339] Criando PKL da zona de pallets completos com 37 volume(s) para o pedido "4333472"
+[05:25:06.499] Ordem 4333472 processada com pendências nas linhas: [Id: 3525714; Item: 1500569; Lote: ; Unid. Faltantes: 128]
+[05:25:13.147] Reservando 448 unidades da UA "1018794801" e Item "1003370" da posição "AP.2.D.11.3.1" da zona "Zona de caixas completas" para o pedido "4333473".
+[05:25:13.155] Criando PKL da zona de pallets completos com 16 volume(s) para o pedido "4333473"
+[05:25:13.202] Ordem 4333473 processada completa
+[05:25:20.130] Reservando 520 unidades da UA "1018779422" e Item "1007094" da posição "AP.2.C.9.2.1" da zona "Zona de caixas completas" para o pedido "4333474".
+[05:25:20.147] Reservando 40 unidades da UA "1018795273" e Item "1007392" da posição "AP.1.B.30.3.1" da zona "Zona de caixas completas" para o pedido "4333474".
+[05:25:20.155] Reservando 96 unidades da UA "1018772677" e Item "1004676" da posição "AP.1.A.25.1.1" da zona "Zona de caixas completas" para o pedido "4333474".
+[05:25:20.166] Reservando 96 unidades da UA "1018737324" e Item "1005290" da posição "AP.2.D.12.4.1" da zona "Zona de caixas completas" para o pedido "4333474".
+[05:25:20.178] Reservando 520 unidades da UA "1018767021" e Item "1006261" da posição "AP.1.B.39.2.1" da zona "Zona de caixas completas" para o pedido "4333474".
+[05:25:20.191] Reservando 600 unidades da UA "1018779472" e Item "1006557" da posição "AP.1.B.42.2.1" da zona "Zona de caixas completas" para o pedido "4333474".
+[05:25:20.200] Reservando 288 unidades da UA "1018795855" e Item "1006496" da posição "AP.2.C.7.1.1" da zona "Zona de caixas completas" para o pedido "4333474".
+[05:25:20.212] Reservando 48 unidades da UA "1018779405" e Item "1006490" da posição "AP.2.C.35.2.1" da zona "Zona de caixas completas" para o pedido "4333474".
+[05:25:20.218] Reservando 1392 unidades da UA "1018758559" e Item "1006563" da posição "AP.1.B.7.2.1" da zona "Zona de caixas completas" para o pedido "4333474".
+[05:25:20.224] Reservando 120 unidades da UA "1018779388" e Item "1006563" da posição "AP.1.B.7.2.1" da zona "Zona de caixas completas" para o pedido "4333474".
+[05:25:20.235] Reservando 20 unidades da UA "1018779432" e Item "1006284" da posição "AP.2.C.36.3.1" da zona "Zona de caixas completas" para o pedido "4333474".
+[05:25:20.249] Reservando 408 unidades da UA "1018774857" e Item "1006572" da posição "AP.2.C.33.2.1" da zona "Zona de caixas completas" para o pedido "4333474".
+[05:25:20.268] Reservando 160 unidades da UA "1018695914" e Item "1006435" da posição "AP.2.C.6.3.1" da zona "Zona de caixas completas" para o pedido "4333474".
+[05:25:20.272] Reservando 40 unidades da UA "1018762668" e Item "1006435" da posição "AP.1.B.6.3.1" da zona "Zona de caixas completas" para o pedido "4333474".
+[05:25:20.275] Criando PKL da zona de pallets completos com 162 volume(s) para o pedido "4333474"
+[05:25:20.370] Ordem 4333474 processada completa
+[05:25:26.949] Reservando 72 unidades da UA "1018785560" e Item "1000351" da posição "AP.1.A.32.3.1" da zona "Zona de caixas completas" para o pedido "4333475".
+[05:25:26.962] Reservando 144 unidades da UA "1018779414" e Item "1000352" da posição "AP.2.D.3.3.1" da zona "Zona de caixas completas" para o pedido "4333475".
+[05:25:26.976] Reservando 40 unidades da UA "1018796013" e Item "1000356" da posição "AP.1.A.50.4.1" da zona "Zona de caixas completas" para o pedido "4333475".
+[05:25:26.984] Reservando 80 unidades da UA "1018777207" e Item "1000953" da posição "AP.1.B.8.3.1" da zona "Zona de caixas completas" para o pedido "4333475".
+[05:25:27.002] Reservando 40 unidades da UA "1018708460" e Item "1001469" da posição "AP.2.D.15.2.1" da zona "Zona de caixas completas" para o pedido "4333475".
+[05:25:27.009] Reservando 28 unidades da UA "1018794801" e Item "1003370" da posição "AP.2.D.11.3.1" da zona "Zona de caixas completas" para o pedido "4333475".
+[05:25:27.016] Reservando 140 unidades da UA "1018793007" e Item "1500558" da posição "AP.2.C.24.1.1" da zona "Zona de caixas completas" para o pedido "4333475".
+[05:25:27.025] Criando PKL da zona de pallets completos com 14 volume(s) para o pedido "4333475"
+[05:25:27.088] Ordem 4333475 processada completa
+[05:25:33.863] Reservando 36 unidades da UA "1018767905" e Item "1006370" da posição "AP.2.C.33.1.1" da zona "Zona de caixas completas" para o pedido "4333476".
+[05:25:33.871] Criando PKL da zona de pallets completos com 1 volume(s) para o pedido "4333476"
+[05:25:33.911] Ordem 4333476 processada completa
+[05:25:40.610] Reservando 240 unidades da UA "1018796011" e Item "1006653" da posição "AP.1.A.50.1.1" da zona "Zona de caixas completas" para o pedido "4333477".
+[05:25:40.618] Criando PKL da zona de pallets completos com 5 volume(s) para o pedido "4333477"
+[05:25:40.658] Ordem 4333477 processada completa
+[05:25:47.548] Reservando 192 unidades da UA "1018796011" e Item "1006653" da posição "AP.1.A.50.1.1" da zona "Zona de caixas completas" para o pedido "4333478".
+[05:25:47.556] Criando PKL da zona de pallets completos com 4 volume(s) para o pedido "4333478"
+[05:25:47.601] Ordem 4333478 processada completa
+[05:25:54.109] Reservando 40 unidades da UA "1018781806" e Item "1000483" da posição "AP.1.A.39.1.1" da zona "Zona de caixas completas" para o pedido "4333479".
+[05:25:54.125] Reservando 36 unidades da UA "1018779456" e Item "1007909" da posição "AP.2.D.41.3.1" da zona "Zona de caixas completas" para o pedido "4333479".
+[05:25:54.140] Reservando 96 unidades da UA "1018778286" e Item "1007261" da posição "AP.1.B.10.1.1" da zona "Zona de caixas completas" para o pedido "4333479".
+[05:25:54.153] Reservando 50 unidades da UA "1018682986" e Item "1501000" da posição "AP.1.A.43.1.1" da zona "Zona de caixas completas" para o pedido "4333479".
+[05:25:54.164] Reservando 50 unidades da UA "1018698521" e Item "1500999" da posição "AP.2.C.20.2.1" da zona "Zona de caixas completas" para o pedido "4333479".
+[05:25:54.172] Reservando 96 unidades da UA "1018796011" e Item "1006653" da posição "AP.1.A.50.1.1" da zona "Zona de caixas completas" para o pedido "4333479".
+[05:25:54.186] Reservando 48 unidades da UA "1018769540" e Item "1003254" da posição "AP.2.C.42.1.1" da zona "Zona de caixas completas" para o pedido "4333479".
+[05:25:54.195] Reservando 48 unidades da UA "1018731756" e Item "1003252" da posição "AP.2.D.31.1.1" da zona "Zona de caixas completas" para o pedido "4333479".
+[05:25:54.202] Reservando 72 unidades da UA "1018786731" e Item "1004839" da posição "AP.2.C.1.2.1" da zona "Zona de caixas completas" para o pedido "4333479".
+[05:25:54.221] Reservando 50 unidades da UA "1018750426" e Item "1500494" da posição "AP.2.C.21.4.1" da zona "Zona de caixas completas" para o pedido "4333479".
+[05:25:54.229] Reservando 36 unidades da UA "1018793009" e Item "1001278" da posição "AP.1.A.3.2.1" da zona "Zona de caixas completas" para o pedido "4333479".
+[05:25:54.243] Reservando 32 unidades da UA "1018796972" e Item "1001513" da posição "AP.1.A.48.4.1" da zona "Zona de caixas completas" para o pedido "4333479".
+[05:25:54.251] Reservando 28 unidades da UA "1018687429" e Item "1001511" da posição "AP.2.D.6.4.1" da zona "Zona de caixas completas" para o pedido "4333479".
+[05:25:54.260] Reservando 108 unidades da UA "1018793008" e Item "1001537" da posição "AP.1.A.42.2.1" da zona "Zona de caixas completas" para o pedido "4333479".
+[05:25:54.266] Reservando 40 unidades da UA "1018793010" e Item "1001528" da posição "AP.2.D.25.1.1" da zona "Zona de caixas completas" para o pedido "4333479".
+[05:25:54.272] Criando PKL da zona de pallets completos com 21 volume(s) para o pedido "4333479"
+[05:25:54.384] Ordem 4333479 processada com pendências nas linhas: [Id: 3525763; Item: 1500569; Lote: ; Unid. Faltantes: 192]
+[05:26:01.094] Reservando 140 unidades da UA "1018793007" e Item "1500558" da posição "AP.2.C.24.1.1" da zona "Zona de caixas completas" para o pedido "4333480".
+[05:26:01.100] Criando PKL da zona de pallets completos com 1 volume(s) para o pedido "4333480"
+[05:26:01.134] Ordem 4333480 processada completa
+[05:26:08.013] Reservando 48 unidades da UA "1018796388" e Item "1007404" da posição "AP.2.D.24.2.1" da zona "Zona de caixas completas" para o pedido "4333481".
+[05:26:08.022] Criando PKL da zona de pallets completos com 1 volume(s) para o pedido "4333481"
+[05:26:08.062] Ordem 4333481 processada completa
+[05:26:14.766] Reservando 50 unidades da UA "1018696291" e Item "1501030" da posição "AP.2.D.3.4.1" da zona "Zona de caixas completas" para o pedido "4333482".
+[05:26:14.774] Criando PKL da zona de pallets completos com 1 volume(s) para o pedido "4333482"
+[05:26:14.823] Ordem 4333482 processada com pendências nas linhas: [Id: 3525772; Item: 1501100; Lote: ; Unid. Faltantes: 135]
+[05:26:21.587] Reservando 36 unidades da UA "1018785560" e Item "1000351" da posição "AP.1.A.32.3.1" da zona "Zona de caixas completas" para o pedido "4333483".
+[05:26:21.599] Reservando 24 unidades da UA "1018770506" e Item "1000355" da posição "AP.2.D.46.2.1" da zona "Zona de caixas completas" para o pedido "4333483".
+[05:26:21.609] Reservando 20 unidades da UA "1018777207" e Item "1000953" da posição "AP.1.B.8.3.1" da zona "Zona de caixas completas" para o pedido "4333483".
+[05:26:21.622] Reservando 28 unidades da UA "1018794801" e Item "1003370" da posição "AP.2.D.11.3.1" da zona "Zona de caixas completas" para o pedido "4333483".
+[05:26:21.633] Reservando 140 unidades da UA "1018793007" e Item "1500558" da posição "AP.2.C.24.1.1" da zona "Zona de caixas completas" para o pedido "4333483".
+[05:26:21.639] Reservando 36 unidades da UA "1018626763" e Item "1006369" da posição "AP.2.D.3.1.1" da zona "Zona de caixas completas" para o pedido "4333483".
+[05:26:21.653] Reservando 36 unidades da UA "1018767905" e Item "1006370" da posição "AP.2.C.33.1.1" da zona "Zona de caixas completas" para o pedido "4333483".
+[05:26:21.661] Criando PKL da zona de pallets completos com 7 volume(s) para o pedido "4333483"
+[05:26:21.722] Ordem 4333483 processada completa
+[05:26:28.542] Reservando 108 unidades da UA "1018785560" e Item "1000351" da posição "AP.1.A.32.3.1" da zona "Zona de caixas completas" para o pedido "4333484".
+[05:26:28.557] Reservando 36 unidades da UA "1018779414" e Item "1000352" da posição "AP.2.D.3.3.1" da zona "Zona de caixas completas" para o pedido "4333484".
+[05:26:28.576] Reservando 48 unidades da UA "1018770506" e Item "1000355" da posição "AP.2.D.46.2.1" da zona "Zona de caixas completas" para o pedido "4333484".
+[05:26:28.593] Reservando 80 unidades da UA "1018796013" e Item "1000356" da posição "AP.1.A.50.4.1" da zona "Zona de caixas completas" para o pedido "4333484".
+[05:26:28.608] Reservando 28 unidades da UA "1018794801" e Item "1003370" da posição "AP.2.D.11.3.1" da zona "Zona de caixas completas" para o pedido "4333484".
+[05:26:28.622] Reservando 140 unidades da UA "1018793007" e Item "1500558" da posição "AP.2.C.24.1.1" da zona "Zona de caixas completas" para o pedido "4333484".
+[05:26:28.636] Reservando 36 unidades da UA "1018767905" e Item "1006370" da posição "AP.2.C.33.1.1" da zona "Zona de caixas completas" para o pedido "4333484".
+[05:26:28.647] Criando PKL da zona de pallets completos com 11 volume(s) para o pedido "4333484"
+[05:26:28.717] Ordem 4333484 processada completa
+[05:26:35.545] Reservando 48 unidades da UA "1018779452" e Item "1007967" da posição "AP.2.D.19.3.1" da zona "Zona de caixas completas" para o pedido "4333485".
+[05:26:35.553] Criando PKL da zona de pallets completos com 1 volume(s) para o pedido "4333485"
+[05:26:35.595] Ordem 4333485 processada completa
+[05:26:42.260] Reservando 72 unidades da UA "1018634774" e Item "1000240" da posição "AP.2.D.33.1.1" da zona "Zona de caixas completas" para o pedido "4333486".
+[05:26:42.272] Criando PKL da zona de pallets completos com 3 volume(s) para o pedido "4333486"
+[05:26:42.316] Ordem 4333486 processada completa
+[05:26:49.218] Reservando 40 unidades da UA "1018795841" e Item "1000065" da posição "AP.1.B.37.1.1" da zona "Zona de caixas completas" para o pedido "4333487".
+[05:26:49.225] Criando PKL da zona de pallets completos com 1 volume(s) para o pedido "4333487"
+[05:26:49.261] Ordem 4333487 processada completa
+[05:26:56.282] Reservando 96 unidades da UA "1018767631" e Item "1500801" da posição "AP.2.C.10.1.1" da zona "Zona de caixas completas" para o pedido "4333488".
+[05:26:56.297] Reservando 140 unidades da UA "1018793007" e Item "1500558" da posição "AP.2.C.24.1.1" da zona "Zona de caixas completas" para o pedido "4333488".
+[05:26:56.314] Reservando 20 unidades da UA "1018777207" e Item "1000953" da posição "AP.1.B.8.3.1" da zona "Zona de caixas completas" para o pedido "4333488".
+[05:26:56.329] Reservando 36 unidades da UA "1018779414" e Item "1000352" da posição "AP.2.D.3.3.1" da zona "Zona de caixas completas" para o pedido "4333488".
+[05:26:56.343] Reservando 36 unidades da UA "1018785560" e Item "1000351" da posição "AP.1.A.32.3.1" da zona "Zona de caixas completas" para o pedido "4333488".
+[05:26:56.353] Criando PKL da zona de pallets completos com 5 volume(s) para o pedido "4333488"
+[05:26:56.423] Ordem 4333488 processada completa
+[05:27:03.393] Reservando 400 unidades da UA "1018795841" e Item "1000065" da posição "AP.1.B.37.1.1" da zona "Zona de caixas completas" para o pedido "4333489".
+[05:27:03.400] Criando PKL da zona de pallets completos com 10 volume(s) para o pedido "4333489"
+[05:27:03.448] Ordem 4333489 processada completa
+[05:27:10.116] Reservando 45 unidades da UA "1018452369" e Item "1500359" da posição "AP.1.B.10.4.1" da zona "Zona de caixas completas" para o pedido "4333490".
+[05:27:10.134] Reservando 140 unidades da UA "1018775603" e Item "1004699" da posição "AP.2.C.12.2.1" da zona "Zona de caixas completas" para o pedido "4333490".
+[05:27:10.143] Reservando 20 unidades da UA "1018778488" e Item "1004763" da posição "AP.2.C.44.4.1" da zona "Zona de caixas completas" para o pedido "4333490".
+[05:27:10.158] Reservando 12 unidades da UA "1018776197" e Item "1005211" da posição "AP.2.D.23.3.1" da zona "Zona de caixas completas" para o pedido "4333490".
+[05:27:10.171] Reservando 16 unidades da UA "1018778586" e Item "1500658" da posição "AP.1.A.37.3.1" da zona "Zona de caixas completas" para o pedido "4333490".
+[05:27:10.183] Reservando 64 unidades da UA "1018796028" e Item "1500959" da posição "AP.2.D.19.1.1" da zona "Zona de caixas completas" para o pedido "4333490".
+[05:27:10.191] Reservando 32 unidades da UA "1018776189" e Item "1500941" da posição "AP.1.B.1.3.1" da zona "Zona de caixas completas" para o pedido "4333490".
+[05:27:10.203] Reservando 56 unidades da UA "1018777206" e Item "1007104" da posição "AP.1.B.3.3.1" da zona "Zona de caixas completas" para o pedido "4333490".
+[05:27:10.217] Reservando 40 unidades da UA "1018689471" e Item "1007551" da posição "AP.1.A.32.4.1" da zona "Zona de caixas completas" para o pedido "4333490".
+[05:27:10.224] Reservando 48 unidades da UA "1018754895" e Item "1007924" da posição "AP.1.A.7.4.1" da zona "Zona de caixas completas" para o pedido "4333490".
+[05:27:10.230] Reservando 216 unidades da UA "1018768869" e Item "1501270" da posição "AP.1.B.2.2.1" da zona "Zona de caixas completas" para o pedido "4333490".
+[05:27:10.235] Reservando 48 unidades da UA "1018767620" e Item "1501281" da posição "AP.2.C.16.3.1" da zona "Zona de caixas completas" para o pedido "4333490".
+[05:27:10.248] Reservando 48 unidades da UA "1018774794" e Item "1501523" da posição "AP.1.B.30.2.1" da zona "Zona de caixas completas" para o pedido "4333490".
+[05:27:10.252] Criando PKL da zona de pallets completos com 21 volume(s) para o pedido "4333490"
+[05:27:10.358] Ordem 4333490 processada completa
+[05:27:17.069] Reservando 48 unidades da UA "1018758703" e Item "1000211" da posição "AP.2.C.41.2.1" da zona "Zona de caixas completas" para o pedido "4333491".
+[05:27:17.084] Reservando 72 unidades da UA "1018726971" e Item "1000212" da posição "AP.2.C.34.3.1" da zona "Zona de caixas completas" para o pedido "4333491".
+[05:27:17.093] Reservando 36 unidades da UA "1018785560" e Item "1000351" da posição "AP.1.A.32.3.1" da zona "Zona de caixas completas" para o pedido "4333491".
+[05:27:17.107] Reservando 36 unidades da UA "1018779414" e Item "1000352" da posição "AP.2.D.3.3.1" da zona "Zona de caixas completas" para o pedido "4333491".
+[05:27:17.123] Reservando 48 unidades da UA "1018770506" e Item "1000355" da posição "AP.2.D.46.2.1" da zona "Zona de caixas completas" para o pedido "4333491".
+[05:27:17.137] Reservando 80 unidades da UA "1018796013" e Item "1000356" da posição "AP.1.A.50.4.1" da zona "Zona de caixas completas" para o pedido "4333491".
+[05:27:17.155] Reservando 16 unidades da UA "1018707782" e Item "1005355" da posição "AP.1.A.44.4.1" da zona "Zona de caixas completas" para o pedido "4333491".
+[05:27:17.171] Reservando 128 unidades da UA "1018786745" e Item "1500799" da posição "AP.2.D.14.4.1" da zona "Zona de caixas completas" para o pedido "4333491".
+[05:27:17.180] Reservando 192 unidades da UA "1018767631" e Item "1500801" da posição "AP.2.C.10.1.1" da zona "Zona de caixas completas" para o pedido "4333491".
+[05:27:17.184] Criando PKL da zona de pallets completos com 15 volume(s) para o pedido "4333491"
+[05:27:17.259] Ordem 4333491 processada completa
+[05:27:23.901] Reservando 100 unidades da UA "1018657449" e Item "1501028" da posição "AP.2.D.22.3.1" da zona "Zona de caixas completas" para o pedido "4333492".
+[05:27:23.915] Reservando 50 unidades da UA "1018759020" e Item "1501038" da posição "AP.2.C.25.4.1" da zona "Zona de caixas completas" para o pedido "4333492".
+[05:27:23.925] Reservando 45 unidades da UA "1018689464" e Item "1501099" da posição "AP.1.A.11.2.1" da zona "Zona de caixas completas" para o pedido "4333492".
+[05:27:23.940] Reservando 48 unidades da UA "1018779452" e Item "1007967" da posição "AP.2.D.19.3.1" da zona "Zona de caixas completas" para o pedido "4333492".
+[05:27:23.949] Criando PKL da zona de pallets completos com 5 volume(s) para o pedido "4333492"
+[05:27:23.999] Ordem 4333492 processada completa
+[05:27:30.733] Reservando 36 unidades da UA "1018785560" e Item "1000351" da posição "AP.1.A.32.3.1" da zona "Zona de caixas completas" para o pedido "4333493".
+[05:27:30.748] Reservando 72 unidades da UA "1018779414" e Item "1000352" da posição "AP.2.D.3.3.1" da zona "Zona de caixas completas" para o pedido "4333493".
+[05:27:30.769] Reservando 100 unidades da UA "1018795497" e Item "1000951" da posição "AP.2.C.38.2.1" da zona "Zona de caixas completas" para o pedido "4333493".
+[05:27:30.779] Reservando 400 unidades da UA "1018796015" e Item "1000951" da posição "AP.2.C.38.2.1" da zona "Zona de caixas completas" para o pedido "4333493".
+[05:27:30.792] Reservando 140 unidades da UA "1018793007" e Item "1500558" da posição "AP.2.C.24.1.1" da zona "Zona de caixas completas" para o pedido "4333493".
+[05:27:30.799] Reservando 140 unidades da UA "1018645020" e Item "1500559" da posição "AP.1.A.50.3.1" da zona "Zona de caixas completas" para o pedido "4333493".
+[05:27:30.817] Reservando 96 unidades da UA "1018767631" e Item "1500801" da posição "AP.2.C.10.1.1" da zona "Zona de caixas completas" para o pedido "4333493".
+[05:27:30.824] Criando PKL da zona de pallets completos com 31 volume(s) para o pedido "4333493"
+[05:27:30.897] Ordem 4333493 processada completa
+[05:27:37.580] Reservando 200 unidades da UA "1018795841" e Item "1000065" da posição "AP.1.B.37.1.1" da zona "Zona de caixas completas" para o pedido "4333494".
+[05:27:37.589] Criando PKL da zona de pallets completos com 5 volume(s) para o pedido "4333494"
+[05:27:37.632] Ordem 4333494 processada completa
+[05:27:44.203] Reservando 192 unidades da UA "1018786747" e Item "1007454" da posição "AP.1.A.42.4.1" da zona "Zona de caixas completas" para o pedido "4333495".
+[05:27:44.217] Reservando 36 unidades da UA "1018745329" e Item "1007937" da posição "AP.2.C.41.4.1" da zona "Zona de caixas completas" para o pedido "4333495".
+[05:27:44.235] Reservando 48 unidades da UA "1018724341" e Item "1007778" da posição "AP.1.B.31.3.1" da zona "Zona de caixas completas" para o pedido "4333495".
+[05:27:44.251] Reservando 36 unidades da UA "1018489686" e Item "1007777" da posição "AP.1.A.35.4.1" da zona "Zona de caixas completas" para o pedido "4333495".
+[05:27:44.268] Reservando 16 unidades da UA "1018546276" e Item "1007783" da posição "AP.2.C.30.2.1" da zona "Zona de caixas completas" para o pedido "4333495".
+[05:27:44.283] Reservando 72 unidades da UA "1018779491" e Item "1006354" da posição "AP.1.A.29.3.1" da zona "Zona de caixas completas" para o pedido "4333495".
+[05:27:44.292] Reservando 192 unidades da UA "1018774796" e Item "1006354" da posição "AP.2.D.29.3.1" da zona "Zona de caixas completas" para o pedido "4333495".
+[05:27:44.304] Reservando 24 unidades da UA "1018760259" e Item "1006356" da posição "AP.1.A.50.2.1" da zona "Zona de caixas completas" para o pedido "4333495".
+[05:27:44.316] Reservando 168 unidades da UA "1018761327" e Item "1006415" da posição "AP.1.B.28.2.1" da zona "Zona de caixas completas" para o pedido "4333495".
+[05:27:44.325] Reservando 24 unidades da UA "1018559930" e Item "1000178" da posição "AP.1.B.4.1.1" da zona "Zona de caixas completas" para o pedido "4333495".
+[05:27:44.328] Reservando 288 unidades da UA "1018777220" e Item "1000178" da posição "AP.2.C.15.1.1" da zona "Zona de caixas completas" para o pedido "4333495".
+[05:27:44.338] Criando PKL da zona de pallets completos com 36 volume(s) para o pedido "4333495"
+[05:27:44.496] Ordem 4333495 processada completa
+[05:27:51.175] Ordem 4333496 processada com pendências nas linhas: [Id: 3525839; Item: 1000314; Lote: ; Unid. Faltantes: 36]
+[05:27:57.983] Reservando 48 unidades da UA "1018634774" e Item "1000240" da posição "AP.2.D.33.1.1" da zona "Zona de caixas completas" para o pedido "4333497".
+[05:27:57.997] Criando PKL da zona de pallets completos com 2 volume(s) para o pedido "4333497"
+[05:27:58.038] Ordem 4333497 processada com pendências nas linhas: [Id: 3525841; Item: 1000314; Lote: ; Unid. Faltantes: 468]
+[05:28:04.896] Reservando 16 unidades da UA "1018780690" e Item "1007541" da posição "AP.1.B.43.1.1" da zona "Zona de caixas completas" para o pedido "4333498".
+[05:28:04.905] Criando PKL da zona de pallets completos com 1 volume(s) para o pedido "4333498"
+[05:28:04.951] Ordem 4333498 processada completa
+[05:28:11.674] Reservando 40 unidades da UA "1018779392" e Item "1005270" da posição "AP.1.A.45.3.1" da zona "Zona de caixas completas" para o pedido "4333499".
+[05:28:11.682] Criando PKL da zona de pallets completos com 2 volume(s) para o pedido "4333499"
+[05:28:11.720] Ordem 4333499 processada completa
+[05:28:18.309] Reservando 54 unidades da UA "1018750410" e Item "1501684" da posição "AP.1.B.19.3.1" da zona "Zona de caixas completas" para o pedido "4333500".
+[05:28:18.317] Criando PKL da zona de pallets completos com 3 volume(s) para o pedido "4333500"
+[05:28:18.358] Ordem 4333500 processada completa
+[05:28:25.200] Reservando 108 unidades da UA "1018785560" e Item "1000351" da posição "AP.1.A.32.3.1" da zona "Zona de caixas completas" para o pedido "4333501".
+[05:28:25.214] Reservando 20 unidades da UA "1018777207" e Item "1000953" da posição "AP.1.B.8.3.1" da zona "Zona de caixas completas" para o pedido "4333501".
+[05:28:25.224] Reservando 28 unidades da UA "1018794801" e Item "1003370" da posição "AP.2.D.11.3.1" da zona "Zona de caixas completas" para o pedido "4333501".
+[05:28:25.239] Reservando 18 unidades da UA "1018794575" e Item "1008120" da posição "AP.1.B.11.4.1" da zona "Zona de caixas completas" para o pedido "4333501".
+[05:28:25.245] Criando PKL da zona de pallets completos com 6 volume(s) para o pedido "4333501"
+[05:28:25.294] Ordem 4333501 processada completa
+[05:28:32.203] Reservando 48 unidades da UA "1018760259" e Item "1006356" da posição "AP.1.A.50.2.1" da zona "Zona de caixas completas" para o pedido "4333502".
+[05:28:32.219] Reservando 72 unidades da UA "1018774796" e Item "1006354" da posição "AP.2.D.29.3.1" da zona "Zona de caixas completas" para o pedido "4333502".
+[05:28:32.238] Reservando 48 unidades da UA "1018685643" e Item "1007762" da posição "AP.1.A.47.4.1" da zona "Zona de caixas completas" para o pedido "4333502".
+[05:28:32.252] Reservando 48 unidades da UA "1018786192" e Item "1007775" da posição "AP.2.C.40.4.1" da zona "Zona de caixas completas" para o pedido "4333502".
+[05:28:32.264] Reservando 48 unidades da UA "1018499996" e Item "1007776" da posição "AP.1.B.38.4.1" da zona "Zona de caixas completas" para o pedido "4333502".
+[05:28:32.282] Reservando 20 unidades da UA "1018665277" e Item "1007808" da posição "AP.2.D.4.1.1" da zona "Zona de caixas completas" para o pedido "4333502".
+[05:28:32.289] Reservando 48 unidades da UA "1018786570" e Item "1007453" da posição "AP.1.A.1.4.1" da zona "Zona de caixas completas" para o pedido "4333502".
+[05:28:32.295] Reservando 48 unidades da UA "1018786747" e Item "1007454" da posição "AP.1.A.42.4.1" da zona "Zona de caixas completas" para o pedido "4333502".
+[05:28:32.299] Criando PKL da zona de pallets completos com 11 volume(s) para o pedido "4333502"
+[05:28:32.379] Ordem 4333502 processada com pendências nas linhas: [Id: 3525849; Item: 1006356; Lote: ; Unid. Faltantes: 24]
+[05:28:39.060] Reservando 20 unidades da UA "1018456155" e Item "1008317" da posição "AP.2.C.5.2.1" da zona "Zona de caixas completas" para o pedido "4333503".
+[05:28:39.069] Criando PKL da zona de pallets completos com 1 volume(s) para o pedido "4333503"
+[05:28:39.115] Ordem 4333503 processada completa
+[05:28:45.839] Reservando 25 unidades da UA "1018768518" e Item "1501455" da posição "AP.2.D.29.2.1" da zona "Zona de caixas completas" para o pedido "4333504".
+[05:28:45.851] Reservando 50 unidades da UA "1018673026" e Item "1501454" da posição "AP.2.D.26.1.1" da zona "Zona de caixas completas" para o pedido "4333504".
+[05:28:45.860] Reservando 280 unidades da UA "1018795839" e Item "1501410" da posição "AP.2.C.45.4.1" da zona "Zona de caixas completas" para o pedido "4333504".
+[05:28:45.879] Reservando 120 unidades da UA "1018794581" e Item "1000080" da posição "AP.2.C.6.1.1" da zona "Zona de caixas completas" para o pedido "4333504".
+[05:28:45.891] Reservando 40 unidades da UA "1018781806" e Item "1000483" da posição "AP.1.A.39.1.1" da zona "Zona de caixas completas" para o pedido "4333504".
+[05:28:45.902] Reservando 50 unidades da UA "1018794715" e Item "1000533" da posição "AP.2.D.22.4.1" da zona "Zona de caixas completas" para o pedido "4333504".
+[05:28:45.908] Reservando 40 unidades da UA "1018793010" e Item "1001528" da posição "AP.2.D.25.1.1" da zona "Zona de caixas completas" para o pedido "4333504".
+[05:28:45.920] Reservando 108 unidades da UA "1018781784" e Item "1001534" da posição "AP.2.D.42.1.1" da zona "Zona de caixas completas" para o pedido "4333504".
+[05:28:45.930] Reservando 108 unidades da UA "1018793008" e Item "1001537" da posição "AP.1.A.42.2.1" da zona "Zona de caixas completas" para o pedido "4333504".
+[05:28:45.937] Reservando 24 unidades da UA "1018665971" e Item "1001618" da posição "AP.1.B.41.4.1" da zona "Zona de caixas completas" para o pedido "4333504".
+[05:28:45.945] Reservando 80 unidades da UA "1018795177" e Item "1003718" da posição "AP.2.C.10.2.1" da zona "Zona de caixas completas" para o pedido "4333504".
+[05:28:45.958] Reservando 868 unidades da UA "1018794819" e Item "1005845" da posição "AP.1.B.14.3.1" da zona "Zona de caixas completas" para o pedido "4333504".
+[05:28:45.966] Reservando 192 unidades da UA "1018795382" e Item "1004838" da posição "AP.2.D.50.3.1" da zona "Zona de caixas completas" para o pedido "4333504".
+[05:28:45.972] Reservando 36 unidades da UA "1018786731" e Item "1004839" da posição "AP.2.C.1.2.1" da zona "Zona de caixas completas" para o pedido "4333504".
+[05:28:45.985] Reservando 48 unidades da UA "1018796011" e Item "1006653" da posição "AP.1.A.50.1.1" da zona "Zona de caixas completas" para o pedido "4333504".
+[05:28:46.001] Reservando 48 unidades da UA "1018779421" e Item "1005380" da posição "AP.1.A.9.3.1" da zona "Zona de caixas completas" para o pedido "4333504".
+[05:28:46.014] Reservando 12 unidades da UA "1018784827" e Item "1007929" da posição "AP.1.A.4.2.1" da zona "Zona de caixas completas" para o pedido "4333504".
+[05:28:46.023] Reservando 100 unidades da UA "1018795837" e Item "1501251" da posição "AP.2.C.19.2.1" da zona "Zona de caixas completas" para o pedido "4333504".
+[05:28:46.038] Reservando 36 unidades da UA "1018752292" e Item "1007912" da posição "AP.2.D.35.2.1" da zona "Zona de caixas completas" para o pedido "4333504".
+[05:28:46.044] Reservando 36 unidades da UA "1018750419" e Item "1501091" da posição "AP.1.B.2.1.1" da zona "Zona de caixas completas" para o pedido "4333504".
+[05:28:46.050] Reservando 96 unidades da UA "1018785310" e Item "1007260" da posição "AP.1.A.14.2.1" da zona "Zona de caixas completas" para o pedido "4333504".
+[05:28:46.060] Reservando 96 unidades da UA "1018786746" e Item "1005498" da posição "AP.1.A.40.3.1" da zona "Zona de caixas completas" para o pedido "4333504".
+[05:28:46.065] Reservando 50 unidades da UA "1018753302" e Item "1500989" da posição "AP.1.B.12.3.1" da zona "Zona de caixas completas" para o pedido "4333504".
+[05:28:46.082] Reservando 50 unidades da UA "1018723721" e Item "1500988" da posição "AP.2.D.9.4.1" da zona "Zona de caixas completas" para o pedido "4333504".
+[05:28:46.098] Reservando 144 unidades da UA "1018796230" e Item "1005382" da posição "AP.1.A.49.4.1" da zona "Zona de caixas completas" para o pedido "4333504".
+[05:28:46.111] Criando PKL da zona de pallets completos com 75 volume(s) para o pedido "4333504"
+[05:28:46.413] Ordem 4333504 processada completa
+[05:28:53.143] Reservando 36 unidades da UA "1018785560" e Item "1000351" da posição "AP.1.A.32.3.1" da zona "Zona de caixas completas" para o pedido "4333505".
+[05:28:53.159] Reservando 36 unidades da UA "1018779414" e Item "1000352" da posição "AP.2.D.3.3.1" da zona "Zona de caixas completas" para o pedido "4333505".
+[05:28:53.179] Reservando 140 unidades da UA "1018793007" e Item "1500558" da posição "AP.2.C.24.1.1" da zona "Zona de caixas completas" para o pedido "4333505".
+[05:28:53.186] Criando PKL da zona de pallets completos com 3 volume(s) para o pedido "4333505"
+[05:28:53.244] Ordem 4333505 processada completa
+[05:28:59.838] Reservando 120 unidades da UA "1018634774" e Item "1000240" da posição "AP.2.D.33.1.1" da zona "Zona de caixas completas" para o pedido "4333506".
+[05:28:59.847] Criando PKL da zona de pallets completos com 5 volume(s) para o pedido "4333506"
+[05:28:59.891] Ordem 4333506 processada completa
+[05:29:06.953] Reservando 48 unidades da UA "1018778286" e Item "1007261" da posição "AP.1.B.10.1.1" da zona "Zona de caixas completas" para o pedido "4333507".
+[05:29:06.966] Reservando 192 unidades da UA "1018785310" e Item "1007260" da posição "AP.1.A.14.2.1" da zona "Zona de caixas completas" para o pedido "4333507".
+[05:29:06.972] Reservando 48 unidades da UA "1018790694" e Item "1007260" da posição "AP.2.D.14.2.1" da zona "Zona de caixas completas" para o pedido "4333507".
+[05:29:06.987] Reservando 50 unidades da UA "1018756055" e Item "1500981" da posição "AP.1.A.16.3.1" da zona "Zona de caixas completas" para o pedido "4333507".
+[05:29:07.001] Reservando 48 unidades da UA "1018796230" e Item "1005382" da posição "AP.1.A.49.4.1" da zona "Zona de caixas completas" para o pedido "4333507".
+[05:29:07.016] Reservando 48 unidades da UA "1018769540" e Item "1003254" da posição "AP.2.C.42.1.1" da zona "Zona de caixas completas" para o pedido "4333507".
+[05:29:07.029] Reservando 144 unidades da UA "1018796010" e Item "1003252" da posição "AP.1.A.2.1.1" da zona "Zona de caixas completas" para o pedido "4333507".
+[05:29:07.039] Reservando 192 unidades da UA "1018795382" e Item "1004838" da posição "AP.2.D.50.3.1" da zona "Zona de caixas completas" para o pedido "4333507".
+[05:29:07.059] Reservando 32 unidades da UA "1018795177" e Item "1003718" da posição "AP.2.C.10.2.1" da zona "Zona de caixas completas" para o pedido "4333507".
+[05:29:07.066] Reservando 56 unidades da UA "1018665287" e Item "1003566" da posição "AP.1.A.24.3.1" da zona "Zona de caixas completas" para o pedido "4333507".
+[05:29:07.073] Reservando 25 unidades da UA "1018537346" e Item "1500350" da posição "AP.2.C.45.2.1" da zona "Zona de caixas completas" para o pedido "4333507".
+[05:29:07.081] Reservando 36 unidades da UA "1018793009" e Item "1001278" da posição "AP.1.A.3.2.1" da zona "Zona de caixas completas" para o pedido "4333507".
+[05:29:07.090] Reservando 28 unidades da UA "1018687429" e Item "1001511" da posição "AP.2.D.6.4.1" da zona "Zona de caixas completas" para o pedido "4333507".
+[05:29:07.097] Reservando 216 unidades da UA "1018793008" e Item "1001537" da posição "AP.1.A.42.2.1" da zona "Zona de caixas completas" para o pedido "4333507".
+[05:29:07.112] Reservando 180 unidades da UA "1018781784" e Item "1001534" da posição "AP.2.D.42.1.1" da zona "Zona de caixas completas" para o pedido "4333507".
+[05:29:07.127] Reservando 40 unidades da UA "1018781806" e Item "1000483" da posição "AP.1.A.39.1.1" da zona "Zona de caixas completas" para o pedido "4333507".
+[05:29:07.135] Reservando 72 unidades da UA "1018634774" e Item "1000240" da posição "AP.2.D.33.1.1" da zona "Zona de caixas completas" para o pedido "4333507".
+[05:29:07.139] Reservando 96 unidades da UA "1018774785" e Item "1000240" da posição "AP.1.B.36.2.1" da zona "Zona de caixas completas" para o pedido "4333507".
+[05:29:07.147] Reservando 150 unidades da UA "1018794581" e Item "1000080" da posição "AP.2.C.6.1.1" da zona "Zona de caixas completas" para o pedido "4333507".
+[05:29:07.155] Reservando 36 unidades da UA "1018779456" e Item "1007909" da posição "AP.2.D.41.3.1" da zona "Zona de caixas completas" para o pedido "4333507".
+[05:29:07.161] Reservando 36 unidades da UA "1018752292" e Item "1007912" da posição "AP.2.D.35.2.1" da zona "Zona de caixas completas" para o pedido "4333507".
+[05:29:07.175] Reservando 50 unidades da UA "1018795837" e Item "1501251" da posição "AP.2.C.19.2.1" da zona "Zona de caixas completas" para o pedido "4333507".
+[05:29:07.186] Reservando 24 unidades da UA "1018784827" e Item "1007929" da posição "AP.1.A.4.2.1" da zona "Zona de caixas completas" para o pedido "4333507".
+[05:29:07.204] Reservando 280 unidades da UA "1018795840" e Item "1501411" da posição "AP.2.C.6.2.1" da zona "Zona de caixas completas" para o pedido "4333507".
+[05:29:07.210] Reservando 50 unidades da UA "1018534676" e Item "1501478" da posição "AP.1.B.8.1.1" da zona "Zona de caixas completas" para o pedido "4333507".
+[05:29:07.215] Criando PKL da zona de pallets completos com 55 volume(s) para o pedido "4333507"
+[05:29:07.474] Ordem 4333507 processada com pendências nas linhas: [Id: 3525894; Item: 1500569; Lote: ; Unid. Faltantes: 64]
+[05:29:14.192] Reservando 120 unidades da UA "1018795841" e Item "1000065" da posição "AP.1.B.37.1.1" da zona "Zona de caixas completas" para o pedido "4333508".
+[05:29:14.200] Criando PKL da zona de pallets completos com 3 volume(s) para o pedido "4333508"
+[05:29:14.242] Ordem 4333508 processada completa
+[05:29:20.798] Reservando 220 unidades da UA "1018796015" e Item "1000951" da posição "AP.2.C.38.2.1" da zona "Zona de caixas completas" para o pedido "4333509".
+[05:29:20.813] Reservando 40 unidades da UA "1018777207" e Item "1000953" da posição "AP.1.B.8.3.1" da zona "Zona de caixas completas" para o pedido "4333509".
+[05:29:20.830] Reservando 40 unidades da UA "1018708460" e Item "1001469" da posição "AP.2.D.15.2.1" da zona "Zona de caixas completas" para o pedido "4333509".
+[05:29:20.846] Reservando 16 unidades da UA "1018707782" e Item "1005355" da posição "AP.1.A.44.4.1" da zona "Zona de caixas completas" para o pedido "4333509".
+[05:29:20.858] Reservando 48 unidades da UA "1018758703" e Item "1000211" da posição "AP.2.C.41.2.1" da zona "Zona de caixas completas" para o pedido "4333509".
+[05:29:20.869] Reservando 24 unidades da UA "1018726971" e Item "1000212" da posição "AP.2.C.34.3.1" da zona "Zona de caixas completas" para o pedido "4333509".
+[05:29:20.880] Reservando 72 unidades da UA "1018785560" e Item "1000351" da posição "AP.1.A.32.3.1" da zona "Zona de caixas completas" para o pedido "4333509".
+[05:29:20.889] Reservando 72 unidades da UA "1018779414" e Item "1000352" da posição "AP.2.D.3.3.1" da zona "Zona de caixas completas" para o pedido "4333509".
+[05:29:20.895] Reservando 40 unidades da UA "1018796013" e Item "1000356" da posição "AP.1.A.50.4.1" da zona "Zona de caixas completas" para o pedido "4333509".
+[05:29:20.903] Criando PKL da zona de pallets completos com 23 volume(s) para o pedido "4333509"
+[05:29:20.985] Ordem 4333509 processada completa
+[05:29:27.640] Reservando 36 unidades da UA "1018767905" e Item "1006370" da posição "AP.2.C.33.1.1" da zona "Zona de caixas completas" para o pedido "4333510".
+[05:29:27.654] Reservando 36 unidades da UA "1018626763" e Item "1006369" da posição "AP.2.D.3.1.1" da zona "Zona de caixas completas" para o pedido "4333510".
+[05:29:27.661] Reservando 36 unidades da UA "1018714949" e Item "1006374" da posição "AP.1.B.28.3.1" da zona "Zona de caixas completas" para o pedido "4333510".
+[05:29:27.672] Reservando 28 unidades da UA "1018794801" e Item "1003370" da posição "AP.2.D.11.3.1" da zona "Zona de caixas completas" para o pedido "4333510".
+[05:29:27.678] Reservando 72 unidades da UA "1018726971" e Item "1000212" da posição "AP.2.C.34.3.1" da zona "Zona de caixas completas" para o pedido "4333510".
+[05:29:27.689] Reservando 108 unidades da UA "1018785560" e Item "1000351" da posição "AP.1.A.32.3.1" da zona "Zona de caixas completas" para o pedido "4333510".
+[05:29:27.699] Reservando 20 unidades da UA "1018777207" e Item "1000953" da posição "AP.1.B.8.3.1" da zona "Zona de caixas completas" para o pedido "4333510".
+[05:29:27.706] Reservando 72 unidades da UA "1018779414" e Item "1000352" da posição "AP.2.D.3.3.1" da zona "Zona de caixas completas" para o pedido "4333510".
+[05:29:27.719] Reservando 120 unidades da UA "1018796015" e Item "1000951" da posição "AP.2.C.38.2.1" da zona "Zona de caixas completas" para o pedido "4333510".
+[05:29:27.726] Reservando 80 unidades da UA "1018796013" e Item "1000356" da posição "AP.1.A.50.4.1" da zona "Zona de caixas completas" para o pedido "4333510".
+[05:29:27.736] Reservando 144 unidades da UA "1018770506" e Item "1000355" da posição "AP.2.D.46.2.1" da zona "Zona de caixas completas" para o pedido "4333510".
+[05:29:27.746] Criando PKL da zona de pallets completos com 27 volume(s) para o pedido "4333510"
+[05:29:27.838] Ordem 4333510 processada completa
+[05:29:34.694] Reservando 1440 unidades da UA "1018779472" e Item "1006557" da posição "AP.1.B.42.2.1" da zona "Zona de caixas completas" para o pedido "4333511".
+[05:29:34.703] Reservando 2184 unidades da UA "1018796009" e Item "1006557" da posição "AP.2.C.42.4.1" da zona "Zona de caixas completas" para o pedido "4333511".
+[05:29:34.713] Reservando 2184 unidades da UA "1018796008" e Item "1006557" da posição "AP.2.C.15.4.1" da zona "Zona de caixas completas" para o pedido "4333511".
+[05:29:34.717] Reservando 2184 unidades da UA "1018796012" e Item "1006557" da posição "AP.2.C.16.4.1" da zona "Zona de caixas completas" para o pedido "4333511".
+[05:29:34.721] Reservando 1464 unidades da UA "1018777205" e Item "1006557" da posição "AP.2.C.42.2.1" da zona "Zona de caixas completas" para o pedido "4333511".
+[05:29:34.730] Reservando 2184 unidades da UA "1018779475" e Item "1006557" da posição "AP.1.B.42.2.1" da zona "Zona de caixas completas" para o pedido "4333511".
+[05:29:34.734] Reservando 2184 unidades da UA "1018779546" e Item "1006557" da posição "AP.1.B.12.1.1" da zona "Zona de caixas completas" para o pedido "4333511".
+[05:29:34.738] Reservando 2184 unidades da UA "1018796014" e Item "1006557" da posição "AP.2.C.42.4.1" da zona "Zona de caixas completas" para o pedido "4333511".
+[05:29:34.746] Reservando 2184 unidades da UA "1018796037" e Item "1006557" da posição "AP.2.C.15.4.1" da zona "Zona de caixas completas" para o pedido "4333511".
+[05:29:34.749] Reservando 1848 unidades da UA "1018796018" e Item "1006557" da posição "AP.2.C.16.4.1" da zona "Zona de caixas completas" para o pedido "4333511".
+[05:29:34.761] Reservando 920 unidades da UA "1018772673" e Item "1007365" da posição "AP.2.C.44.2.1" da zona "Zona de caixas completas" para o pedido "4333511".
+[05:29:34.765] Reservando 1600 unidades da UA "1018796115" e Item "1007365" da posição "AP.2.D.35.4.1" da zona "Zona de caixas completas" para o pedido "4333511".
+[05:29:34.768] Reservando 1600 unidades da UA "1018796838" e Item "1007365" da posição "AP.1.B.20.3.1" da zona "Zona de caixas completas" para o pedido "4333511".
+[05:29:34.770] Reservando 1600 unidades da UA "1018796017" e Item "1007365" da posição "AP.2.D.15.4.1" da zona "Zona de caixas completas" para o pedido "4333511".
+[05:29:34.777] Reservando 1600 unidades da UA "1018796917" e Item "1007365" da posição "AP.2.D.40.4.1" da zona "Zona de caixas completas" para o pedido "4333511".
+[05:29:34.779] Reservando 1600 unidades da UA "1018797114" e Item "1007365" da posição "AP.1.B.20.3.1" da zona "Zona de caixas completas" para o pedido "4333511".
+[05:29:34.781] Reservando 1080 unidades da UA "1018796016" e Item "1007365" da posição "AP.2.C.44.2.1" da zona "Zona de caixas completas" para o pedido "4333511".
+[05:29:34.785] Criando PKL da zona de pallets completos com 1335 volume(s) para o pedido "4333511"
+[05:29:34.987] Ordem 4333511 processada completa
+[05:29:41.765] Reservando 16 unidades da UA "1018779548" e Item "1001514" da posição "AP.1.B.26.3.1" da zona "Zona de caixas completas" para o pedido "4333512".
+[05:29:41.780] Criando PKL da zona de pallets completos com 1 volume(s) para o pedido "4333512"
+[05:29:41.820] Ordem 4333512 processada completa
+[05:29:48.497] Reservando 240 unidades da UA "1018770506" e Item "1000355" da posição "AP.2.D.46.2.1" da zona "Zona de caixas completas" para o pedido "4333513".
+[05:29:48.510] Reservando 240 unidades da UA "1018796013" e Item "1000356" da posição "AP.1.A.50.4.1" da zona "Zona de caixas completas" para o pedido "4333513".
+[05:29:48.518] Reservando 72 unidades da UA "1018779414" e Item "1000352" da posição "AP.2.D.3.3.1" da zona "Zona de caixas completas" para o pedido "4333513".
+[05:29:48.537] Reservando 216 unidades da UA "1018785560" e Item "1000351" da posição "AP.1.A.32.3.1" da zona "Zona de caixas completas" para o pedido "4333513".
+[05:29:48.554] Reservando 40 unidades da UA "1018796015" e Item "1000951" da posição "AP.2.C.38.2.1" da zona "Zona de caixas completas" para o pedido "4333513".
+[05:29:48.568] Reservando 40 unidades da UA "1018708460" e Item "1001469" da posição "AP.2.D.15.2.1" da zona "Zona de caixas completas" para o pedido "4333513".
+[05:29:48.585] Reservando 28 unidades da UA "1018794801" e Item "1003370" da posição "AP.2.D.11.3.1" da zona "Zona de caixas completas" para o pedido "4333513".
+[05:29:48.603] Reservando 140 unidades da UA "1018793007" e Item "1500558" da posição "AP.2.C.24.1.1" da zona "Zona de caixas completas" para o pedido "4333513".
+[05:29:48.608] Reservando 36 unidades da UA "1018714949" e Item "1006374" da posição "AP.1.B.28.3.1" da zona "Zona de caixas completas" para o pedido "4333513".
+[05:29:48.613] Reservando 18 unidades da UA "1018794575" e Item "1008120" da posição "AP.1.B.11.4.1" da zona "Zona de caixas completas" para o pedido "4333513".
+[05:29:48.624] Reservando 96 unidades da UA "1018767631" e Item "1500801" da posição "AP.2.C.10.1.1" da zona "Zona de caixas completas" para o pedido "4333513".
+[05:29:48.628] Criando PKL da zona de pallets completos com 32 volume(s) para o pedido "4333513"
+[05:29:48.728] Ordem 4333513 processada completa
+[05:29:55.240] Reservando 36 unidades da UA "1018781784" e Item "1001534" da posição "AP.2.D.42.1.1" da zona "Zona de caixas completas" para o pedido "4333514".
+[05:29:55.253] Reservando 36 unidades da UA "1018793008" e Item "1001537" da posição "AP.1.A.42.2.1" da zona "Zona de caixas completas" para o pedido "4333514".
+[05:29:55.264] Criando PKL da zona de pallets completos com 2 volume(s) para o pedido "4333514"
+[05:29:55.314] Ordem 4333514 processada completa
+[05:30:02.042] Reservando 40 unidades da UA "1018793010" e Item "1001528" da posição "AP.2.D.25.1.1" da zona "Zona de caixas completas" para o pedido "4333515".
+[05:30:02.057] Reservando 16 unidades da UA "1018795177" e Item "1003718" da posição "AP.2.C.10.2.1" da zona "Zona de caixas completas" para o pedido "4333515".
+[05:30:02.071] Reservando 48 unidades da UA "1018790694" e Item "1007260" da posição "AP.2.D.14.2.1" da zona "Zona de caixas completas" para o pedido "4333515".
+[05:30:02.085] Reservando 50 unidades da UA "1018795837" e Item "1501251" da posição "AP.2.C.19.2.1" da zona "Zona de caixas completas" para o pedido "4333515".
+[05:30:02.099] Reservando 140 unidades da UA "1018795839" e Item "1501410" da posição "AP.2.C.45.4.1" da zona "Zona de caixas completas" para o pedido "4333515".
+[05:30:02.114] Reservando 140 unidades da UA "1018795840" e Item "1501411" da posição "AP.2.C.6.2.1" da zona "Zona de caixas completas" para o pedido "4333515".
+[05:30:02.125] Reservando 50 unidades da UA "1018794715" e Item "1000533" da posição "AP.2.D.22.4.1" da zona "Zona de caixas completas" para o pedido "4333515".
+[05:30:02.141] Reservando 48 unidades da UA "1018774785" e Item "1000240" da posição "AP.1.B.36.2.1" da zona "Zona de caixas completas" para o pedido "4333515".
+[05:30:02.144] Criando PKL da zona de pallets completos com 9 volume(s) para o pedido "4333515"
+[05:30:02.235] Ordem 4333515 processada completa
+[05:30:09.060] Reservando 12 unidades da UA "1018784827" e Item "1007929" da posição "AP.1.A.4.2.1" da zona "Zona de caixas completas" para o pedido "4333516".
+[05:30:09.074] Reservando 36 unidades da UA "1018779456" e Item "1007909" da posição "AP.2.D.41.3.1" da zona "Zona de caixas completas" para o pedido "4333516".
+[05:30:09.084] Reservando 36 unidades da UA "1018780320" e Item "1007362" da posição "AP.1.B.3.2.1" da zona "Zona de caixas completas" para o pedido "4333516".
+[05:30:09.096] Reservando 96 unidades da UA "1018790694" e Item "1007260" da posição "AP.2.D.14.2.1" da zona "Zona de caixas completas" para o pedido "4333516".
+[05:30:09.115] Reservando 420 unidades da UA "1018794581" e Item "1000080" da posição "AP.2.C.6.1.1" da zona "Zona de caixas completas" para o pedido "4333516".
+[05:30:09.130] Reservando 48 unidades da UA "1018786746" e Item "1005498" da posição "AP.1.A.40.3.1" da zona "Zona de caixas completas" para o pedido "4333516".
+[05:30:09.146] Reservando 50 unidades da UA "1018745301" e Item "1500998" da posição "AP.2.C.38.4.1" da zona "Zona de caixas completas" para o pedido "4333516".
+[05:30:09.159] Reservando 48 unidades da UA "1018796230" e Item "1005382" da posição "AP.1.A.49.4.1" da zona "Zona de caixas completas" para o pedido "4333516".
+[05:30:09.176] Reservando 48 unidades da UA "1018779421" e Item "1005380" da posição "AP.1.A.9.3.1" da zona "Zona de caixas completas" para o pedido "4333516".
+[05:30:09.186] Reservando 48 unidades da UA "1018796010" e Item "1003252" da posição "AP.1.A.2.1.1" da zona "Zona de caixas completas" para o pedido "4333516".
+[05:30:09.192] Reservando 48 unidades da UA "1018795382" e Item "1004838" da posição "AP.2.D.50.3.1" da zona "Zona de caixas completas" para o pedido "4333516".
+[05:30:09.203] Reservando 28 unidades da UA "1018794819" e Item "1005845" da posição "AP.1.B.14.3.1" da zona "Zona de caixas completas" para o pedido "4333516".
+[05:30:09.214] Reservando 50 unidades da UA "1018779830" e Item "1500495" da posição "AP.2.D.31.4.1" da zona "Zona de caixas completas" para o pedido "4333516".
+[05:30:09.221] Reservando 64 unidades da UA "1018795177" e Item "1003718" da posição "AP.2.C.10.2.1" da zona "Zona de caixas completas" para o pedido "4333516".
+[05:30:09.236] Reservando 24 unidades da UA "1018665971" e Item "1001618" da posição "AP.1.B.41.4.1" da zona "Zona de caixas completas" para o pedido "4333516".
+[05:30:09.243] Reservando 96 unidades da UA "1018774785" e Item "1000240" da posição "AP.1.B.36.2.1" da zona "Zona de caixas completas" para o pedido "4333516".
+[05:30:09.250] Reservando 200 unidades da UA "1018794715" e Item "1000533" da posição "AP.2.D.22.4.1" da zona "Zona de caixas completas" para o pedido "4333516".
+[05:30:09.256] Reservando 72 unidades da UA "1018793009" e Item "1001278" da posição "AP.1.A.3.2.1" da zona "Zona de caixas completas" para o pedido "4333516".
+[05:30:09.267] Reservando 140 unidades da UA "1018795839" e Item "1501410" da posição "AP.2.C.45.4.1" da zona "Zona de caixas completas" para o pedido "4333516".
+[05:30:09.273] Criando PKL da zona de pallets completos com 45 volume(s) para o pedido "4333516"
+[05:30:09.415] Ordem 4333516 processada com pendências nas linhas: [Id: 3525968; Item: 1500569; Lote: ; Unid. Faltantes: 64]
+[05:30:16.084] Reservando 150 unidades da UA "1018673026" e Item "1501454" da posição "AP.2.D.26.1.1" da zona "Zona de caixas completas" para o pedido "4333517".
+[05:30:16.101] Reservando 50 unidades da UA "1018768518" e Item "1501455" da posição "AP.2.D.29.2.1" da zona "Zona de caixas completas" para o pedido "4333517".
+[05:30:16.106] Criando PKL da zona de pallets completos com 5 volume(s) para o pedido "4333517"
+[05:30:16.151] Ordem 4333517 processada completa
+[05:30:22.840] Reservando 1152 unidades da UA "1018760336" e Item "1007024" da posição "AP.2.C.4.3.1" da zona "Zona de caixas completas" para o pedido "4333518".
+[05:30:22.846] Reservando 240 unidades da UA "1018779451" e Item "1007024" da posição "AP.2.C.4.3.1" da zona "Zona de caixas completas" para o pedido "4333518".
+[05:30:22.855] Criando PKL da zona de pallets completos com 29 volume(s) para o pedido "4333518"
+[05:30:22.907] Ordem 4333518 processada com pendências nas linhas: [Id: 3525978; Item: 1007024; Lote: ; Unid. Faltantes: 1488]
+[05:30:29.708] Reservando 192 unidades da UA "1018779452" e Item "1007967" da posição "AP.2.D.19.3.1" da zona "Zona de caixas completas" para o pedido "4333519".
+[05:30:29.720] Reservando 45 unidades da UA "1018625995" e Item "1007553" da posição "AP.2.D.2.1.1" da zona "Zona de caixas completas" para o pedido "4333519".
+[05:30:29.728] Reservando 20 unidades da UA "1018767629" e Item "1007695" da posição "AP.1.B.3.1.1" da zona "Zona de caixas completas" para o pedido "4333519".
+[05:30:29.740] Reservando 50 unidades da UA "1018759020" e Item "1501038" da posição "AP.2.C.25.4.1" da zona "Zona de caixas completas" para o pedido "4333519".
+[05:30:29.754] Reservando 50 unidades da UA "1018657449" e Item "1501028" da posição "AP.2.D.22.3.1" da zona "Zona de caixas completas" para o pedido "4333519".
+[05:30:29.767] Reservando 80 unidades da UA "1018779392" e Item "1005270" da posição "AP.1.A.45.3.1" da zona "Zona de caixas completas" para o pedido "4333519".
+[05:30:29.779] Criando PKL da zona de pallets completos com 12 volume(s) para o pedido "4333519"
+[05:30:29.855] Ordem 4333519 processada com pendências nas linhas: [Id: 3525982; Item: 1501100; Lote: ; Unid. Faltantes: 45]
+[05:30:36.668] Reservando 24 unidades da UA "1018726971" e Item "1000212" da posição "AP.2.C.34.3.1" da zona "Zona de caixas completas" para o pedido "4333520".
+[05:30:36.683] Reservando 80 unidades da UA "1018796015" e Item "1000951" da posição "AP.2.C.38.2.1" da zona "Zona de caixas completas" para o pedido "4333520".
+[05:30:36.692] Reservando 18 unidades da UA "1018794575" e Item "1008120" da posição "AP.1.B.11.4.1" da zona "Zona de caixas completas" para o pedido "4333520".
+[05:30:36.702] Criando PKL da zona de pallets completos com 6 volume(s) para o pedido "4333520"
+[05:30:36.751] Ordem 4333520 processada completa
+[05:30:43.338] Reservando 40 unidades da UA "1018463063" e Item "1000176" da posição "AP.2.D.13.1.1" da zona "Zona de caixas completas" para o pedido "4333521".
+[05:30:43.351] Reservando 192 unidades da UA "1018777220" e Item "1000178" da posição "AP.2.C.15.1.1" da zona "Zona de caixas completas" para o pedido "4333521".
+[05:30:43.359] Reservando 72 unidades da UA "1018776199" e Item "1000178" da posição "AP.1.B.15.3.1" da zona "Zona de caixas completas" para o pedido "4333521".
+[05:30:43.368] Reservando 56 unidades da UA "1018761327" e Item "1006415" da posição "AP.1.B.28.2.1" da zona "Zona de caixas completas" para o pedido "4333521".
+[05:30:43.387] Reservando 48 unidades da UA "1018774796" e Item "1006354" da posição "AP.2.D.29.3.1" da zona "Zona de caixas completas" para o pedido "4333521".
+[05:30:43.396] Reservando 48 unidades da UA "1018685643" e Item "1007762" da posição "AP.1.A.47.4.1" da zona "Zona de caixas completas" para o pedido "4333521".
+[05:30:43.405] Reservando 48 unidades da UA "1018786570" e Item "1007453" da posição "AP.1.A.1.4.1" da zona "Zona de caixas completas" para o pedido "4333521".
+[05:30:43.411] Reservando 96 unidades da UA "1018786747" e Item "1007454" da posição "AP.1.A.42.4.1" da zona "Zona de caixas completas" para o pedido "4333521".
+[05:30:43.419] Criando PKL da zona de pallets completos com 19 volume(s) para o pedido "4333521"
+[05:30:43.494] Ordem 4333521 processada com pendências nas linhas: [Id: 3525992; Item: 1006356; Lote: ; Unid. Faltantes: 24]
+[05:30:50.157] Reservando 24 unidades da UA "1018758703" e Item "1000211" da posição "AP.2.C.41.2.1" da zona "Zona de caixas completas" para o pedido "4333522".
+[05:30:50.171] Reservando 108 unidades da UA "1018785560" e Item "1000351" da posição "AP.1.A.32.3.1" da zona "Zona de caixas completas" para o pedido "4333522".
+[05:30:50.181] Reservando 72 unidades da UA "1018779414" e Item "1000352" da posição "AP.2.D.3.3.1" da zona "Zona de caixas completas" para o pedido "4333522".
+[05:30:50.195] Reservando 40 unidades da UA "1018796013" e Item "1000356" da posição "AP.1.A.50.4.1" da zona "Zona de caixas completas" para o pedido "4333522".
+[05:30:50.208] Reservando 120 unidades da UA "1018796015" e Item "1000951" da posição "AP.2.C.38.2.1" da zona "Zona de caixas completas" para o pedido "4333522".
+[05:30:50.225] Reservando 40 unidades da UA "1018777207" e Item "1000953" da posição "AP.1.B.8.3.1" da zona "Zona de caixas completas" para o pedido "4333522".
+[05:30:50.239] Reservando 40 unidades da UA "1018708460" e Item "1001469" da posição "AP.2.D.15.2.1" da zona "Zona de caixas completas" para o pedido "4333522".
+[05:30:50.250] Criando PKL da zona de pallets completos com 16 volume(s) para o pedido "4333522"
+[05:30:50.323] Ordem 4333522 processada completa
+[05:30:57.157] Reservando 25 unidades da UA "1018768518" e Item "1501455" da posição "AP.2.D.29.2.1" da zona "Zona de caixas completas" para o pedido "4333523".
+[05:30:57.165] Criando PKL da zona de pallets completos com 1 volume(s) para o pedido "4333523"
+[05:30:57.225] Ordem 4333523 processada completa
+[05:31:04.049] Reservando 180 unidades da UA "1018779392" e Item "1005270" da posição "AP.1.A.45.3.1" da zona "Zona de caixas completas" para o pedido "4333524".
+[05:31:04.057] Criando PKL da zona de pallets completos com 9 volume(s) para o pedido "4333524"
+[05:31:04.097] Ordem 4333524 processada completa
+[05:31:10.793] Reservando 56 unidades da UA "1018767633" e Item "1008245" da posição "AP.2.C.38.3.1" da zona "Zona de caixas completas" para o pedido "4333525".
+[05:31:10.797] Criando PKL da zona de pallets completos com 2 volume(s) para o pedido "4333525"
+[05:31:10.838] Ordem 4333525 processada completa
+[05:31:17.702] Reservando 24 unidades da UA "1018784827" e Item "1007929" da posição "AP.1.A.4.2.1" da zona "Zona de caixas completas" para o pedido "4333526".
+[05:31:17.714] Reservando 36 unidades da UA "1018786597" e Item "1007912" da posição "AP.2.C.26.1.1" da zona "Zona de caixas completas" para o pedido "4333526".
+[05:31:17.719] Criando PKL da zona de pallets completos com 3 volume(s) para o pedido "4333526"
+[05:31:17.767] Ordem 4333526 processada completa
+[05:31:17.813] Onda 24626 reservada. 90 ordens processadas totalmente e 15 com pendências.

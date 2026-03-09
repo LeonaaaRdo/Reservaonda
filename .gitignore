@@ -1,0 +1,29 @@
+# Logs grandes de produção (não versionar, são gerados automaticamente)
+2026_*/
+TRACE_*.txt
+
+# Dados sensíveis / gerados
+*.log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.env
+venv/
+.venv/
+
+# IDEs
+.vscode/
+.idea/
+*.suo
+*.user
+
+# Sistema operacional
+.DS_Store
+Thumbs.db

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Previsão de Tempo de Reserva de Ondas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0d0f1a;
+      --surface: #161929;
+      --surface2: #1e2340;
+      --border: #2e3460;
+      --accent: #4f7cff;
+      --accent2: #7c56f0;
+      --green: #22c97a;
+      --orange: #f5a623;
+      --red: #f55c47;
+      --text: #e0e4ff;
+      --text-muted: #7a82aa;
+      --radius: 14px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      background-image:
+        radial-gradient(ellipse 60% 40% at 80% 10%, rgba(79, 124, 255, 0.12) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 50% at 10% 90%, rgba(124, 86, 240, 0.12) 0%, transparent 60%);
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      width: 100%;
+      max-width: 560px;
+      padding: 2.5rem;
+      box-shadow: 0 16px 64px rgba(0, 0, 0, 0.5);
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 0.9rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .badge {
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      border-radius: 8px;
+      padding: 0.4rem 0.6rem;
+      font-size: 1.1rem;
+    }
+
+    h1 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .subtitle {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      margin-bottom: 2rem;
+      line-height: 1.6;
+      margin-top: 0.3rem;
+    }
+
+    .insight {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 0.9rem 1.1rem;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      margin-bottom: 2rem;
+      line-height: 1.7;
+    }
+
+    .insight strong {
+      color: var(--accent);
+    }
+
+    .insight em {
+      color: #8895cc;
+    }
+
+    .fields {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      margin-bottom: 1.8rem;
+    }
+
+    .field label {
+      display: block;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 0.4rem;
+    }
+
+    .field .hint {
+      font-size: 0.73rem;
+      color: #555e80;
+      margin-top: 0.28rem;
+    }
+
+    .field input[type="number"] {
+      width: 100%;
+      background: var(--surface2);
+      border: 1.5px solid var(--border);
+      border-radius: 9px;
+      color: var(--text);
+      font-size: 1rem;
+      font-family: inherit;
+      padding: 0.7rem 1rem;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      outline: none;
+    }
+
+    .field input[type="number"]:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(79, 124, 255, 0.18);
+    }
+
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+    }
+
+    input[type=number] {
+      -moz-appearance: textfield;
+    }
+
+    .btn-calc {
+      width: 100%;
+      padding: 0.85rem;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      border: none;
+      border-radius: 10px;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 600;
+      font-family: inherit;
+      cursor: pointer;
+      transition: opacity 0.2s, transform 0.1s;
+    }
+
+    .btn-calc:hover {
+      opacity: 0.9;
+    }
+
+    .btn-calc:active {
+      transform: scale(0.98);
+    }
+
+    .result-box {
+      margin-top: 1.8rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      background: var(--surface2);
+      display: none;
+      animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(8px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .result-label {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      margin-bottom: 0.4rem;
+    }
+
+    .result-time {
+      font-size: 2.8rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      margin-bottom: 0.2rem;
+    }
+
+    .result-time.fast {
+      color: var(--green);
+    }
+
+    .result-time.medium {
+      color: var(--orange);
+    }
+
+    .result-time.slow {
+      color: var(--red);
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 1rem 0;
+    }
+
+    .breakdown-item {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      padding: 0.45rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .breakdown-item:last-child {
+      border-bottom: none;
+    }
+
+    .breakdown-item span:last-child {
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    .status-chip {
+      display: inline-block;
+      margin-top: 0.9rem;
+      padding: 0.35rem 0.9rem;
+      border-radius: 20px;
+      font-size: 0.76rem;
+      font-weight: 600;
+    }
+
+    .chip-ok {
+      background: rgba(34, 201, 122, 0.15);
+      color: var(--green);
+    }
+
+    .chip-warn {
+      background: rgba(245, 166, 35, 0.15);
+      color: var(--orange);
+    }
+
+    .chip-alert {
+      background: rgba(245, 92, 71, 0.15);
+      color: var(--red);
+    }
+
+    .note-box {
+      margin-top: 1.1rem;
+      background: rgba(79, 124, 255, 0.08);
+      border: 1px solid rgba(79, 124, 255, 0.25);
+      border-radius: 9px;
+      padding: 0.7rem 1rem;
+      font-size: 0.76rem;
+      color: #8ca4ff;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <div class="header">
+      <span class="badge">🌊</span>
+      <h1>Previsão: Reserva da Onda </h1>
+    </div>
+    <p class="subtitle">
+      A onda entra em curso assim que o sistema processa <strong>todas as ordens</strong> — com ou sem pendências de
+      estoque.
+      Pendências são tratadas em paralelo e não bloqueiam a liberação para o picking.
+    </p>
+
+    <div class="insight">
+      &#128208; <strong>T = Ordens &times; 6.86 segundos/ordem</strong> (= Ordens &times; 0.1143 min)<br />
+      <em>Validado em 8 ondas reais nos logs DynamicReservations &mdash; erro medio de apenas 0,5%.</em><br />
+      Pendencias de estoque <strong>nao bloqueiam o em curso</strong> &mdash; sao tratadas em paralelo depois.
+    </div>
+
+    <div class="fields">
+      <div class="field">
+        <label for="ordens">Total de Remessas/Ordens na Onda</label>
+        <input type="number" id="ordens" placeholder="ex: 130" min="1" autofocus />
+        <p class="hint">Número total de pedidos (ordens) na onda — inclui reservadas e as com pendências.</p>
+      </div>
+      <div class="field">
+        <label for="itens">Itens médios por Ordem (opcional)</label>
+        <input type="number" id="itens" placeholder="ex: 3" min="1" />
+        <p class="hint">Ondas com mais itens/ordem levam ligeiramente mais tempo por pedido. Padrão observado: 3
+          itens/ordem.</p>
+      </div>
+    </div>
+
+    <button class="btn-calc" id="btnCalc" onclick="calcular()">▶ Calcular Quando Entra em Curso</button>
+
+    <div class="result-box" id="resultBox">
+      <p class="result-label">Estimativa até entrar em curso</p>
+      <div class="result-time" id="resultTime">—</div>
+      <hr class="divider" />
+      <div>
+        <div class="breakdown-item">
+          <span>Custo base (Ordens &times; 6.86 seg)</span>
+          <span id="bCustoBase">—</span>
+        </div>
+        <div class="breakdown-item">
+          <span>Ajuste de volume de itens</span>
+          <span id="bAjuste">—</span>
+        </div>
+        <div class="breakdown-item">
+          <span>Velocidade da engine</span>
+          <span id="bVel">—</span>
+        </div>
+      </div>
+      <div id="statusChip" class="status-chip chip-ok">✅ Reserva rápida</div>
+      <div class="note-box">
+        ℹ️ Após entrar em curso, as ordens com pendência continuam sendo tentadas pelo loop de retentativas em
+        background — mas <strong>não bloqueiam o picking</strong> das ordens já reservadas com sucesso.
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function fmt(min) {
+      if (min < 1) return (min * 60).toFixed(0) + ' seg';
+      const h = Math.floor(min / 60);
+      const m = Math.round(min % 60);
+      if (h === 0) return m + ' min';
+      return h + 'h ' + String(m).padStart(2, '0') + 'min';
+    }
+
+    function calcular() {
+      const ordens = parseFloat(document.getElementById('ordens').value) || 0;
+      const itens = parseFloat(document.getElementById('itens').value) || 3;
+
+      if (ordens === 0) { document.getElementById('ordens').focus(); return; }
+
+      // Constante validada: 6.86 seg/ordem = 0.1143 min/ordem
+      // Validada contra 8 ondas historicas com erro medio de 0.5%
+      const MIN_POR_ORDEM = 6.86 / 60;  // 0.1143
+
+      const custoBase = ordens * MIN_POR_ORDEM;
+
+      // Ajuste opcional: cada item acima da media de 3 por ordem adiciona ~0.3 seg por ordem
+      const itensExtra = Math.max(0, itens - 3);
+      const ajuste = ordens * itensExtra * (0.3 / 60);
+
+      const total = custoBase + ajuste;
+      const vel = (ordens / total).toFixed(1) + ' ordens/min';
+
+      document.getElementById('bCustoBase').textContent = fmt(custoBase);
+      document.getElementById('bAjuste').textContent = ajuste > 0.01 ? '+' + fmt(ajuste) : 'nenhum';
+      document.getElementById('bVel').textContent = vel;
+
+      const timeEl = document.getElementById('resultTime');
+      timeEl.textContent = fmt(total);
+      timeEl.className = 'result-time';
+
+      const chip = document.getElementById('statusChip');
+      if (total < 12) {
+        timeEl.classList.add('fast');
+        chip.className = 'status-chip chip-ok';
+        chip.textContent = 'Reserva rapida -- onda pequena';
+      } else if (total < 35) {
+        timeEl.classList.add('medium');
+        chip.className = 'status-chip chip-warn';
+        chip.textContent = 'Moderada -- acompanhe a engine';
+      } else {
+        timeEl.classList.add('slow');
+        chip.className = 'status-chip chip-alert';
+        chip.textContent = 'Onda grande -- pode demorar';
+      }
+
+      document.getElementById('resultBox').style.display = 'block';
+    }
+
+    document.addEventListener('keydown', e => { if (e.key === 'Enter') calcular(); });
+  </script>
+</body>
+
+</html>
