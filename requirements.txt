@@ -1,0 +1,2 @@
+# Add your python dependencies here if you plan to use serverless functions
+# For now, it's empty as we only use standard libraries.
