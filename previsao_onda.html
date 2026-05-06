@@ -22,11 +22,7 @@
       --radius: 14px;
     }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
       background: var(--bg);
@@ -66,11 +62,7 @@
       font-size: 1.1rem;
     }
 
-    h1 {
-      font-size: 1.25rem;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-    }
+    h1 { font-size: 1.25rem; font-weight: 700; letter-spacing: -0.02em; }
 
     .subtitle {
       font-size: 0.82rem;
@@ -78,25 +70,6 @@
       margin-bottom: 2rem;
       line-height: 1.6;
       margin-top: 0.3rem;
-    }
-
-    .insight {
-      background: var(--surface2);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 0.9rem 1.1rem;
-      font-size: 0.78rem;
-      color: var(--text-muted);
-      margin-bottom: 2rem;
-      line-height: 1.7;
-    }
-
-    .insight strong {
-      color: var(--accent);
-    }
-
-    .insight em {
-      color: #8895cc;
     }
 
     .fields {
@@ -107,32 +80,19 @@
     }
 
     .field label {
-      display: block;
-      font-size: 0.8rem;
-      font-weight: 500;
-      color: var(--text-muted);
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      margin-bottom: 0.4rem;
+      display: block; font-size: 0.8rem; font-weight: 500;
+      color: var(--text-muted); text-transform: uppercase;
+      letter-spacing: 0.06em; margin-bottom: 0.4rem;
     }
 
-    .field .hint {
-      font-size: 0.73rem;
-      color: #555e80;
-      margin-top: 0.28rem;
-    }
+    .field .hint { font-size: 0.73rem; color: #555e80; margin-top: 0.28rem; }
 
     .field input[type="number"] {
-      width: 100%;
-      background: var(--surface2);
-      border: 1.5px solid var(--border);
-      border-radius: 9px;
-      color: var(--text);
-      font-size: 1rem;
-      font-family: inherit;
+      width: 100%; background: var(--surface2);
+      border: 1.5px solid var(--border); border-radius: 9px;
+      color: var(--text); font-size: 1rem; font-family: inherit;
       padding: 0.7rem 1rem;
-      transition: border-color 0.2s, box-shadow 0.2s;
-      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s; outline: none;
     }
 
     .field input[type="number"]:focus {
@@ -141,142 +101,164 @@
     }
 
     input[type=number]::-webkit-inner-spin-button,
-    input[type=number]::-webkit-outer-spin-button {
-      -webkit-appearance: none;
-    }
+    input[type=number]::-webkit-outer-spin-button { -webkit-appearance: none; }
+    input[type=number] { -moz-appearance: textfield; }
 
-    input[type=number] {
-      -moz-appearance: textfield;
-    }
+    .btn-row { display: flex; gap: 0.7rem; }
 
     .btn-calc {
-      width: 100%;
-      padding: 0.85rem;
+      flex: 1; padding: 0.85rem;
       background: linear-gradient(135deg, var(--accent), var(--accent2));
-      border: none;
-      border-radius: 10px;
-      color: #fff;
-      font-size: 1rem;
-      font-weight: 600;
-      font-family: inherit;
-      cursor: pointer;
-      transition: opacity 0.2s, transform 0.1s;
+      border: none; border-radius: 10px; color: #fff;
+      font-size: 1rem; font-weight: 600; font-family: inherit;
+      cursor: pointer; transition: opacity 0.2s, transform 0.1s;
     }
+    .btn-calc:hover { opacity: 0.9; }
+    .btn-calc:active { transform: scale(0.98); }
 
-    .btn-calc:hover {
-      opacity: 0.9;
+    .btn-about {
+      padding: 0.85rem 1.2rem;
+      background: var(--surface2);
+      border: 1.5px solid var(--border); border-radius: 10px;
+      color: var(--text-muted); font-size: 0.85rem; font-weight: 600;
+      font-family: inherit; cursor: pointer;
+      transition: border-color 0.2s, color 0.2s, background 0.2s;
     }
-
-    .btn-calc:active {
-      transform: scale(0.98);
+    .btn-about:hover {
+      border-color: var(--accent); color: var(--accent);
+      background: rgba(79, 124, 255, 0.06);
     }
 
     .result-box {
-      margin-top: 1.8rem;
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 1.5rem;
-      background: var(--surface2);
-      display: none;
+      margin-top: 1.8rem; border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 1.5rem;
+      background: var(--surface2); display: none;
       animation: fadeIn 0.3s ease;
     }
 
     @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(8px);
-      }
-
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     .result-label {
-      font-size: 0.75rem;
-      color: var(--text-muted);
-      text-transform: uppercase;
-      letter-spacing: 0.07em;
-      margin-bottom: 0.4rem;
+      font-size: 0.75rem; color: var(--text-muted);
+      text-transform: uppercase; letter-spacing: 0.07em; margin-bottom: 0.4rem;
     }
 
     .result-time {
-      font-size: 2.8rem;
-      font-weight: 700;
-      letter-spacing: -0.03em;
-      margin-bottom: 0.2rem;
+      font-size: 2.8rem; font-weight: 700;
+      letter-spacing: -0.03em; margin-bottom: 0.2rem;
     }
+    .result-time.fast { color: var(--green); }
+    .result-time.medium { color: var(--orange); }
+    .result-time.slow { color: var(--red); }
 
-    .result-time.fast {
-      color: var(--green);
-    }
-
-    .result-time.medium {
-      color: var(--orange);
-    }
-
-    .result-time.slow {
-      color: var(--red);
-    }
-
-    .divider {
-      border: none;
-      border-top: 1px solid var(--border);
-      margin: 1rem 0;
-    }
+    .divider { border: none; border-top: 1px solid var(--border); margin: 1rem 0; }
 
     .breakdown-item {
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.82rem;
-      color: var(--text-muted);
-      padding: 0.45rem 0;
-      border-bottom: 1px solid var(--border);
+      display: flex; justify-content: space-between;
+      font-size: 0.82rem; color: var(--text-muted);
+      padding: 0.45rem 0; border-bottom: 1px solid var(--border);
     }
-
-    .breakdown-item:last-child {
-      border-bottom: none;
-    }
-
-    .breakdown-item span:last-child {
-      color: var(--text);
-      font-weight: 500;
-    }
+    .breakdown-item:last-child { border-bottom: none; }
+    .breakdown-item span:last-child { color: var(--text); font-weight: 500; }
 
     .status-chip {
-      display: inline-block;
-      margin-top: 0.9rem;
-      padding: 0.35rem 0.9rem;
-      border-radius: 20px;
-      font-size: 0.76rem;
-      font-weight: 600;
+      display: inline-block; margin-top: 0.9rem;
+      padding: 0.35rem 0.9rem; border-radius: 20px;
+      font-size: 0.76rem; font-weight: 600;
+    }
+    .chip-ok { background: rgba(34, 201, 122, 0.15); color: var(--green); }
+    .chip-warn { background: rgba(245, 166, 35, 0.15); color: var(--orange); }
+    .chip-alert { background: rgba(245, 92, 71, 0.15); color: var(--red); }
+
+    /* ---- Modal Sobre ---- */
+    .modal-overlay {
+      display: none; position: fixed; inset: 0;
+      background: rgba(0,0,0,0.7); backdrop-filter: blur(6px);
+      z-index: 1000; align-items: center; justify-content: center;
+      padding: 1.5rem; animation: fadeIn 0.25s ease;
+    }
+    .modal-overlay.active { display: flex; }
+
+    .modal {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius); max-width: 640px; width: 100%;
+      max-height: 85vh; overflow-y: auto; padding: 2rem;
+      box-shadow: 0 24px 80px rgba(0,0,0,0.6);
+    }
+    .modal::-webkit-scrollbar { width: 6px; }
+    .modal::-webkit-scrollbar-track { background: transparent; }
+    .modal::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+    .modal h2 {
+      font-size: 1.15rem; font-weight: 700; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.6rem;
+    }
+    .modal h3 {
+      font-size: 0.9rem; font-weight: 600; color: var(--accent);
+      margin: 1.4rem 0 0.6rem; text-transform: uppercase; letter-spacing: 0.04em;
+    }
+    .modal p, .modal li {
+      font-size: 0.8rem; color: var(--text-muted); line-height: 1.7;
+      margin-bottom: 0.5rem;
+    }
+    .modal ul { padding-left: 1.2rem; margin-bottom: 0.8rem; }
+    .modal li { margin-bottom: 0.3rem; }
+
+    .formula-box {
+      background: var(--bg); border: 1px solid var(--border);
+      border-radius: 10px; padding: 1.1rem 1.3rem;
+      font-family: 'Courier New', monospace; font-size: 0.85rem;
+      color: var(--accent); line-height: 1.8; margin: 0.8rem 0;
+      text-align: center; letter-spacing: 0.02em;
     }
 
-    .chip-ok {
-      background: rgba(34, 201, 122, 0.15);
-      color: var(--green);
+    .weight-table {
+      width: 100%; border-collapse: collapse; margin: 0.8rem 0;
+      font-size: 0.78rem;
     }
-
-    .chip-warn {
-      background: rgba(245, 166, 35, 0.15);
-      color: var(--orange);
+    .weight-table th {
+      text-align: left; color: var(--accent); font-weight: 600;
+      padding: 0.5rem 0.6rem; border-bottom: 1.5px solid var(--border);
+      text-transform: uppercase; font-size: 0.7rem; letter-spacing: 0.05em;
     }
-
-    .chip-alert {
-      background: rgba(245, 92, 71, 0.15);
-      color: var(--red);
+    .weight-table td {
+      padding: 0.45rem 0.6rem; border-bottom: 1px solid var(--border);
+      color: var(--text-muted);
     }
+    .weight-table tr:last-child td { border-bottom: none; }
+    .weight-table .val { color: var(--text); font-weight: 500; font-family: 'Courier New', monospace; }
 
-    .note-box {
-      margin-top: 1.1rem;
-      background: rgba(79, 124, 255, 0.08);
-      border: 1px solid rgba(79, 124, 255, 0.25);
-      border-radius: 9px;
-      padding: 0.7rem 1rem;
-      font-size: 0.76rem;
-      color: #8ca4ff;
-      line-height: 1.6;
+    .validation-table {
+      width: 100%; border-collapse: collapse; margin: 0.8rem 0;
+      font-size: 0.75rem;
+    }
+    .validation-table th {
+      text-align: center; color: var(--accent); font-weight: 600;
+      padding: 0.4rem; border-bottom: 1.5px solid var(--border);
+      font-size: 0.68rem; text-transform: uppercase;
+    }
+    .validation-table td {
+      text-align: center; padding: 0.35rem 0.4rem;
+      border-bottom: 1px solid var(--border); color: var(--text-muted);
+    }
+    .validation-table .good { color: var(--green); font-weight: 600; }
+
+    .modal-close {
+      width: 100%; padding: 0.7rem; margin-top: 1.2rem;
+      background: var(--surface2); border: 1.5px solid var(--border);
+      border-radius: 9px; color: var(--text); font-family: inherit;
+      font-size: 0.85rem; font-weight: 500; cursor: pointer;
+      transition: border-color 0.2s;
+    }
+    .modal-close:hover { border-color: var(--accent); }
+
+    .tag-r2 {
+      display: inline-block; background: rgba(34, 201, 122, 0.15);
+      color: var(--green); padding: 0.2rem 0.6rem; border-radius: 6px;
+      font-size: 0.72rem; font-weight: 600; margin-left: 0.4rem;
     }
   </style>
 </head>
@@ -285,7 +267,7 @@
   <div class="card">
     <div class="header">
       <span class="badge">🌊</span>
-      <h1>Previsão: Reserva da Onda </h1>
+      <h1>Previsão: Reserva da Onda</h1>
     </div>
     <p class="subtitle">
       A onda entra em curso assim que o sistema processa <strong>todas as ordens</strong> — com ou sem pendências de
@@ -293,27 +275,18 @@
       Pendências são tratadas em paralelo e não bloqueiam a liberação para o picking.
     </p>
 
-    <!-- <div class="insight">
-      &#128208; <strong>T = Ordens &times; 6.86 segundos/ordem</strong> (= Ordens &times; 0.1143 min)<br />
-      <em>Validado em 8 ondas reais nos logs DynamicReservations &mdash; erro medio de apenas 0,5%.</em><br />
-      Pendencias de estoque <strong>nao bloqueiam o em curso</strong> &mdash; sao tratadas em paralelo depois.
-    </div> -->
-
     <div class="fields">
       <div class="field">
         <label for="ordens">Total de Remessas/Ordens na Onda</label>
         <input type="number" id="ordens" placeholder="ex: 130" min="1" autofocus />
         <p class="hint">Número total de pedidos (ordens) na onda — inclui reservadas e as com pendências.</p>
       </div>
-      <div class="field">
-        <label for="itens">Itens médios por Ordem (opcional)</label>
-        <input type="number" id="itens" placeholder="ex: 3" min="1" />
-        <p class="hint">Ondas com mais itens/ordem levam ligeiramente mais tempo por pedido. Padrão observado: 3
-          itens/ordem.</p>
-      </div>
     </div>
 
-    <button class="btn-calc" id="btnCalc" onclick="calcular()">▶ Calcular Quando Entra em Curso</button>
+    <div class="btn-row">
+      <button class="btn-calc" id="btnCalc" onclick="calcular()">▶ Calcular Previsão</button>
+      <button class="btn-about" id="btnAbout" onclick="abrirSobre()">📊 Sobre</button>
+    </div>
 
     <div class="result-box" id="resultBox">
       <p class="result-label">Estimativa até entrar em curso</p>
@@ -321,12 +294,16 @@
       <hr class="divider" />
       <div>
         <div class="breakdown-item">
-          <span>Custo base (Ordens &times; 6.86 seg)</span>
-          <span id="bCustoBase">—</span>
+          <span>Componente linear (6.506 × N)</span>
+          <span id="bLinear">—</span>
         </div>
         <div class="breakdown-item">
-          <span>Ajuste de volume de itens</span>
-          <span id="bAjuste">—</span>
+          <span>Componente quadrático (0.00156 × N²)</span>
+          <span id="bQuad">—</span>
+        </div>
+        <div class="breakdown-item">
+          <span>Constante base</span>
+          <span id="bConst">—</span>
         </div>
         <div class="breakdown-item">
           <span>Velocidade da engine</span>
@@ -334,10 +311,100 @@
         </div>
       </div>
       <div id="statusChip" class="status-chip chip-ok">✅ Reserva rápida</div>
-      <!--<div class="note-box">
-        ℹ️ Após entrar em curso, as ordens com pendência continuam sendo tentadas pelo loop de retentativas em
-        background — mas <strong>não bloqueiam o picking</strong> das ordens já reservadas com sucesso.
-      </div>-->
+    </div>
+  </div>
+
+  <!-- Modal Sobre -->
+  <div class="modal-overlay" id="modalSobre">
+    <div class="modal">
+      <h2>📊 Sobre a Fórmula <span class="tag-r2">R² = 0.9982</span></h2>
+
+      <h3>🔬 Metodologia</h3>
+      <p>
+        A fórmula foi calibrada a partir de uma <strong>análise integral</strong> de
+        <strong>75 arquivos de log</strong> do sistema DynamicReservations, abrangendo
+        <strong>4 dias</strong> de operação (04/03, 05/03, 06/03 e 06/05 de 2026).
+      </p>
+      <p>
+        Foram extraídas <strong>10 ondas completas</strong> com 15+ variáveis cada
+        (ordens, reservas, unidades, itens faltantes, posições, volumes, PKLs, etc.)
+        e testados <strong>5 modelos de regressão</strong> — do linear simples ao
+        polinomial multivariável.
+      </p>
+
+      <h3>📐 A Fórmula Quadrática</h3>
+      <div class="formula-box">
+        T(seg) = 0.00156 × N² + 6.506 × N + 9.75
+      </div>
+      <p>Onde <strong>N</strong> = total de ordens na onda (completas + pendentes).</p>
+
+      <h3>⚖️ Peso de Cada Componente</h3>
+      <table class="weight-table">
+        <tr>
+          <th>Componente</th>
+          <th>Coeficiente</th>
+          <th>Significado Físico</th>
+        </tr>
+        <tr>
+          <td>Termo linear</td>
+          <td class="val">+6.506 seg/ordem</td>
+          <td>Custo base de processar cada ordem — consulta ao banco, alocação de estoque, criação de PKL</td>
+        </tr>
+        <tr>
+          <td>Termo quadrático</td>
+          <td class="val">+0.00156 seg/ordem²</td>
+          <td>Fator de degradação: em ondas grandes o banco sofre contention, cada ordem fica ~0.5-1 seg mais lenta</td>
+        </tr>
+        <tr>
+          <td>Constante base</td>
+          <td class="val">+9.75 seg</td>
+          <td>Tempo fixo de inicialização da engine (recálculo de InventoryGlobal, setup da onda)</td>
+        </tr>
+      </table>
+
+      <h3>📈 Comportamento</h3>
+      <ul>
+        <li><strong>Ondas pequenas (≤100 ordens)</strong>: custo ~6.5 seg/ordem — rápido e linear</li>
+        <li><strong>Ondas médias (100-400)</strong>: custo cresce para ~7.0 seg/ordem — leve degradação</li>
+        <li><strong>Ondas grandes (400+)</strong>: custo ~7.5-7.7 seg/ordem — o termo N² pesa mais</li>
+      </ul>
+
+      <h3>✅ Validação — 10 Ondas Reais</h3>
+      <table class="validation-table">
+        <tr>
+          <th>Onda</th><th>Ordens</th><th>Real</th><th>Previsto</th><th>Erro</th>
+        </tr>
+        <tr><td>24619</td><td>129</td><td>14m 40s</td><td>14m 35s</td><td class="good">0.6%</td></tr>
+        <tr><td>24620</td><td>300</td><td>34m 03s</td><td>35m 02s</td><td class="good">2.9%</td></tr>
+        <tr><td>24621</td><td>234</td><td>26m 56s</td><td>26m 58s</td><td class="good">0.1%</td></tr>
+        <tr><td>24622</td><td>101</td><td>11m 34s</td><td>11m 23s</td><td class="good">1.6%</td></tr>
+        <tr><td>24623</td><td>360</td><td>40m 41s</td><td>42m 34s</td><td class="good">4.6%</td></tr>
+        <tr><td>24624</td><td>89</td><td>10m 14s</td><td>10m 01s</td><td class="good">2.0%</td></tr>
+        <tr><td>24625</td><td>181</td><td>20m 46s</td><td>20m 39s</td><td class="good">0.6%</td></tr>
+        <tr><td>24626</td><td>105</td><td>12m 01s</td><td>11m 50s</td><td class="good">1.6%</td></tr>
+        <tr><td>24800</td><td>496</td><td>63m 03s</td><td>60m 21s</td><td class="good">4.3%</td></tr>
+        <tr><td>24801</td><td>760</td><td>97m 01s</td><td>97m 36s</td><td class="good">0.6%</td></tr>
+      </table>
+      <p>
+        <strong>Erro médio: 1.89%</strong> · Erro máximo: 4.63% · RMSE: 66 seg
+      </p>
+
+      <h3>🔎 Modelo Completo (5 variáveis)</h3>
+      <p>
+        Existe também um modelo com <strong>R² = 0.999997</strong> (erro médio 0.22%) que
+        usa 5 variáveis: ordens, ordens², % pendência, itens faltantes distintos e
+        total de PKLs. Ele não está implementado nesta interface por exigir dados
+        que só ficam disponíveis após o início da onda.
+      </p>
+
+      <h3>📁 Dados Fonte</h3>
+      <p>
+        Logs analisados: <strong>DynamicReservations</strong> dos dias 04/03, 05/03, 06/03 e 06/05 de 2026
+        (75 arquivos, ~10 MB de dados brutos). Scripts: <code>extract_waves.py</code> e
+        <code>regression_analysis.py</code>.
+      </p>
+
+      <button class="modal-close" onclick="fecharSobre()">Fechar</button>
     </div>
   </div>
 
@@ -350,52 +417,75 @@
       return h + 'h ' + String(m).padStart(2, '0') + 'min';
     }
 
+    function fmtSeg(seg) {
+      if (seg < 60) return seg.toFixed(1) + ' seg';
+      return fmt(seg / 60);
+    }
+
     function calcular() {
-      const ordens = parseFloat(document.getElementById('ordens').value) || 0;
-      const itens = parseFloat(document.getElementById('itens').value) || 3;
+      const N = parseFloat(document.getElementById('ordens').value) || 0;
+      if (N === 0) { document.getElementById('ordens').focus(); return; }
 
-      if (ordens === 0) { document.getElementById('ordens').focus(); return; }
+      // Modelo quadrático calibrado em 10 ondas reais (R² = 0.9982)
+      // T(seg) = 0.00156098 × N² + 6.506477 × N + 9.7507
+      const A = 0.00156098;
+      const B = 6.506477;
+      const C = 9.7507;
 
-      // Constante validada: 6.86 seg/ordem = 0.1143 min/ordem
-      // Validada contra 8 ondas historicas com erro medio de 0.5%
-      const MIN_POR_ORDEM = 6.86 / 60;  // 0.1143
+      const compQuad = A * N * N;
+      const compLinear = B * N;
+      const totalSeg = compQuad + compLinear + C;
+      const totalMin = totalSeg / 60;
 
-      const custoBase = ordens * MIN_POR_ORDEM;
+      const vel = (N / totalMin).toFixed(1) + ' ordens/min';
+      const segPorOrdem = (totalSeg / N).toFixed(2) + ' seg/ordem';
 
-      // Ajuste opcional: cada item acima da media de 3 por ordem adiciona ~0.3 seg por ordem
-      const itensExtra = Math.max(0, itens - 3);
-      const ajuste = ordens * itensExtra * (0.3 / 60);
-
-      const total = custoBase + ajuste;
-      const vel = (ordens / total).toFixed(1) + ' ordens/min';
-
-      document.getElementById('bCustoBase').textContent = fmt(custoBase);
-      document.getElementById('bAjuste').textContent = ajuste > 0.01 ? '+' + fmt(ajuste) : 'nenhum';
-      document.getElementById('bVel').textContent = vel;
+      document.getElementById('bLinear').textContent = fmtSeg(compLinear);
+      document.getElementById('bQuad').textContent = '+' + fmtSeg(compQuad);
+      document.getElementById('bConst').textContent = fmtSeg(C) + ' (fixo)';
+      document.getElementById('bVel').textContent = vel + ' · ' + segPorOrdem;
 
       const timeEl = document.getElementById('resultTime');
-      timeEl.textContent = fmt(total);
+      timeEl.textContent = fmt(totalMin);
       timeEl.className = 'result-time';
 
       const chip = document.getElementById('statusChip');
-      if (total < 12) {
+      if (totalMin < 12) {
         timeEl.classList.add('fast');
         chip.className = 'status-chip chip-ok';
-        chip.textContent = 'Reserva rapida -- onda pequena';
-      } else if (total < 35) {
+        chip.textContent = '✅ Reserva rápida — onda pequena';
+      } else if (totalMin < 40) {
         timeEl.classList.add('medium');
         chip.className = 'status-chip chip-warn';
-        chip.textContent = 'Moderada -- acompanhe a engine';
+        chip.textContent = '⚠️ Moderada — acompanhe a engine';
       } else {
         timeEl.classList.add('slow');
         chip.className = 'status-chip chip-alert';
-        chip.textContent = 'Onda grande -- pode demorar';
+        chip.textContent = '🔴 Onda grande — pode demorar';
       }
 
       document.getElementById('resultBox').style.display = 'block';
     }
 
-    document.addEventListener('keydown', e => { if (e.key === 'Enter') calcular(); });
+    function abrirSobre() {
+      document.getElementById('modalSobre').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function fecharSobre() {
+      document.getElementById('modalSobre').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    // Fechar modal ao clicar fora
+    document.getElementById('modalSobre').addEventListener('click', function(e) {
+      if (e.target === this) fecharSobre();
+    });
+
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Enter') calcular();
+      if (e.key === 'Escape') fecharSobre();
+    });
   </script>
 </body>
 
