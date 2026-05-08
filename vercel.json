@@ -1,7 +1,4 @@
 {
   "version": 2,
-  "public": true,
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/previsao_onda.html" }
-  ]
+  "cleanUrls": true
 }
