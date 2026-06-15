@@ -22,13 +22,15 @@ import csv
 from datetime import datetime, timedelta
 from collections import defaultdict
 
-# Diretórios de logs
-LOG_DIRS = [
-    r"C:\Users\leonardo.oliveira\Documents\Logs de onda\2026_03_04\DynamicReservations",
-    r"C:\Users\leonardo.oliveira\Documents\Logs de onda\2026_03_05\DynamicReservations",
-    r"C:\Users\leonardo.oliveira\Documents\Logs de onda\2026_03_06\DynamicReservations",
-    r"C:\Users\leonardo.oliveira\Documents\Logs de onda\2026_05_06\DynamicReservations",
-]
+# Diretórios de logs dinâmicos
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+LOG_DIRS = []
+for item in sorted(os.listdir(BASE_DIR)):
+    item_path = os.path.join(BASE_DIR, item)
+    if os.path.isdir(item_path) and re.match(r"^\d{4}_\d{2}_\d{2}$", item):
+        dyn_path = os.path.join(item_path, "DynamicReservations")
+        if os.path.exists(dyn_path):
+            LOG_DIRS.append(dyn_path)
 
 # Regex patterns
 RE_TIME = re.compile(r'^\[(\d{2}:\d{2}:\d{2}\.\d{3})\]')

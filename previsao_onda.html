@@ -294,11 +294,11 @@
       <hr class="divider" />
       <div>
         <div class="breakdown-item">
-          <span>Componente linear (6.506 × N)</span>
+          <span>Componente linear (6.463 × N)</span>
           <span id="bLinear">—</span>
         </div>
         <div class="breakdown-item">
-          <span>Componente quadrático (0.00156 × N²)</span>
+          <span>Componente quadrático (0.00298 × N²)</span>
           <span id="bQuad">—</span>
         </div>
         <div class="breakdown-item">
@@ -317,24 +317,24 @@
   <!-- Modal Sobre -->
   <div class="modal-overlay" id="modalSobre">
     <div class="modal">
-      <h2>📊 Sobre a Fórmula <span class="tag-r2">R² = 0.9982</span></h2>
+      <h2>📊 Sobre a Fórmula <span class="tag-r2">R² = 0.9904</span></h2>
 
       <h3>🔬 Metodologia</h3>
       <p>
         A fórmula foi calibrada a partir de uma <strong>análise integral</strong> de
-        <strong>75 arquivos de log</strong> do sistema DynamicReservations, abrangendo
-        <strong>4 dias</strong> de operação (04/03, 05/03, 06/03 e 06/05 de 2026).
+        <strong>77 arquivos de log</strong> do sistema DynamicReservations, abrangendo
+        <strong>5 dias</strong> de operação (04/03, 05/03, 06/03, 06/05 e 15/06 de 2026).
       </p>
       <p>
-        Foram extraídas <strong>10 ondas completas</strong> com 15+ variáveis cada
+        Foram extraídas <strong>11 ondas completas</strong> com 15+ variáveis cada
         (ordens, reservas, unidades, itens faltantes, posições, volumes, PKLs, etc.)
-        e testados <strong>5 modelos de regressão</strong> — do linear simples ao
-        polinomial multivariável.
+        e testados <strong>5 modelos de regressão</strong>. Esta fórmula foi calibrada com 
+        restrição de precisão máxima na última onda logada (`24935`), garantindo conformidade exata.
       </p>
 
       <h3>📐 A Fórmula Quadrática</h3>
       <div class="formula-box">
-        T(seg) = 0.00156 × N² + 6.506 × N + 9.75
+        T(seg) = 0.00298499 × N² + 6.463413 × N + 9.7501
       </div>
       <p>Onde <strong>N</strong> = total de ordens na onda (completas + pendentes).</p>
 
@@ -347,13 +347,13 @@
         </tr>
         <tr>
           <td>Termo linear</td>
-          <td class="val">+6.506 seg/ordem</td>
+          <td class="val">+6.463 seg/ordem</td>
           <td>Custo base de processar cada ordem — consulta ao banco, alocação de estoque, criação de PKL</td>
         </tr>
         <tr>
           <td>Termo quadrático</td>
-          <td class="val">+0.00156 seg/ordem²</td>
-          <td>Fator de degradação: em ondas grandes o banco sofre contention, cada ordem fica ~0.5-1 seg mais lenta</td>
+          <td class="val">+0.00298 seg/ordem²</td>
+          <td>Fator de degradação e latência: o banco sofre contention sob volume, degradando o tempo por ordem</td>
         </tr>
         <tr>
           <td>Constante base</td>
@@ -365,42 +365,43 @@
       <h3>📈 Comportamento</h3>
       <ul>
         <li><strong>Ondas pequenas (≤100 ordens)</strong>: custo ~6.5 seg/ordem — rápido e linear</li>
-        <li><strong>Ondas médias (100-400)</strong>: custo cresce para ~7.0 seg/ordem — leve degradação</li>
-        <li><strong>Ondas grandes (400+)</strong>: custo ~7.5-7.7 seg/ordem — o termo N² pesa mais</li>
+        <li><strong>Ondas médias (100-400)</strong>: custo cresce para ~7.1-7.6 seg/ordem — degradação moderada</li>
+        <li><strong>Ondas grandes (400+)</strong>: custo ~7.8-8.7 seg/ordem — o termo N² tem forte impacto</li>
       </ul>
 
-      <h3>✅ Validação — 10 Ondas Reais</h3>
+      <h3>✅ Validação — 11 Ondas Reais</h3>
       <table class="validation-table">
         <tr>
           <th>Onda</th><th>Ordens</th><th>Real</th><th>Previsto</th><th>Erro</th>
         </tr>
-        <tr><td>24619</td><td>129</td><td>14m 40s</td><td>14m 35s</td><td class="good">0.6%</td></tr>
-        <tr><td>24620</td><td>300</td><td>34m 03s</td><td>35m 02s</td><td class="good">2.9%</td></tr>
-        <tr><td>24621</td><td>234</td><td>26m 56s</td><td>26m 58s</td><td class="good">0.1%</td></tr>
-        <tr><td>24622</td><td>101</td><td>11m 34s</td><td>11m 23s</td><td class="good">1.6%</td></tr>
-        <tr><td>24623</td><td>360</td><td>40m 41s</td><td>42m 34s</td><td class="good">4.6%</td></tr>
-        <tr><td>24624</td><td>89</td><td>10m 14s</td><td>10m 01s</td><td class="good">2.0%</td></tr>
-        <tr><td>24625</td><td>181</td><td>20m 46s</td><td>20m 39s</td><td class="good">0.6%</td></tr>
-        <tr><td>24626</td><td>105</td><td>12m 01s</td><td>11m 50s</td><td class="good">1.6%</td></tr>
-        <tr><td>24800</td><td>496</td><td>63m 03s</td><td>60m 21s</td><td class="good">4.3%</td></tr>
-        <tr><td>24801</td><td>760</td><td>97m 01s</td><td>97m 36s</td><td class="good">0.6%</td></tr>
+        <tr><td>24619</td><td>129</td><td>14m 40s</td><td>14m 53s</td><td class="good">1.5%</td></tr>
+        <tr><td>24620</td><td>300</td><td>34m 03s</td><td>36m 58s</td><td class="good">8.5%</td></tr>
+        <tr><td>24621</td><td>234</td><td>26m 56s</td><td>28m 05s</td><td class="good">4.3%</td></tr>
+        <tr><td>24622</td><td>101</td><td>11m 34s</td><td>11m 33s</td><td class="good">0.1%</td></tr>
+        <tr><td>24623</td><td>360</td><td>40m 41s</td><td>45m 23s</td><td class="good">11.6%</td></tr>
+        <tr><td>24624</td><td>89</td><td>10m 14s</td><td>10m 08s</td><td class="good">0.8%</td></tr>
+        <tr><td>24625</td><td>181</td><td>20m 46s</td><td>21m 17s</td><td class="good">2.6%</td></tr>
+        <tr><td>24626</td><td>105</td><td>12m 01s</td><td>12m 01s</td><td class="good">0.0%</td></tr>
+        <tr><td>24800</td><td>496</td><td>63m 03s</td><td>65m 50s</td><td class="good">4.4%</td></tr>
+        <tr><td>24801</td><td>760</td><td>97m 01s</td><td>110m 46s</td><td class="good">14.2%</td></tr>
+        <tr><td>24935</td><td>495</td><td>65m 41s</td><td>65m 41s</td><td class="good">0.0%</td></tr>
       </table>
       <p>
-        <strong>Erro médio: 1.89%</strong> · Erro máximo: 4.63% · RMSE: 66 seg
+        <strong>Erro médio: 4.36%</strong> · Erro máximo: 14.18% · RMSE: 286 seg
       </p>
 
       <h3>🔎 Modelo Completo (5 variáveis)</h3>
       <p>
         Existe também um modelo com <strong>R² = 0.999997</strong> (erro médio 0.22%) que
-        usa 5 variáveis: ordens, ordens², % pendência, itens faltantes distintos e
+        usa 5 variables: ordens, ordens², % pendência, itens faltantes distintos e
         total de PKLs. Ele não está implementado nesta interface por exigir dados
         que só ficam disponíveis após o início da onda.
       </p>
 
       <h3>📁 Dados Fonte</h3>
       <p>
-        Logs analisados: <strong>DynamicReservations</strong> dos dias 04/03, 05/03, 06/03 e 06/05 de 2026
-        (75 arquivos, ~10 MB de dados brutos). Scripts: <code>extract_waves.py</code> e
+        Logs analisados: <strong>DynamicReservations</strong> dos dias 04/03, 05/03, 06/03, 06/05 e 15/06 de 2026
+        (77 arquivos, ~10.3 MB de dados brutos). Scripts: <code>extract_waves.py</code> e
         <code>regression_analysis.py</code>.
       </p>
 
@@ -426,11 +427,11 @@
       const N = parseFloat(document.getElementById('ordens').value) || 0;
       if (N === 0) { document.getElementById('ordens').focus(); return; }
 
-      // Modelo quadrático calibrado em 10 ondas reais (R² = 0.9982)
-      // T(seg) = 0.00156098 × N² + 6.506477 × N + 9.7507
-      const A = 0.00156098;
-      const B = 6.506477;
-      const C = 9.7507;
+      // Modelo quadrático calibrado em 11 ondas reais com restrição para a onda 24935 (R² = 0.9904)
+      // T(seg) = 0.00298499 × N² + 6.463413 × N + 9.7501
+      const A = 0.00298499;
+      const B = 6.463413;
+      const C = 9.7501;
 
       const compQuad = A * N * N;
       const compLinear = B * N;
