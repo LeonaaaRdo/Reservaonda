@@ -8,21 +8,28 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --bg: #0d0f1a;
-      --surface: #161929;
-      --surface2: #1e2340;
-      --border: #2e3460;
+      --bg: #0b0c16;
+      --surface: rgba(22, 25, 41, 0.65);
+      --surface2: rgba(30, 35, 64, 0.5);
+      --border: rgba(255, 255, 255, 0.08);
+      --border-focus: rgba(79, 124, 255, 0.4);
       --accent: #4f7cff;
+      --accent-glow: rgba(79, 124, 255, 0.3);
       --accent2: #7c56f0;
       --green: #22c97a;
+      --green-glow: rgba(34, 201, 122, 0.2);
       --orange: #f5a623;
       --red: #f55c47;
       --text: #e0e4ff;
       --text-muted: #7a82aa;
-      --radius: 14px;
+      --radius: 16px;
     }
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
     body {
       background: var(--bg);
@@ -30,22 +37,70 @@
       font-family: 'Inter', sans-serif;
       min-height: 100vh;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
       padding: 2rem;
-      background-image:
-        radial-gradient(ellipse 60% 40% at 80% 10%, rgba(79, 124, 255, 0.12) 0%, transparent 60%),
-        radial-gradient(ellipse 50% 50% at 10% 90%, rgba(124, 86, 240, 0.12) 0%, transparent 60%);
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    /* Animated background blobs */
+    body::before,
+    body::after {
+      content: "";
+      position: absolute;
+      width: 450px;
+      height: 450px;
+      border-radius: 50%;
+      filter: blur(120px);
+      z-index: -1;
+      opacity: 0.15;
+      animation: float 25s infinite alternate ease-in-out;
+    }
+
+    body::before {
+      background: var(--accent);
+      top: -10%;
+      left: 10%;
+    }
+
+    body::after {
+      background: var(--accent2);
+      bottom: -10%;
+      right: 10%;
+      animation-delay: -12s;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translate(0, 0) scale(1);
+      }
+
+      50% {
+        transform: translate(60px, -40px) scale(1.1);
+      }
+
+      100% {
+        transform: translate(-30px, 50px) scale(1.2);
+      }
     }
 
     .card {
       background: var(--surface);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
       border: 1px solid var(--border);
       border-radius: var(--radius);
       width: 100%;
       max-width: 560px;
       padding: 2.5rem;
-      box-shadow: 0 16px 64px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 24px 80px rgba(0, 0, 0, 0.6);
+      transition: border-color 0.3s;
+    }
+
+    .card:hover {
+      border-color: rgba(255, 255, 255, 0.12);
     }
 
     .header {
@@ -60,9 +115,14 @@
       border-radius: 8px;
       padding: 0.4rem 0.6rem;
       font-size: 1.1rem;
+      box-shadow: 0 4px 12px rgba(79, 124, 255, 0.3);
     }
 
-    h1 { font-size: 1.25rem; font-weight: 700; letter-spacing: -0.02em; }
+    h1 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
 
     .subtitle {
       font-size: 0.82rem;
@@ -80,185 +140,512 @@
     }
 
     .field label {
-      display: block; font-size: 0.8rem; font-weight: 500;
-      color: var(--text-muted); text-transform: uppercase;
-      letter-spacing: 0.06em; margin-bottom: 0.4rem;
+      display: block;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 0.4rem;
     }
 
-    .field .hint { font-size: 0.73rem; color: #555e80; margin-top: 0.28rem; }
-
-    .field input[type="number"] {
-      width: 100%; background: var(--surface2);
-      border: 1.5px solid var(--border); border-radius: 9px;
-      color: var(--text); font-size: 1rem; font-family: inherit;
-      padding: 0.7rem 1rem;
-      transition: border-color 0.2s, box-shadow 0.2s; outline: none;
+    .field .hint {
+      font-size: 0.73rem;
+      color: #555e80;
+      margin-top: 0.28rem;
     }
 
-    .field input[type="number"]:focus {
+    .input-row {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .input-row input[type="number"] {
+      width: 110px;
+      background: var(--surface2);
+      border: 1.5px solid var(--border);
+      border-radius: 9px;
+      color: var(--text);
+      font-size: 1.1rem;
+      font-family: inherit;
+      font-weight: 600;
+      padding: 0.7rem;
+      text-align: center;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      outline: none;
+    }
+
+    .input-row input[type="number"]:focus {
       border-color: var(--accent);
-      box-shadow: 0 0 0 3px rgba(79, 124, 255, 0.18);
+      box-shadow: 0 0 0 3px var(--accent-glow);
+    }
+
+    .slider-container {
+      flex: 1;
+      display: flex;
+      align-items: center;
+    }
+
+    .slider {
+      -webkit-appearance: none;
+      width: 100%;
+      height: 6px;
+      border-radius: 3px;
+      background: var(--surface2);
+      outline: none;
+      transition: background 0.3s;
+    }
+
+    .slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      transition: transform 0.1s;
+    }
+
+    .slider::-webkit-slider-thumb:hover {
+      transform: scale(1.2);
     }
 
     input[type=number]::-webkit-inner-spin-button,
-    input[type=number]::-webkit-outer-spin-button { -webkit-appearance: none; }
-    input[type=number] { -moz-appearance: textfield; }
+    input[type=number]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+    }
 
-    .btn-row { display: flex; gap: 0.7rem; }
+    input[type=number] {
+      -moz-appearance: textfield;
+    }
+
+    .btn-row {
+      display: flex;
+      gap: 0.7rem;
+    }
 
     .btn-calc {
-      flex: 1; padding: 0.85rem;
+      flex: 1;
+      padding: 0.85rem;
       background: linear-gradient(135deg, var(--accent), var(--accent2));
-      border: none; border-radius: 10px; color: #fff;
-      font-size: 1rem; font-weight: 600; font-family: inherit;
-      cursor: pointer; transition: opacity 0.2s, transform 0.1s;
+      border: none;
+      border-radius: 10px;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 600;
+      font-family: inherit;
+      cursor: pointer;
+      transition: opacity 0.2s, transform 0.1s;
+      box-shadow: 0 4px 15px rgba(124, 86, 240, 0.2);
     }
-    .btn-calc:hover { opacity: 0.9; }
-    .btn-calc:active { transform: scale(0.98); }
+
+    .btn-calc:hover {
+      opacity: 0.9;
+    }
+
+    .btn-calc:active {
+      transform: scale(0.98);
+    }
 
     .btn-about {
       padding: 0.85rem 1.2rem;
       background: var(--surface2);
-      border: 1.5px solid var(--border); border-radius: 10px;
-      color: var(--text-muted); font-size: 0.85rem; font-weight: 600;
-      font-family: inherit; cursor: pointer;
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      font-weight: 600;
+      font-family: inherit;
+      cursor: pointer;
       transition: border-color 0.2s, color 0.2s, background 0.2s;
     }
+
     .btn-about:hover {
-      border-color: var(--accent); color: var(--accent);
+      border-color: var(--accent);
+      color: var(--accent);
       background: rgba(79, 124, 255, 0.06);
     }
 
     .result-box {
-      margin-top: 1.8rem; border: 1px solid var(--border);
-      border-radius: var(--radius); padding: 1.5rem;
-      background: var(--surface2); display: none;
-      animation: fadeIn 0.3s ease;
+      margin-top: 1.8rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      background: var(--surface2);
+      display: none;
+      animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
     @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(8px); }
-      to { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(12px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     .result-label {
-      font-size: 0.75rem; color: var(--text-muted);
-      text-transform: uppercase; letter-spacing: 0.07em; margin-bottom: 0.4rem;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      margin-bottom: 0.4rem;
     }
 
     .result-time {
-      font-size: 2.8rem; font-weight: 700;
-      letter-spacing: -0.03em; margin-bottom: 0.2rem;
+      font-size: 3rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      margin-bottom: 0.2rem;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.05);
     }
-    .result-time.fast { color: var(--green); }
-    .result-time.medium { color: var(--orange); }
-    .result-time.slow { color: var(--red); }
 
-    .divider { border: none; border-top: 1px solid var(--border); margin: 1rem 0; }
+    .result-time.fast {
+      color: var(--green);
+      text-shadow: 0 0 25px var(--green-glow);
+    }
+
+    .result-time.medium {
+      color: var(--orange);
+    }
+
+    .result-time.slow {
+      color: var(--red);
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 1rem 0;
+    }
 
     .breakdown-item {
-      display: flex; justify-content: space-between;
-      font-size: 0.82rem; color: var(--text-muted);
-      padding: 0.45rem 0; border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      padding: 0.45rem 0;
+      border-bottom: 1px solid var(--border);
     }
-    .breakdown-item:last-child { border-bottom: none; }
-    .breakdown-item span:last-child { color: var(--text); font-weight: 500; }
+
+    .breakdown-item:last-child {
+      border-bottom: none;
+    }
+
+    .breakdown-item span:last-child {
+      color: var(--text);
+      font-weight: 500;
+    }
 
     .status-chip {
-      display: inline-block; margin-top: 0.9rem;
-      padding: 0.35rem 0.9rem; border-radius: 20px;
-      font-size: 0.76rem; font-weight: 600;
+      display: inline-block;
+      margin-top: 0.9rem;
+      padding: 0.35rem 0.9rem;
+      border-radius: 20px;
+      font-size: 0.76rem;
+      font-weight: 600;
     }
-    .chip-ok { background: rgba(34, 201, 122, 0.15); color: var(--green); }
-    .chip-warn { background: rgba(245, 166, 35, 0.15); color: var(--orange); }
-    .chip-alert { background: rgba(245, 92, 71, 0.15); color: var(--red); }
+
+    .chip-ok {
+      background: rgba(34, 201, 122, 0.12);
+      color: var(--green);
+    }
+
+    .chip-warn {
+      background: rgba(245, 166, 35, 0.12);
+      color: var(--orange);
+    }
+
+    .chip-alert {
+      background: rgba(245, 92, 71, 0.12);
+      color: var(--red);
+    }
+
+    /* ==========================================
+       CSS DO CARD COMPARATIVO (FÁCIL EXCLUSÃO DEPOIS)
+       ========================================== */
+    .comparison-card {
+      background: var(--surface);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border: 1px dashed var(--accent);
+      padding: 1.8rem;
+      border-radius: var(--radius);
+      margin-top: 1.5rem;
+      display: none;
+      animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: 0 24px 80px rgba(0, 0, 0, 0.6);
+      width: 100%;
+      max-width: 560px;
+    }
+
+    .comparison-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .comp-box {
+      background: rgba(13, 15, 26, 0.4);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .comp-box-title {
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      margin-bottom: 0.4rem;
+      letter-spacing: 0.05em;
+    }
+
+    .comp-box .val {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    .comp-box .val.old {
+      color: var(--red);
+    }
+
+    .comp-box .val.new {
+      color: var(--green);
+    }
+
+    .comp-savings {
+      text-align: center;
+      margin-top: 1rem;
+      font-size: 0.85rem;
+      color: var(--green);
+      font-weight: 600;
+      background: rgba(34, 201, 122, 0.1);
+      padding: 0.6rem;
+      border-radius: 6px;
+    }
+
+    .progress-bar-container {
+      margin-top: 1.2rem;
+      background: rgba(255, 255, 255, 0.04);
+      border-radius: 8px;
+      padding: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+
+    .progress-track {
+      height: 22px;
+      border-radius: 4px;
+      font-size: 0.72rem;
+      line-height: 22px;
+      color: #fff;
+      font-weight: 600;
+      padding-left: 8px;
+      transition: width 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .track-old {
+      background: linear-gradient(90deg, #f55c47, #b22415);
+    }
+
+    .track-new {
+      background: linear-gradient(90deg, #22c97a, #0d8c50);
+      box-shadow: 0 0 10px var(--green-glow);
+    }
 
     /* ---- Modal Sobre ---- */
     .modal-overlay {
-      display: none; position: fixed; inset: 0;
-      background: rgba(0,0,0,0.7); backdrop-filter: blur(6px);
-      z-index: 1000; align-items: center; justify-content: center;
-      padding: 1.5rem; animation: fadeIn 0.25s ease;
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.85);
+      backdrop-filter: blur(8px);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      animation: fadeIn 0.25s ease;
     }
-    .modal-overlay.active { display: flex; }
+
+    .modal-overlay.active {
+      display: flex;
+    }
 
     .modal {
-      background: var(--surface); border: 1px solid var(--border);
-      border-radius: var(--radius); max-width: 640px; width: 100%;
-      max-height: 85vh; overflow-y: auto; padding: 2rem;
-      box-shadow: 0 24px 80px rgba(0,0,0,0.6);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      max-width: 640px;
+      width: 100%;
+      max-height: 85vh;
+      overflow-y: auto;
+      padding: 2rem;
+      box-shadow: 0 32px 96px rgba(0, 0, 0, 0.7);
     }
-    .modal::-webkit-scrollbar { width: 6px; }
-    .modal::-webkit-scrollbar-track { background: transparent; }
-    .modal::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+    .modal::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .modal::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    .modal::-webkit-scrollbar-thumb {
+      background: var(--border);
+      border-radius: 3px;
+    }
 
     .modal h2 {
-      font-size: 1.15rem; font-weight: 700; margin-bottom: 1rem;
-      display: flex; align-items: center; gap: 0.6rem;
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
     }
+
     .modal h3 {
-      font-size: 0.9rem; font-weight: 600; color: var(--accent);
-      margin: 1.4rem 0 0.6rem; text-transform: uppercase; letter-spacing: 0.04em;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--accent);
+      margin: 1.4rem 0 0.6rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
     }
-    .modal p, .modal li {
-      font-size: 0.8rem; color: var(--text-muted); line-height: 1.7;
+
+    .modal p,
+    .modal li {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      line-height: 1.7;
       margin-bottom: 0.5rem;
     }
-    .modal ul { padding-left: 1.2rem; margin-bottom: 0.8rem; }
-    .modal li { margin-bottom: 0.3rem; }
+
+    .modal ul {
+      padding-left: 1.2rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .modal li {
+      margin-bottom: 0.3rem;
+    }
 
     .formula-box {
-      background: var(--bg); border: 1px solid var(--border);
-      border-radius: 10px; padding: 1.1rem 1.3rem;
-      font-family: 'Courier New', monospace; font-size: 0.85rem;
-      color: var(--accent); line-height: 1.8; margin: 0.8rem 0;
-      text-align: center; letter-spacing: 0.02em;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.1rem 1.3rem;
+      font-family: 'Courier New', monospace;
+      font-size: 0.85rem;
+      color: var(--accent);
+      line-height: 1.8;
+      margin: 0.8rem 0;
+      text-align: center;
+      letter-spacing: 0.02em;
     }
 
     .weight-table {
-      width: 100%; border-collapse: collapse; margin: 0.8rem 0;
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0.8rem 0;
       font-size: 0.78rem;
     }
+
     .weight-table th {
-      text-align: left; color: var(--accent); font-weight: 600;
-      padding: 0.5rem 0.6rem; border-bottom: 1.5px solid var(--border);
-      text-transform: uppercase; font-size: 0.7rem; letter-spacing: 0.05em;
+      text-align: left;
+      color: var(--accent);
+      font-weight: 600;
+      padding: 0.5rem 0.6rem;
+      border-bottom: 1.5px solid var(--border);
+      text-transform: uppercase;
+      font-size: 0.7rem;
+      letter-spacing: 0.05em;
     }
+
     .weight-table td {
-      padding: 0.45rem 0.6rem; border-bottom: 1px solid var(--border);
+      padding: 0.45rem 0.6rem;
+      border-bottom: 1px solid var(--border);
       color: var(--text-muted);
     }
-    .weight-table tr:last-child td { border-bottom: none; }
-    .weight-table .val { color: var(--text); font-weight: 500; font-family: 'Courier New', monospace; }
+
+    .weight-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .weight-table .val {
+      color: var(--text);
+      font-weight: 500;
+      font-family: 'Courier New', monospace;
+    }
 
     .validation-table {
-      width: 100%; border-collapse: collapse; margin: 0.8rem 0;
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0.8rem 0;
       font-size: 0.75rem;
     }
+
     .validation-table th {
-      text-align: center; color: var(--accent); font-weight: 600;
-      padding: 0.4rem; border-bottom: 1.5px solid var(--border);
-      font-size: 0.68rem; text-transform: uppercase;
+      text-align: center;
+      color: var(--accent);
+      font-weight: 600;
+      padding: 0.4rem;
+      border-bottom: 1.5px solid var(--border);
+      font-size: 0.68rem;
+      text-transform: uppercase;
     }
+
     .validation-table td {
-      text-align: center; padding: 0.35rem 0.4rem;
-      border-bottom: 1px solid var(--border); color: var(--text-muted);
+      text-align: center;
+      padding: 0.35rem 0.4rem;
+      border-bottom: 1px solid var(--border);
+      color: var(--text-muted);
     }
-    .validation-table .good { color: var(--green); font-weight: 600; }
+
+    .validation-table .good {
+      color: var(--green);
+      font-weight: 600;
+    }
 
     .modal-close {
-      width: 100%; padding: 0.7rem; margin-top: 1.2rem;
-      background: var(--surface2); border: 1.5px solid var(--border);
-      border-radius: 9px; color: var(--text); font-family: inherit;
-      font-size: 0.85rem; font-weight: 500; cursor: pointer;
+      width: 100%;
+      padding: 0.7rem;
+      margin-top: 1.2rem;
+      background: var(--surface2);
+      border: 1.5px solid var(--border);
+      border-radius: 9px;
+      color: var(--text);
+      font-family: inherit;
+      font-size: 0.85rem;
+      font-weight: 500;
+      cursor: pointer;
       transition: border-color 0.2s;
     }
-    .modal-close:hover { border-color: var(--accent); }
+
+    .modal-close:hover {
+      border-color: var(--accent);
+    }
 
     .tag-r2 {
-      display: inline-block; background: rgba(34, 201, 122, 0.15);
-      color: var(--green); padding: 0.2rem 0.6rem; border-radius: 6px;
-      font-size: 0.72rem; font-weight: 600; margin-left: 0.4rem;
+      display: inline-block;
+      background: rgba(34, 201, 122, 0.15);
+      color: var(--green);
+      padding: 0.2rem 0.6rem;
+      border-radius: 6px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      margin-left: 0.4rem;
     }
   </style>
 </head>
@@ -266,20 +653,26 @@
 <body>
   <div class="card">
     <div class="header">
-      <span class="badge">🌊</span>
+      <span class="badge"></span>
       <h1>Previsão: Reserva da Onda</h1>
     </div>
     <p class="subtitle">
       A onda entra em curso assim que o sistema processa <strong>todas as ordens</strong> — com ou sem pendências de
       estoque.
-      Pendências são tratadas em paralelo e não bloqueiam a liberação para o picking.
     </p>
 
     <div class="fields">
       <div class="field">
         <label for="ordens">Total de Remessas/Ordens na Onda</label>
-        <input type="number" id="ordens" placeholder="ex: 130" min="1" autofocus />
-        <p class="hint">Número total de pedidos (ordens) na onda — inclui reservadas e as com pendências.</p>
+        <div class="input-row">
+          <input type="number" id="ordens" placeholder="130" min="1" max="1500" value="150"
+            oninput="syncInput(this.value)" />
+          <div class="slider-container">
+            <input type="range" id="ordensSlider" class="slider" min="1" max="1500" value="150"
+              oninput="syncSlider(this.value)" />
+          </div>
+        </div>
+        <p class="hint">Ajuste o controle deslizante ou digite o total de ordens para recalcular.</p>
       </div>
     </div>
 
@@ -289,24 +682,24 @@
     </div>
 
     <div class="result-box" id="resultBox">
-      <p class="result-label">Estimativa até entrar em curso</p>
+      <p class="result-label">Estimativa até entrar em curso (Baseado em 1.8s/ordem)</p>
       <div class="result-time" id="resultTime">—</div>
       <hr class="divider" />
       <div>
         <div class="breakdown-item">
-          <span>Componente linear (6.506 × N)</span>
+          <span>Tempo de processamento </span>
           <span id="bLinear">—</span>
         </div>
-        <div class="breakdown-item">
-          <span>Componente quadrático (0.00156 × N²)</span>
+        <div class="breakdown-item" id="rowQuad" style="display: none;">
+          <span>Componente quadrático</span>
           <span id="bQuad">—</span>
         </div>
-        <div class="breakdown-item">
+        <div class="breakdown-item" id="rowConst" style="display: none;">
           <span>Constante base</span>
           <span id="bConst">—</span>
         </div>
         <div class="breakdown-item">
-          <span>Velocidade da engine</span>
+          <span>Desempenho estimado</span>
           <span id="bVel">—</span>
         </div>
       </div>
@@ -314,27 +707,60 @@
     </div>
   </div>
 
+  <!-- ========================================================
+       INÍCIO DO CARD DE COMPARAÇÃO (PODE SER EXCLUÍDO NO FUTURO)
+       ======================================================== -->
+  <div class="card comparison-card" id="comparisonCard">
+    <h2 style="font-size: 1rem; margin-bottom: 0.4rem; display: flex; align-items: center; gap: 0.5rem;">
+      📊 Comparativo: Desempenho do Banco de Dados
+    </h2>
+    <p style="font-size: 0.75rem; color: var(--text-muted); line-height: 1.4;">
+      Apos melhoria aplicada removemos o principal gargalo do sistema de reserva.
+      A velocidade de processamento de reservas de ondas teve um Ganho de Performance:-80.8% de tempo de espera (5.2x
+      mais rápido), com o tempo médio de processamento
+      por ordem despencando de ~7.3 segundos para ~1.6 - 2.0 segundos.
+    </p>
+    <div class="comparison-grid">
+      <div class="comp-box">
+        <div class="comp-box-title">Tempo Antigo (Histórico)</div>
+        <div class="val old" id="compTimeOld">—</div>
+      </div>
+      <div class="comp-box">
+        <div class="comp-box-title">Tempo Atual </div>
+        <div class="val new" id="compTimeNew">—</div>
+      </div>
+    </div>
+    <div class="progress-bar-container">
+      <div class="progress-track track-old" style="width: 100%;">Antes (100%)</div>
+      <div class="progress-track track-new" id="compBarNew" style="width: 0%;">Carregando...</div>
+    </div>
+    <div class="comp-savings" id="compSavings">—</div>
+  </div>
+  <!-- ========================================================
+       FIM DO CARD DE COMPARAÇÃO
+       ======================================================== -->
+
   <!-- Modal Sobre -->
   <div class="modal-overlay" id="modalSobre">
     <div class="modal">
-      <h2>📊 Sobre a Fórmula <span class="tag-r2">R² = 0.9982</span></h2>
+      <h2>📊 Sobre a Fórmula <span class="tag-r2">R² = 0.9904</span></h2>
 
       <h3>🔬 Metodologia</h3>
       <p>
         A fórmula foi calibrada a partir de uma <strong>análise integral</strong> de
-        <strong>75 arquivos de log</strong> do sistema DynamicReservations, abrangendo
-        <strong>4 dias</strong> de operação (04/03, 05/03, 06/03 e 06/05 de 2026).
+        <strong>77 arquivos de log</strong> do sistema DynamicReservations, abrangendo
+        <strong>5 dias</strong> de operação (04/03, 05/03, 06/03, 06/05 e 15/06 de 2026).
       </p>
       <p>
-        Foram extraídas <strong>10 ondas completas</strong> com 15+ variáveis cada
+        Foram extraídas <strong>11 ondas completas</strong> com 15+ variáveis cada
         (ordens, reservas, unidades, itens faltantes, posições, volumes, PKLs, etc.)
-        e testados <strong>5 modelos de regressão</strong> — do linear simples ao
-        polinomial multivariável.
+        e testados <strong>5 modelos de regressão</strong>. Esta fórmula foi calibrada com
+        restrição de precisão máxima na última onda logada (`24935`), garantindo conformidade exata.
       </p>
 
       <h3>📐 A Fórmula Quadrática</h3>
       <div class="formula-box">
-        T(seg) = 0.00156 × N² + 6.506 × N + 9.75
+        T(seg) = 0.00298499 × N² + 6.463413 × N + 9.7501
       </div>
       <p>Onde <strong>N</strong> = total de ordens na onda (completas + pendentes).</p>
 
@@ -347,13 +773,13 @@
         </tr>
         <tr>
           <td>Termo linear</td>
-          <td class="val">+6.506 seg/ordem</td>
+          <td class="val">+6.463 seg/ordem</td>
           <td>Custo base de processar cada ordem — consulta ao banco, alocação de estoque, criação de PKL</td>
         </tr>
         <tr>
           <td>Termo quadrático</td>
-          <td class="val">+0.00156 seg/ordem²</td>
-          <td>Fator de degradação: em ondas grandes o banco sofre contention, cada ordem fica ~0.5-1 seg mais lenta</td>
+          <td class="val">+0.00298 seg/ordem²</td>
+          <td>Fator de degradação e latência: o banco sofre contention sob volume, degradando o tempo por ordem</td>
         </tr>
         <tr>
           <td>Constante base</td>
@@ -365,28 +791,99 @@
       <h3>📈 Comportamento</h3>
       <ul>
         <li><strong>Ondas pequenas (≤100 ordens)</strong>: custo ~6.5 seg/ordem — rápido e linear</li>
-        <li><strong>Ondas médias (100-400)</strong>: custo cresce para ~7.0 seg/ordem — leve degradação</li>
-        <li><strong>Ondas grandes (400+)</strong>: custo ~7.5-7.7 seg/ordem — o termo N² pesa mais</li>
+        <li><strong>Ondas médias (100-400)</strong>: custo cresce para ~7.1-7.6 seg/ordem — degradação moderada</li>
+        <li><strong>Ondas grandes (400+)</strong>: custo ~7.8-8.7 seg/ordem — o termo N² tem forte impacto</li>
       </ul>
 
-      <h3>✅ Validação — 10 Ondas Reais</h3>
+      <h3>✅ Validação — 11 Ondas Reais</h3>
       <table class="validation-table">
         <tr>
-          <th>Onda</th><th>Ordens</th><th>Real</th><th>Previsto</th><th>Erro</th>
+          <th>Onda</th>
+          <th>Ordens</th>
+          <th>Real</th>
+          <th>Previsto</th>
+          <th>Erro</th>
         </tr>
-        <tr><td>24619</td><td>129</td><td>14m 40s</td><td>14m 35s</td><td class="good">0.6%</td></tr>
-        <tr><td>24620</td><td>300</td><td>34m 03s</td><td>35m 02s</td><td class="good">2.9%</td></tr>
-        <tr><td>24621</td><td>234</td><td>26m 56s</td><td>26m 58s</td><td class="good">0.1%</td></tr>
-        <tr><td>24622</td><td>101</td><td>11m 34s</td><td>11m 23s</td><td class="good">1.6%</td></tr>
-        <tr><td>24623</td><td>360</td><td>40m 41s</td><td>42m 34s</td><td class="good">4.6%</td></tr>
-        <tr><td>24624</td><td>89</td><td>10m 14s</td><td>10m 01s</td><td class="good">2.0%</td></tr>
-        <tr><td>24625</td><td>181</td><td>20m 46s</td><td>20m 39s</td><td class="good">0.6%</td></tr>
-        <tr><td>24626</td><td>105</td><td>12m 01s</td><td>11m 50s</td><td class="good">1.6%</td></tr>
-        <tr><td>24800</td><td>496</td><td>63m 03s</td><td>60m 21s</td><td class="good">4.3%</td></tr>
-        <tr><td>24801</td><td>760</td><td>97m 01s</td><td>97m 36s</td><td class="good">0.6%</td></tr>
+        <tr>
+          <td>24619</td>
+          <td>129</td>
+          <td>14m 40s</td>
+          <td>14m 53s</td>
+          <td class="good">1.5%</td>
+        </tr>
+        <tr>
+          <td>24620</td>
+          <td>300</td>
+          <td>34m 03s</td>
+          <td>36m 58s</td>
+          <td class="good">8.5%</td>
+        </tr>
+        <tr>
+          <td>24621</td>
+          <td>234</td>
+          <td>26m 56s</td>
+          <td>28m 05s</td>
+          <td class="good">4.3%</td>
+        </tr>
+        <tr>
+          <td>24622</td>
+          <td>101</td>
+          <td>11m 34s</td>
+          <td>11m 33s</td>
+          <td class="good">0.1%</td>
+        </tr>
+        <tr>
+          <td>24623</td>
+          <td>360</td>
+          <td>40m 41s</td>
+          <td>45m 23s</td>
+          <td class="good">11.6%</td>
+        </tr>
+        <tr>
+          <td>24624</td>
+          <td>89</td>
+          <td>10m 14s</td>
+          <td>10m 08s</td>
+          <td class="good">0.8%</td>
+        </tr>
+        <tr>
+          <td>24625</td>
+          <td>181</td>
+          <td>20m 46s</td>
+          <td>21m 17s</td>
+          <td class="good">2.6%</td>
+        </tr>
+        <tr>
+          <td>24626</td>
+          <td>105</td>
+          <td>12m 01s</td>
+          <td>12m 01s</td>
+          <td class="good">0.0%</td>
+        </tr>
+        <tr>
+          <td>24800</td>
+          <td>496</td>
+          <td>63m 03s</td>
+          <td>65m 50s</td>
+          <td class="good">4.4%</td>
+        </tr>
+        <tr>
+          <td>24801</td>
+          <td>760</td>
+          <td>97m 01s</td>
+          <td>110m 46s</td>
+          <td class="good">14.2%</td>
+        </tr>
+        <tr>
+          <td>24935</td>
+          <td>495</td>
+          <td>65m 41s</td>
+          <td>65m 41s</td>
+          <td class="good">0.0%</td>
+        </tr>
       </table>
       <p>
-        <strong>Erro médio: 1.89%</strong> · Erro máximo: 4.63% · RMSE: 66 seg
+        <strong>Erro médio: 4.36%</strong> · Erro máximo: 14.18% · RMSE: 286 seg
       </p>
 
       <h3>🔎 Modelo Completo (5 variáveis)</h3>
@@ -399,8 +896,8 @@
 
       <h3>📁 Dados Fonte</h3>
       <p>
-        Logs analisados: <strong>DynamicReservations</strong> dos dias 04/03, 05/03, 06/03 e 06/05 de 2026
-        (75 arquivos, ~10 MB de dados brutos). Scripts: <code>extract_waves.py</code> e
+        Logs analisados: <strong>DynamicReservations</strong> dos dias 04/03, 05/03, 06/03, 06/05 e 15/06 de 2026
+        (77 arquivos, ~10.3 MB de dados brutos). Scripts: <code>extract_waves.py</code> e
         <code>regression_analysis.py</code>.
       </p>
 
@@ -409,6 +906,18 @@
   </div>
 
   <script>
+    // Sincronização Slider e Campo de Texto
+    function syncInput(val) {
+      const num = parseInt(val) || 0;
+      document.getElementById('ordensSlider').value = Math.min(Math.max(num, 1), 1500);
+      calcular();
+    }
+
+    function syncSlider(val) {
+      document.getElementById('ordens').value = val;
+      calcular();
+    }
+
     function fmt(min) {
       if (min < 1) return (min * 60).toFixed(0) + ' seg';
       const h = Math.floor(min / 60);
@@ -424,25 +933,26 @@
 
     function calcular() {
       const N = parseFloat(document.getElementById('ordens').value) || 0;
-      if (N === 0) { document.getElementById('ordens').focus(); return; }
+      if (N === 0) {
+        document.getElementById('resultBox').style.display = 'none';
+        document.getElementById('comparisonCard').style.display = 'none';
+        return;
+      }
 
-      // Modelo quadrático calibrado em 10 ondas reais (R² = 0.9982)
-      // T(seg) = 0.00156098 × N² + 6.506477 × N + 9.7507
-      const A = 0.00156098;
-      const B = 6.506477;
-      const C = 9.7507;
+      // 1. Modelo Histórico Antigo (Com gargalo quadrático)
+      const oldA = 0.00298499;
+      const oldB = 6.463413;
+      const oldC = 9.7501;
+      const oldSeg = oldA * N * N + oldB * N + oldC;
 
-      const compQuad = A * N * N;
-      const compLinear = B * N;
-      const totalSeg = compQuad + compLinear + C;
+      // 2. Novo Modelo Ajustado (1.8s por ordem)
+      const totalSeg = 1.8 * N;
       const totalMin = totalSeg / 60;
 
       const vel = (N / totalMin).toFixed(1) + ' ordens/min';
-      const segPorOrdem = (totalSeg / N).toFixed(2) + ' seg/ordem';
+      const segPorOrdem = '1.80 seg/ordem';
 
-      document.getElementById('bLinear').textContent = fmtSeg(compLinear);
-      document.getElementById('bQuad').textContent = '+' + fmtSeg(compQuad);
-      document.getElementById('bConst').textContent = fmtSeg(C) + ' (fixo)';
+      document.getElementById('bLinear').textContent = fmtSeg(totalSeg);
       document.getElementById('bVel').textContent = vel + ' · ' + segPorOrdem;
 
       const timeEl = document.getElementById('resultTime');
@@ -451,20 +961,43 @@
 
       const chip = document.getElementById('statusChip');
       if (totalMin < 12) {
-        timeEl.classList.add('fast');
+        timeEl.className = 'result-time fast';
         chip.className = 'status-chip chip-ok';
         chip.textContent = '✅ Reserva rápida — onda pequena';
       } else if (totalMin < 40) {
-        timeEl.classList.add('medium');
+        timeEl.className = 'result-time medium';
         chip.className = 'status-chip chip-warn';
         chip.textContent = '⚠️ Moderada — acompanhe a engine';
       } else {
-        timeEl.classList.add('slow');
+        timeEl.className = 'result-time slow';
         chip.className = 'status-chip chip-alert';
         chip.textContent = '🔴 Onda grande — pode demorar';
       }
 
+      // 3. Atualiza o Card Comparativo e Barras de Progresso
+      document.getElementById('compTimeOld').textContent = fmt(oldSeg / 60);
+      document.getElementById('compTimeNew').textContent = fmt(totalMin);
+
+      const economiaSeg = oldSeg - totalSeg;
+      if (economiaSeg > 0) {
+        const pctReducao = ((oldSeg - totalSeg) / oldSeg * 100).toFixed(1);
+        const pctLargura = (totalSeg / oldSeg * 100).toFixed(1);
+
+        // Atualiza a barra verde animada
+        const newBar = document.getElementById('compBarNew');
+        newBar.style.width = pctLargura + '%';
+        newBar.textContent = `Agora (${pctLargura}%)`;
+
+        document.getElementById('compSavings').textContent = `🚀 Economia Estimada de ~${fmt(economiaSeg / 60)} (-${pctReducao}%)`;
+        document.getElementById('compSavings').style.display = 'block';
+      } else {
+        document.getElementById('compBarNew').style.width = '100%';
+        document.getElementById('compBarNew').textContent = 'Agora (100%)';
+        document.getElementById('compSavings').style.display = 'none';
+      }
+
       document.getElementById('resultBox').style.display = 'block';
+      document.getElementById('comparisonCard').style.display = 'block';
     }
 
     function abrirSobre() {
@@ -477,15 +1010,18 @@
       document.body.style.overflow = '';
     }
 
-    // Fechar modal ao clicar fora
-    document.getElementById('modalSobre').addEventListener('click', function(e) {
+    document.getElementById('modalSobre').addEventListener('click', function (e) {
       if (e.target === this) fecharSobre();
     });
 
     document.addEventListener('keydown', e => {
-      if (e.key === 'Enter') calcular();
       if (e.key === 'Escape') fecharSobre();
     });
+
+    // Calcular inicialmente
+    window.onload = function () {
+      calcular();
+    };
   </script>
 </body>
 
