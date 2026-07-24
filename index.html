@@ -260,6 +260,60 @@
       color: var(--green); padding: 0.2rem 0.6rem; border-radius: 6px;
       font-size: 0.72rem; font-weight: 600; margin-left: 0.4rem;
     }
+
+    /* ==========================================
+       CSS DO CARD COMPARATIVO (FÁCIL EXCLUSÃO DEPOIS)
+       ========================================== */
+    .comparison-card {
+      background: linear-gradient(135deg, rgba(30, 35, 64, 0.9), rgba(22, 25, 41, 0.9));
+      border: 1px dashed var(--accent);
+      padding: 1.8rem;
+      border-radius: var(--radius);
+      margin-top: 1.5rem;
+      display: none;
+      animation: fadeIn 0.3s ease;
+      box-shadow: 0 16px 64px rgba(0, 0, 0, 0.5);
+    }
+    .comparison-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .comp-box {
+      background: rgba(13, 15, 26, 0.5);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1rem;
+      text-align: center;
+    }
+    .comp-box-title {
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      margin-bottom: 0.4rem;
+      letter-spacing: 0.05em;
+    }
+    .comp-box .val {
+      font-size: 1.4rem;
+      font-weight: 700;
+    }
+    .comp-box .val.old {
+      color: var(--red);
+    }
+    .comp-box .val.new {
+      color: var(--green);
+    }
+    .comp-savings {
+      text-align: center;
+      margin-top: 1rem;
+      font-size: 0.85rem;
+      color: var(--green);
+      font-weight: 600;
+      background: rgba(34, 201, 122, 0.1);
+      padding: 0.6rem;
+      border-radius: 6px;
+    }
   </style>
 </head>
 
@@ -289,30 +343,56 @@
     </div>
 
     <div class="result-box" id="resultBox">
-      <p class="result-label">Estimativa até entrar em curso</p>
+      <p class="result-label">Estimativa até entrar em curso (Margem de 2.5s/ordem)</p>
       <div class="result-time" id="resultTime">—</div>
       <hr class="divider" />
       <div>
         <div class="breakdown-item">
-          <span>Componente linear (6.463 × N)</span>
+          <span>Tempo de processamento (2.5s × N)</span>
           <span id="bLinear">—</span>
         </div>
-        <div class="breakdown-item">
-          <span>Componente quadrático (0.00298 × N²)</span>
+        <div class="breakdown-item" id="rowQuad" style="display: none;">
+          <span>Componente quadrático</span>
           <span id="bQuad">—</span>
         </div>
-        <div class="breakdown-item">
+        <div class="breakdown-item" id="rowConst" style="display: none;">
           <span>Constante base</span>
           <span id="bConst">—</span>
         </div>
         <div class="breakdown-item">
-          <span>Velocidade da engine</span>
+          <span>Desempenho estimado</span>
           <span id="bVel">—</span>
         </div>
       </div>
       <div id="statusChip" class="status-chip chip-ok">✅ Reserva rápida</div>
     </div>
   </div>
+
+  <!-- ========================================================
+       INÍCIO DO CARD DE COMPARAÇÃO (PODE SER EXCLUÍDO NO FUTURO)
+       ======================================================== -->
+  <div class="card comparison-card" id="comparisonCard">
+    <h2 style="font-size: 1rem; margin-bottom: 0.4rem; display: flex; align-items: center; gap: 0.5rem;">
+      📊 Comparativo: Desempenho do Banco de Dados
+    </h2>
+    <p style="font-size: 0.75rem; color: var(--text-muted); line-height: 1.4;">
+      Comparação direta entre o tempo gasto antes da limpeza do banco de dados (modelo antigo) e o tempo atual com a margem de segurança configurada de 2.5s por ordem.
+    </p>
+    <div class="comparison-grid">
+      <div class="comp-box">
+        <div class="comp-box-title">Tempo Antigo (Histórico)</div>
+        <div class="val old" id="compTimeOld">—</div>
+      </div>
+      <div class="comp-box">
+        <div class="comp-box-title">Tempo Atual (Com Margem)</div>
+        <div class="val new" id="compTimeNew">—</div>
+      </div>
+    </div>
+    <div class="comp-savings" id="compSavings">—</div>
+  </div>
+  <!-- ========================================================
+       FIM DO CARD DE COMPARAÇÃO
+       ======================================================== -->
 
   <!-- Modal Sobre -->
   <div class="modal-overlay" id="modalSobre">
@@ -427,23 +507,21 @@
       const N = parseFloat(document.getElementById('ordens').value) || 0;
       if (N === 0) { document.getElementById('ordens').focus(); return; }
 
-      // Modelo quadrático calibrado em 11 ondas reais com restrição para a onda 24935 (R² = 0.9904)
+      // 1. Modelo Histórico Antigo (Com gargalo quadrático)
       // T(seg) = 0.00298499 × N² + 6.463413 × N + 9.7501
-      const A = 0.00298499;
-      const B = 6.463413;
-      const C = 9.7501;
+      const oldA = 0.00298499;
+      const oldB = 6.463413;
+      const oldC = 9.7501;
+      const oldSeg = oldA * N * N + oldB * N + oldC;
 
-      const compQuad = A * N * N;
-      const compLinear = B * N;
-      const totalSeg = compQuad + compLinear + C;
+      // 2. Novo Modelo com Margem de Segurança (2.5s por ordem)
+      const totalSeg = 2.5 * N;
       const totalMin = totalSeg / 60;
 
       const vel = (N / totalMin).toFixed(1) + ' ordens/min';
-      const segPorOrdem = (totalSeg / N).toFixed(2) + ' seg/ordem';
+      const segPorOrdem = '2.50 seg/ordem';
 
-      document.getElementById('bLinear').textContent = fmtSeg(compLinear);
-      document.getElementById('bQuad').textContent = '+' + fmtSeg(compQuad);
-      document.getElementById('bConst').textContent = fmtSeg(C) + ' (fixo)';
+      document.getElementById('bLinear').textContent = fmtSeg(totalSeg);
       document.getElementById('bVel').textContent = vel + ' · ' + segPorOrdem;
 
       const timeEl = document.getElementById('resultTime');
@@ -465,7 +543,21 @@
         chip.textContent = '🔴 Onda grande — pode demorar';
       }
 
+      // 3. Atualiza o Card Comparativo (Fácil de remover depois)
+      document.getElementById('compTimeOld').textContent = fmt(oldSeg / 60);
+      document.getElementById('compTimeNew').textContent = fmt(totalMin);
+      
+      const economiaSeg = oldSeg - totalSeg;
+      if (economiaSeg > 0) {
+        const pctReducao = ((oldSeg - totalSeg) / oldSeg * 100).toFixed(1);
+        document.getElementById('compSavings').textContent = `🚀 Economia Estimada de ~${fmt(economiaSeg / 60)} (-${pctReducao}%)`;
+        document.getElementById('compSavings').style.display = 'block';
+      } else {
+        document.getElementById('compSavings').style.display = 'none';
+      }
+
       document.getElementById('resultBox').style.display = 'block';
+      document.getElementById('comparisonCard').style.display = 'block';
     }
 
     function abrirSobre() {
